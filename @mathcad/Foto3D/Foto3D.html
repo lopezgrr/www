@@ -1,0 +1,155 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="generator" content="Mathcad Professional 14.0" /><title>Nube de puntos a partir de tonos de grises</title><style type="text/css">
+				
+		p 
+		{ 
+			margin: 0 0 0 0; 
+			font-family: Arial, sans-serif;
+			font-size:10pt;
+			font-weight: normal;
+			font-style: normal;
+			vertical-align: baseline;
+			color: black;
+			text-decoration: none;			
+		}
+		div
+		{
+			border-width:0px;
+			border-style: solid;
+			border-color: red;
+			
+		}
+		
+			body
+			{			
+				background-color: #c0c0c0;				
+			}
+		
+		p img { vertical-align: middle; }
+		p b, li b { font-weight : bold; }
+		p i, li i { font-style : italic; }
+		p u, li u { text-decoration : underline; }
+		p so, li so { text-decoration : line-through; }
+		p sub, p sub { font-size : 70%; vertical-align: sub; }
+		p sup, p sup { font-size : 70%; vertical-align: super; }
+		ul
+		{
+			padding-left	: 2em; /* for mozilla list marker box */
+			margin-left		: 0;   /* for IE list marker box */
+		}
+		ol
+		{
+			padding-left	: 2em; /* for mozilla list marker box */
+			margin-right 	: -0.5em;
+			margin-left		: 0;   /* for IE list marker box */
+		}
+		
+		p.Style1, li.Style1 /*Normal*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style2, li.Style2 /*Heading 1*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 13.26315789473684pt;font-weight: bold;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style3, li.Style3 /*Heading 2*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 12pt;font-weight: bold;
+		font-style: italic;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style4, li.Style4 /*Heading 3*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 12pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style5, li.Style5 /*Paragraph*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 21pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style6, li.Style6 /*List*/
+		{
+			margin-left: 14.25pt;
+		margin-right: 0pt;
+		text-indent: -14.25pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style7, li.Style7 /*Indent*/
+		{
+			margin-left: 108pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style8, li.Style8 /*Title*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: center;
+		font-family: 'Times New Roman', sans-serif;;
+		font-size: 24pt;font-weight: bold;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style9, li.Style9 /*Subtitle*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: center;
+		font-family: 'Times New Roman', sans-serif;;
+		font-size: 18pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	</style></head><body><div id="mc-region-1" style="position: absolute; top: 14.25pt; left: 36pt; width: 342.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><b><span style="color: #008100; ">CONVERTIR UNA FOTO EN TONOS DE GRISES A NUBE DE PUNTOS XYZ</span></b></p></div><div id="mc-region-5" style="position: absolute; top: 38.25pt; left: 12pt; width: 429.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">El primer paso es leer el archivo que contiene la foto a convertir, utilizando la función</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">interconstruída de MathCAD READBMP. Esta función admite como argumento un string</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">con el nombre del archivo en formato BMP. Como resultado, regresa una matriz 2D con</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">filas y columnas por cada pixel de la foto. Los valores de esta matriz son el tono de gris</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">de cada pixel en un rango 0-255, en donde 0 es negro y 255 blanco.</span></p></div><div id="mc-region-9" style="position: absolute; top: 116.25pt; left: 108pt; width: 156pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0001_516113000.JPG" id="generatedImage9" path="Foto3D_images/IMG0001_516113000.JPG" style="width: 156pt;height: 13.5pt;"></img></div><div id="mc-region-10" style="position: absolute; top: 146.25pt; left: 18pt; width: 398pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">Es posible obtener fácilmente el negativo de la foto. Simplemente con la operación:</span></p></div><div id="mc-region-16" style="position: absolute; top: 170.25pt; left: 102pt; width: 82.5pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0002_516113000.JPG" id="generatedImage16" path="Foto3D_images/IMG0002_516113000.JPG" style="width: 82.5pt;height: 13.5pt;"></img></div><div id="mc-region-15" style="position: absolute; top: 216pt; left: 24pt; width: 190.5pt; background-color: inherit; "><a name="" /><img border="0" src="Foto3D_images/IMG0004_516113015.JPG" id="generatedImage15" path="Foto3D_images/IMG0004_516113015.JPG" style="width: 190.5pt;height: 298.5pt;"></img></div><div id="mc-region-18" style="position: absolute; top: 218.25pt; left: 246pt; width: 180.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;">Los valores de filas y columnas pueden</p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;">obtenerse con las funciones de MathCAD:</p></div><div id="mc-region-39" style="position: absolute; top: 254.25pt; left: 228pt; width: 106.5pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0005_516113015.JPG" id="generatedImage39" path="Foto3D_images/IMG0005_516113015.JPG" style="width: 106.5pt;height: 13.5pt;"></img></div><div id="mc-region-40" style="position: absolute; top: 254.25pt; left: 348pt; width: 74.25pt; background-color: inherit; "><a name="" /><img border="0" src="Foto3D_images/IMG0006_516113015.JPG" id="generatedImage40" path="Foto3D_images/IMG0006_516113015.JPG" style="width: 74.25pt;height: 13.5pt;"></img></div><div id="mc-region-41" style="position: absolute; top: 272.25pt; left: 228pt; width: 108.75pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0007_516113015.JPG" id="generatedImage41" path="Foto3D_images/IMG0007_516113015.JPG" style="width: 108.75pt;height: 13.5pt;"></img></div><div id="mc-region-42" style="position: absolute; top: 272.25pt; left: 348pt; width: 78.75pt; background-color: inherit; "><a name="" /><img border="0" src="Foto3D_images/IMG0008_516113015.JPG" id="generatedImage42" path="Foto3D_images/IMG0008_516113015.JPG" style="width: 78.75pt;height: 13.5pt;"></img></div><div id="mc-region-44" style="position: absolute; top: 320.25pt; left: 252pt; width: 177.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;">El número total de pixeles en la foto es:</p></div><div id="mc-region-46" style="position: absolute; top: 350.25pt; left: 258pt; width: 147.75pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0009_516113015.JPG" id="generatedImage46" path="Foto3D_images/IMG0009_516113015.JPG" style="width: 147.75pt;height: 13.5pt;"></img></div><div id="mc-region-48" style="position: absolute; top: 375.75pt; left: 276pt; width: 108pt; background-color: inherit; "><a name="" /><img border="0" src="Foto3D_images/IMG0010_516113015.JPG" id="generatedImage48" path="Foto3D_images/IMG0010_516113015.JPG" style="width: 108pt;height: 18pt;"></img></div><div id="mc-region-73" style="position: absolute; top: 560.25pt; left: 12pt; width: 425pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">Para hacer la conversión es necesario convertir todos los pixeles (filas x columnas) en 3</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">vectores que representan los valores de X, Y, Z. La variable de rango k inicia con el</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">primer elemento (posición cero) y termina con el último (posición NUMPIX-1).</span></p></div><div id="mc-region-80" style="position: absolute; top: 614.25pt; left: 132pt; width: 94.5pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0011_516113031.JPG" id="generatedImage80" path="Foto3D_images/IMG0011_516113031.JPG" style="width: 94.5pt;height: 13.5pt;"></img></div><div id="mc-region-74" style="position: absolute; top: 650.25pt; left: 12pt; width: 425.75pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">La función de MathCAD mod es la división con enteros, y regresa el valor del módulo</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">de la división. Para que las diferentes posiciones de filas puedan ser almacenadas en</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">un vector </span><span style="font-size: 10.266666666666667pt; "><b><i>x </i></b></span><span style="font-size: 10.266666666666667pt; ">simplemente se divide el vector </span><span style="font-size: 10.266666666666667pt; "><b><i>k </i></b></span><span style="font-size: 10.266666666666667pt; ">entre MAXFIL.</span></p></div><div id="mc-region-79" style="position: absolute; top: 698.25pt; left: 132pt; width: 107.25pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0012_516113031.JPG" id="generatedImage79" path="Foto3D_images/IMG0012_516113031.JPG" style="width: 107.25pt;height: 15.75pt;"></img></div><div id="mc-region-75" style="position: absolute; top: 740.25pt; left: 12pt; width: 320.75pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">Lo mismo ocurre para las posiciones de las columnas y el vector </span><span style="font-size: 10.266666666666667pt; "><b><i>y</i></b></span><span style="font-size: 10.266666666666667pt; ">:</span></p></div><div id="mc-region-78" style="position: absolute; top: 764.25pt; left: 132pt; width: 112.5pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0013_516113031.JPG" id="generatedImage78" path="Foto3D_images/IMG0013_516113031.JPG" style="width: 112.5pt;height: 15.75pt;"></img></div><div id="mc-region-76" style="position: absolute; top: 812.25pt; left: 12pt; width: 430.25pt; "><a name="" /><p class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">Finalmente los valores de z se obtienen directamente de la matriz original utilizando los indices que se acaban de calcular en los vectores </span><span style="font-size: 10.266666666666667pt; "><b><i>x y</i></b></span><span style="font-size: 10.266666666666667pt; ">.</span></p></div><div id="mc-region-77" style="position: absolute; top: 848.25pt; left: 132pt; width: 77.25pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0014_516113031.JPG" id="generatedImage77" path="Foto3D_images/IMG0014_516113031.JPG" style="width: 77.25pt;height: 24pt;"></img></div><div id="mc-region-83" style="position: absolute; top: 914.25pt; left: 12pt; width: 426.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">La nube de puntos se puede ahora graficar en el espacio 3D XYZ. Es necesario recordar</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">que los pixeles negros tienen z=0 y se encuentran en el plano XY, mientras que los</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">blancos en la parte más alta de la grafica. El resto de los pixeles intermedios son tonos</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">de grises. El factor de escala de la gráfica sirve para adecuar el aspecto visual.</span></p></div><div id="mc-region-113" style="position: absolute; top: 984pt; left: 72pt; width: 249.75pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0016_516113031.JPG" id="generatedImage113" path="Foto3D_images/IMG0016_516113031.JPG" style="width: 249.75pt;height: 325.5pt;"></img></div><div id="mc-region-99" style="position: absolute; top: 1334.25pt; left: 24pt; width: 353.75pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">Es posible contruir la matriz B copiando en sus columnas los vectores xyz:</span></p></div><div id="mc-region-110" style="position: absolute; top: 1359pt; left: 90pt; width: 39pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0017_516113031.JPG" id="generatedImage110" path="Foto3D_images/IMG0017_516113031.JPG" style="width: 39pt;height: 18.75pt;"></img></div><div id="mc-region-111" style="position: absolute; top: 1359pt; left: 180pt; width: 39pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0018_516113031.JPG" id="generatedImage111" path="Foto3D_images/IMG0018_516113031.JPG" style="width: 39pt;height: 18.75pt;"></img></div><div id="mc-region-112" style="position: absolute; top: 1359pt; left: 282pt; width: 38.25pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0019_516113046.JPG" id="generatedImage112" path="Foto3D_images/IMG0019_516113046.JPG" style="width: 38.25pt;height: 18.75pt;"></img></div><div id="mc-region-108" style="position: absolute; top: 1418.25pt; left: 24pt; width: 317pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">y guardar la matriz B en un archivo de texto, separado por comas:</span></p></div><div id="mc-region-109" style="position: absolute; top: 1440pt; left: 156pt; width: 86.25pt; background-color: inherit; "><a name="" /><img border="0" src="Foto3D_images/IMG0021_516113046.JPG" id="generatedImage109" path="Foto3D_images/IMG0021_516113046.JPG" style="width: 86.25pt;height: 63.75pt;"></img></div><div id="mc-region-115" style="position: absolute; top: 1537.5pt; left: 18pt; width: 369.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">La importación de datos en un programa de CAD se muestra a continuación:</span></p></div><div id="mc-region-117" style="position: absolute; top: 1578pt; left: 30pt; width: 354.75pt; "><a name="" /><img border="0" src="Foto3D_images/IMG0023_516113046.JPG" id="generatedImage117" path="Foto3D_images/IMG0023_516113046.JPG" style="width: 354.75pt;height: 337.5pt;"></img></div><div id="mc-region-118" style="position: absolute; top: 1953pt; left: 48pt; width: 185.75pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;">El archivo <b><u><a href="Mathcad - Foto3D.pdf">PDF</a></u></b><b> </b>está disponible en este link.</p><br /><br /><br /><br /></div><div></div></body></html>
