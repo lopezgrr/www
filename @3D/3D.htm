@@ -1,0 +1,438 @@
+<html>
+<head>
+<title>Prof.Dr. Eugenio L&oacute;pez (Geometr&iacute;as 3D)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#999999" text="#000000">
+<p align="center"><b><font size="5">LGAC 2.- OPTIMIZACI&Oacute;N GEOM&Eacute;TRICA</font><font size="6"> 
+  </font></b></p>
+<p align="left"><font size="4">En la pr&aacute;ctica de dise&ntilde;o de componentes 
+  mec&aacute;nicos se analizan los aspectos funcionales del producto, se dimensiona 
+  y calculan los esfuerzos debidos a las cargas que soportar&aacute;n. Adem&aacute;s 
+  se analizan los aspectos del proceso de manufactura que influyen directamente 
+  con la forma &uacute;ltima del producto. Es deseable reducir costos. El desarrollo 
+  vertiginoso de productos obliga al ingeniero en dise&ntilde;o a utilizar sistemas 
+  computacionales que le permitan analizar las posibles zonas cr&iacute;ticas 
+  que presenten elevaciones de esfuerzo de piezas antes de que &eacute;stas sean 
+  manufacturadas. Resulta deseable que las geometr&iacute;as sean optimizadas 
+  bajo criterios de minimizaci&oacute;n de los esfuerzos m&aacute;ximos y poder 
+  as&iacute; garantizar la vida &uacute;til del componente. Esto es posible desde 
+  la fase de an&aacute;lisis y dise&ntilde;o por medio de t&eacute;cnicas como 
+  las de dise&ntilde;o mec&aacute;nico, elemento finito, la aplicaci&oacute;n 
+  de criterios biol&oacute;gicos, entre otras.</font></p>
+<p align="left"><font size="4"><a href="http://gama.fime.uanl.mx/elopez/"><img src="../home.png" width="100" height="100" border="0"></a></font></p>
+<hr>
+<p align="left">&nbsp;</p>
+<p align="center"><font size="5"><b>GEOMETR&Iacute;AS PARA DISE&Ntilde;O DE PRODUCTOS 
+  MEC&Aacute;NICOS</b></font></p>
+<p align="left"><font size="4">El uso de la tecnolog&iacute;a en ingenier&iacute;a 
+  juega un rol muy importante en el dise&ntilde;o de partes mec&aacute;nicas. 
+  Los programas de dise&ntilde;o por computadora, CAD (del ingl&eacute;s Computer 
+  Aided Design), permiten generar geometr&iacute;as en tres dimensiones, que pueden 
+  ser utilizadas para diversos an&aacute;lisis, y con ello lograr un dise&ntilde;o 
+  &oacute;ptimo que cumpla con las especificaciones del producto.</font></p>
+<p align="left"><font size="4">En los programas de dise&ntilde;o por computadora 
+  los objetos se modelan mediante primitivas geom&eacute;tricas como son el punto, 
+  la recta, la curva, la esfera, etc. Aunque existen diversos modos de manejo 
+  matem&aacute;tico de dichas primitivas, cada programa de dise&ntilde;o las maneja 
+  de manera particular para facilitar las operaciones internas. Un modelo geom&eacute;trico 
+  es una idealizaci&oacute;n de una parte real cuyo comportamiento puede ser descrito 
+  por ecuaciones matem&aacute;ticas. En un modelo 3D se pueden utilizar las diferentes 
+  primitivas geom&eacute;tricas de construcci&oacute;n de modelos tridimensionales: 
+  el cubo, el cilindro, el cono y la esfera; estas primitivas se pueden escalar, 
+  rotar o trasladar en el espacio; tambi&eacute;n se utilizan operaciones que 
+  permiten su interacci&oacute;n: uni&oacute;n, diferencia o intersecci&oacute;n 
+  de secciones, facilitando as&iacute; el dise&ntilde;o de geometr&iacute;as m&aacute;s 
+  complejas. Con toda la informaci&oacute;n que contiene un modelo geom&eacute;trico, 
+  &eacute;ste puede ser usado para fabricar su prototipo r&aacute;pido, hacer 
+  un an&aacute;lisis de colisiones, de esfuerzos est&aacute;ticos, de cinem&aacute;tica 
+  de eslabones y su manufactura en serie.</font></p>
+<p align="left">&nbsp;</p>
+<table width="78%" border="3" align="center" bordercolor="#FF0000">
+  <tr> 
+    <td width="24%" height="237"><a href="sw/portaherramienta.jpg"><img src="sw/portaherramienta.gif" width="360" height="233" border="0"></a></td>
+    <td width="25%" height="237"><a href="sw/articulacion.jpg"><img src="sw/articulacion.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%" height="237"><a href="sw/portadremel.jpg"><img src="sw/portadremel.gif" width="360" height="225" border="0"></a></td>
+    <td width="26%" height="237"><a href="sw/Machine%2003.jpg"><img src="sw/Machine%2003.gif" width="360" height="225" border="0"></a></td>
+  </tr>
+  <tr> 
+    <td width="24%">
+      <div align="center">Porta herramienta MDX-20.</div>
+    </td>
+    <td width="25%">
+      <div align="center">Articulaci&oacute;n con encoder del proyecto &quot;M&aacute;quina 
+        de medici&oacute;n&quot; PARO.</div>
+    </td>
+    <td width="25%">
+      <div align="center">Porta Dremel con guias IGUS y partes maquinadas en 2D.</div>
+    </td>
+    <td width="26%">
+      <div align="center">Maquina-Herramienta v3</div>
+    </td>
+  </tr>
+</table>
+<p align="left">&nbsp;</p>
+<hr>
+<p align="center"><font size="5"><b>TOPOLOGICAL MESH MODELING</b></font></p>
+<p align="center"><font size="4"><i>Ergun Akleman</i></font></p>
+<p><font size="4"><b><font color="#006600">Extracto del libro &quot;Topological 
+  Mesh Modeling&quot;:</font></b></font></p>
+<p><font size="4">One of the most exciting aspects of shape modeling and sculpting 
+  is the development of new algorithms and methods to create unusual, interesting 
+  and aesthetically pleasing shapes. Recent advances in computer graphics, shape 
+  modeling and mathematics help the imagination of contemporary mathematicians, 
+  artists and architects to design new and unusual 3D forms [13].</font></p>
+<p><font size="4">One of the most notable artists of the last century, Escher, 
+  frequently applied mathematical concepts to create drawings of unusual 3D forms 
+  [170]. With the advance of computer graphics, many artists have begun to use 
+  mathematics as a tool to create revolutionary forms of artworks. There currently 
+  exists many contemporary artists such as George Hart [10], Helaman Ferguson 
+  [9], Bathseba Grossman [11], Brent Collins and Carlo S&acute;equin [22] who 
+  successfully combines art and mathematics to create unusual sculptures. These 
+  mathematical sculptors, who have a very noticeable presence in today&#146;s 
+  art scene, develop their own methods to model, prototype and fabricate an extraordinary 
+  variety of shapes. Unusual shapes are especially interesting for architectural 
+  design. Interestingly shaped architectural structures are symbols of cities, 
+  regions, states, and even countries. In fact, recent advances in computer graphics 
+  and shape modeling help the imagination of contemporary architects to design 
+  new forms [13]. One most notable contemporary example of interestingly shaped 
+  buildings that have become symbols is Frank Gehry&#146;s Guggenheim Museum. 
+  The Museum, with its stunning titanium-clad forms, has been credited with vitalizing 
+  an entire city and region of Spain.</font></p>
+<p><font size="4"><b>Poygonal Modeling</b></font></p>
+<p><font size="4">Polygonal modeling is the most widely used modeling approach 
+  in computer graphics applications. With the advent of subdivision surfaces, 
+  most users have converted back to polygonal modeling to create control surfaces 
+  for subdivision schemes. It is interesting to note that this popularity of polygonal 
+  modeling happened despite the limited tools provided by commercial modeling 
+  systems (The users find effective uses of existing tools and share their experiences 
+  with other users by publishing trade articles and books).</font></p>
+<p><font size="4">We believe that the popularity of polygonal modeling comes from 
+  one of its under-appreciated advantages over other modeling approaches. If the 
+  polygons are not triangles or quadrilaterals, the faces are not geometrically 
+  well-defined. With geometrically ill-defined faces, self-intersection becomes 
+  meaningless. So, any commercial system that allows general polygons does not 
+  check self-intersection and avoids the cost of self-intersection computation 
+  which can considerably slow down the application during interactive modeling.</font></p>
+<p><font size="4">The omission of automatic self-intersection avoidance is typically 
+  not of concern to most users, since they can easily avoid self-intersection 
+  manually. Given a choice users usually prefer interactivity and higher speed 
+  in their applications. On the other hand, when users become more advanced, their 
+  main complaint becomes the limitations of the tools. For instance, opening a 
+  hole or adding a handle can require huge amount of manual work. Therefore, modeling 
+  a very complicated shape with huge number of holes and handles can be an uphill 
+  task even for experienced users.</font></p>
+<p><font color="0" size="+2"><b><font size="4">Las siguientes geometr&iacute;as 
+  fueron generadas con TopMod de Ergun Akleman y rendereadas con 3DMAX:</font></b></font></p>
+<table width="80%" border="3" align="center" bordercolor="#FF0000">
+  <tr> 
+    <td width="24%"> 
+      <div align="center"><a href="akleman/MyInterlacedStars.jpg"><img src="akleman/MyInterlacedStars.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyInterlacedStars2.jpg"><img src="akleman/MyInterlacedStars2.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyMoebius.jpg"><img src="akleman/MyMoebius.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="26%"> 
+      <div align="center"><a href="akleman/MyMoebius-002.jpg"><img src="akleman/MyMoebius-002.gif" width="360" height="225" border="0"></a></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="24%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="24%"> 
+      <div align="center"><a href="akleman/MyOrtho.jpg"><img src="akleman/MyOrtho.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyOrtho2.jpg"><img src="akleman/MyOrtho2.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyOrtho3.jpg"><img src="akleman/MyOrtho3.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="26%"> 
+      <div align="center"><a href="akleman/MyOrtho4.jpg"><img src="akleman/MyOrtho4.gif" width="360" height="225" border="0"></a></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="24%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="24%"> 
+      <div align="center"><a href="akleman/MyQuad3D.jpg"><img src="akleman/MyQuad3D.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyStar6c2.jpg"><img src="akleman/MyStar6c2.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyQuintet-002.jpg"><img src="akleman/MyQuintet-002.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="26%"> 
+      <div align="center"><a href="akleman/MyStar6c-001.jpg"><img src="akleman/MyStar6c-001.gif" width="360" height="225" border="0"></a></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="24%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="24%"> 
+      <div align="center"><a href="akleman/MyQuintet-03.jpg"><img src="akleman/MyQuintet-03.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyQuintet-04.jpg"><img src="akleman/MyQuintet-04.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MySoccerball.jpg"><img src="akleman/MySoccerball.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="26%"> 
+      <div align="center"><a href="akleman/MyStar5c-01.jpg"><img src="akleman/MyStar5c-01.gif" width="360" height="225" border="0"></a></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="24%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="24%"> 
+      <div align="center"><a href="akleman/MyStar5c-02.jpg"><img src="akleman/MyStar5c-02.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyStar5d.jpg"><img src="akleman/MyStar5d.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><a href="akleman/MyStar6c.jpg"><img src="akleman/MyStar6c.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="26%"> 
+      <div align="center"><a href="akleman/MyStar6c1.jpg"><img src="akleman/MyStar6c1.gif" width="360" height="225" border="0"></a></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="24%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="24%" height="231"><a href="akleman/MyQuintet-02.jpg"><img src="akleman/MyQuintet-02.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%" height="231"><a href="akleman/MyQuintet-01.jpg"><img src="akleman/MyQuintet-01.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%" height="231"><a href="akleman/dodecahedron.jpg"><img src="akleman/dodecahedron.gif" width="360" height="225" border="0"></a></td>
+    <td width="26%" height="231"><a href="akleman/dodecahedron-002.jpg"><img src="akleman/dodecahedron-002.gif" width="360" height="225" border="0"></a></td>
+  </tr>
+  <tr>
+    <td width="24%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="25%">&nbsp;</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="24%">&nbsp;</td>
+    <td width="25%"> 
+      <div align="center"></div>
+    </td>
+    <td width="25%">&nbsp;</td>
+    <td width="26%"> 
+      <div align="center"></div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><font size="4">Ver tambi&eacute;n: <a href="http://www2.memenet.or.jp/%7Ekeizo/">Keizo 
+  Ushio</a></font></p>
+<p>&nbsp;</p><hr>
+<p>&nbsp;</p>
+<p align="center"><font size="+2"><b><font size="5">SCHERK-COLLINS SCULPTURE GENERATOR</font></b></font></p>
+<p align="center"><font size="4"><i><a href="http://www.cs.berkeley.edu/%7Esequin/">Carlo 
+  H. S&eacute;quin</a></i></font></p>
+<p><font size="4"><b><font color="#006600">Extracto de la p&aacute;gina personal 
+  de Carlo S&eacute;quin UC Berkeley:</font></b></font></p>
+<p><font size="4">Computer Graphics, Art, Math, Geometry, and Abstract Sculpture 
+  are closely related. In the activities below we are trying to transcend the 
+  boundaries between these fields.</font></p>
+<p><font size="4">A computer program has been developed to visualize different 
+  configurations of such saddle rings with different number of holes and different 
+  amounts of twists. Experimenting with different values for the parameters of 
+  such a virtual sculpture can be done at interactive speeds and can save weeks 
+  of hard labor needed to build physical prototypes. It also may result in more 
+  optimized solutions, and it allows to find configurations that one would not 
+  likely dare to explore if the prototypes had to be built manually from physical 
+  matter.</font></p>
+<p><font size="4">An intellectual collaboration with Brent Collins has already 
+  resulted in a couple of intriguing new wood sculptures. A direct collaboration 
+  on more complex sculptures is now under way since the prototyping program has 
+  recently been enhanced to deliver construction blueprints in the form of slices 
+  through the sculpture geometry. Brent Collins is a professional artist living 
+  in Gower, MO, who has been carving abstract geometrical structures from solid 
+  wood blocks or from laminated assemblies. any of his sculptures comprise minimal 
+  surfaces which form an intricate composition of tunnels and saddles. Carlo S&eacute;quin 
+  is a professor at U.C. Berkeley, teaching computer graphics, geometric modeling, 
+  and computer aided design. Since 1995 he has been collaborating with Collins 
+  in the conception and design of intricate geometrical shapes that expand the 
+  original work of Collins. He has developed several procedural generator programs 
+  that recreate some of the shapes conceived by Collins and can expand the basic 
+  concept in several possible directions. His interactive &quot;sculpture generator&quot; 
+  allows a quick perusal of some domain of the configuration space, and an optimization 
+  of a given design along the axes of several parameters. Shapes of high artistic 
+  merits can then be sliced into 1-inch slabs and a corresponding set of cross 
+  sections printed out. Brent Collins uses these templates to precut a set of 
+  wood boards and to preassemble a rough shape from which the final sculpture 
+  is then carved. In this way, the intuitive genius of the artist can be amplified 
+  by a computer tool that assists with the visualization and faithful reproduction 
+  of complex geometrical shapes.<br>
+  </font></p>
+<p><font size="+2"><b><font size="4">Las siguientes geometr&iacute;as fueron generadas 
+  por 'Sculpture Generator 1' by Carlo H. S&eacute;quin, UC Berkeley:</font></b></font></p>
+<p>&nbsp;</p>
+<table width="80%" border="3" align="center" bordercolor="#FF0000">
+  <tr> 
+    <td width="24%"><a href="sequin/Hyperbolic%20Heptagon.jpg"><img src="sequin/Hyperbolic%20Heptagon.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%"><a href="sequin/Anton-001.jpg"><img src="sequin/Anton-001.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%"><a href="sequin/Beta-001.jpg"><img src="sequin/Beta-001.gif" width="360" height="225" border="0"></a></td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="24%">&quot;Demo from 'Sculpture Generator 1' by Carlo H. S&eacute;quin, 
+      UC Berkeley&quot;</td>
+    <td width="25%">&quot;Generated by 'Sculpture Generator 1' by Carlo H. S&eacute;quin, 
+      UC Berkeley&quot;</td>
+    <td width="25%">&quot;Generated by 'Sculpture Generator 1' by Carlo H. S&eacute;quin, 
+      UC Berkeley&quot; <a href="sequin/Beta-001.zip">(Archivo STL)</a> <a href="http://elopez.fime.uanl.mx/@RP/escultura/Beta.htm">Construccion</a></td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p align="center"><font size="5"><b> <a name="Caballito"></a>GEOMETR&Iacute;AS 
+  DE NUBE DE PUNTOS (point cloud) </b></font></p>
+<p>&nbsp;</p>
+<table width="78%" border="3" align="center" bordercolor="#FF0000">
+  <tr> 
+    <td width="24%" height="183"> 
+      <div align="center"><a href="pointcloud/Caballito-points.jpg"><img src="pointcloud/Caballito-points.gif" width="360" height="206" border="0"></a></div>
+    </td>
+    <td width="24%" height="183"><a href="pointcloud/Caballito-both.jpg"><img src="pointcloud/Caballito-both.gif" width="360" height="206" border="0"></a></td>
+    <td width="24%" height="183"><a href="pointcloud/Caballito-render.jpg"><img src="pointcloud/Caballito-render.gif" width="360" height="206" border="0"></a></td>
+    <td width="28%" height="183"><a href="pointcloud/Caballito-mesh.jpg"><img src="pointcloud/Caballito-mesh.gif" width="360" height="206" border="0"></a></td>
+  </tr>
+  <tr> 
+    <td width="24%" height="47">Nube de puntos del caballito de mar</td>
+    <td width="24%" height="47">Nube de puntos + 3D Facets del caballito de mar</td>
+    <td width="24%" height="47">Malla de superficies del caballito de mar</td>
+    <td width="28%" height="47"> 
+      <p>Tonos de altura del caballito de mar (<a href="pointcloud/Caballito.txt">archivo 
+        de puntos</a>)</p>
+    </td>
+  </tr>
+</table>
+<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p align="center"><font size="5"><b>ALGUNAS OTRAS GEOMETR&Iacute;AS</b></font></p>
+<p>&nbsp;</p>
+<table width="80%" border="3" align="center" bordercolor="#FF0000">
+  <tr> 
+    <td width="24%" height="231"> 
+      <div align="center"><a href="3dmax/Toroide.jpg"><img src="3dmax/Toroide.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%" height="231"> 
+      <div align="center"><a href="3dmax/Escudo%20MEX.jpg"><img src="3dmax/Escudo%20MEX.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="25%" height="231"> 
+      <div align="center"><a href="3dmax/Femur.jpg"><img src="3dmax/Femur.gif" width="360" height="225" border="0"></a></div>
+    </td>
+    <td width="26%" height="231"> 
+      <div align="center"><a href="3dmax/tenis.jpg"><img src="3dmax/tenis.gif" width="360" height="225" border="0"></a></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="24%">&quot;Generated and rendered by 3DMAX&quot;</td>
+    <td width="25%">&quot;Generated and rendered by 3DMAX&quot;</td>
+    <td width="25%">Render en 3DMAX del art&iacute;culo sobre biomec&aacute;nica</td>
+    <td width="26%">Render en 3DMAX del art&iacute;culo sobre calzado deportivo 
+      <a href="3dmax/Zapato%20tenis.zip">(Archivo STL) </a></td>
+  </tr>
+  <tr> 
+    <td width="24%"><a href="3dmax/5stars.jpg"><img src="3dmax/5stars.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%"><a href="3dmax/estatua.jpg"><img src="3dmax/estatua.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%"><a href="3dmax/rines.jpg"><img src="3dmax/rines.gif" width="360" height="240" border="0"></a></td>
+    <td width="26%"><a href="3dmax/Busto.jpg"><img src="3dmax/Busto.gif" width="360" height="225" border="0"></a></td>
+  </tr>
+  <tr> 
+    <td width="24%">&quot;Generated with <font color="0">TopMod</font> and rendered 
+      by 3DMAX&quot;</td>
+    <td width="25%">Render en 3DMAX del art&iacute;culo sobre estatuas</td>
+    <td width="25%">&quot;Clay+Oclussion generated with <font color="0">Rhino</font> 
+      and rendered by 3DMAX &amp; Phtoshop&quot;</td>
+    <td width="26%">&quot;3D CG art test. Shadows and material maps in 3DMAX&quot;</td>
+  </tr>
+  <tr> 
+    <td width="24%"><a href="3dmax/nicho%20osos.jpg"><img src="3dmax/nicho%20osos.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%"><a href="3dmax/Angel.jpg"><img src="3dmax/Angel.gif" width="360" height="225" border="0"></a></td>
+    <td width="25%"><a href="3dmax/Nariz.jpg"><img src="3dmax/Nariz.gif" width="360" height="225" border="0"></a></td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="24%">&quot;Render en 3DMAX oso de FIME/UANL&quot;</td>
+    <td width="25%">&quot;Obispado Mty and rendered angel with 3DMAX&quot;</td>
+    <td width="25%">Render en 3DMAX del art&iacute;culo sobre caracterizaci&oacute;n 
+      3D de la nariz</td>
+    <td width="26%">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+<p>&nbsp;</p>
+<p align="center"><font size="5"><b>PLUG-IN CULT3D</b></font></p>
+<p><font size="4">Si tiene instalado el PlugIn de <font color="#990000">Cult3D</font> 
+  y su browser es <b>Internet Explorer</b>, puede observar interactivamente con 
+  el mouse las geometr&iacute;as en 3D. Cult3D permite al usuario ver objetos 
+  3D en tiempo real por medio de la red. Para poder hacerlo, necesita bajar (<a href="http://www.cult3d.com/download/">de 
+  la p&aacute;gina oficial</a>) e instalar el PlugIn. Las texturas aparecen lentamente, 
+  as&iacute; que sea paciente.<br>
+  </font></p>
+<p>&nbsp;</p>
+<p></p>
+<table width="80%" border="3" align="center" bordercolor="#FF0000">
+  <tr> 
+    <td width="24%"> 
+      <div align="center"><font color="#000000"><a href="cult3d/Alabe.html"><img src="cult3d/Alabe.gif" width="300" height="225" border="0"></a></font></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><font color="#000000"><a href="cult3d/dremel_molde.html"><img src="cult3d/Dremel_molde.gif" width="300" height="225" border="0"></a></font></div>
+    </td>
+    <td width="25%"> 
+      <div align="center"><font color="#000000"><a href="cult3d/Serpiente.html"><img src="cult3d/Serpiente.gif" width="350" height="224" border="0"></a></font></div>
+    </td>
+    <td width="26%">
+      <div align="center"><font color="#000000"><a href="cult3d/Sera-Chan.html"><img src="cult3d/sera-chan.gif" width="320" height="240" border="0"></a></font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td width="24%">ALABE. PlugIn Cult3D y navegador Internet Explorer</td>
+    <td width="25%">MOLDE DREMEL. PlugIn Cult3D y navegador Internet Explorer</td>
+    <td width="25%">SERPIENTE EMPLUMADA. PlugIn Cult3D y navegador Internet Explorer</td>
+    <td width="26%">Sera-Chan. PlugIn Cult3D y navegador Internet Explorer</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+</body>
+</html>
