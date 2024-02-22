@@ -1,0 +1,171 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="generator" content="Mathcad Professional 14.0" /><title>Trebol con curvas de Bezier racionalizadas</title><style type="text/css">
+				
+		p 
+		{ 
+			margin: 0 0 0 0; 
+			font-family: Arial, sans-serif;
+			font-size:10pt;
+			font-weight: normal;
+			font-style: normal;
+			vertical-align: baseline;
+			color: black;
+			text-decoration: none;			
+		}
+		div
+		{
+			border-width:0px;
+			border-style: solid;
+			border-color: red;
+			
+		}
+		
+			body
+			{			
+				background-color: #fff;				
+			}
+		
+		p img { vertical-align: middle; }
+		p b, li b { font-weight : bold; }
+		p i, li i { font-style : italic; }
+		p u, li u { text-decoration : underline; }
+		p so, li so { text-decoration : line-through; }
+		p sub, p sub { font-size : 70%; vertical-align: sub; }
+		p sup, p sup { font-size : 70%; vertical-align: super; }
+		ul
+		{
+			padding-left	: 2em; /* for mozilla list marker box */
+			margin-left		: 0;   /* for IE list marker box */
+		}
+		ol
+		{
+			padding-left	: 2em; /* for mozilla list marker box */
+			margin-right 	: -0.5em;
+			margin-left		: 0;   /* for IE list marker box */
+		}
+		
+		p.Style1, li.Style1 /*Normal*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 0pt;
+		text-align: left;
+		list-style-type: none;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style2, li.Style2 /*Heading 1*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 0pt;
+		text-align: left;
+		list-style-type: none;
+		font-family: 'Arial', sans-serif;;
+		font-size: 13.26315789473684pt;font-weight: bold;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style3, li.Style3 /*Heading 2*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 0pt;
+		text-align: left;
+		list-style-type: none;
+		font-family: 'Arial', sans-serif;;
+		font-size: 12pt;font-weight: bold;
+		font-style: italic;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style4, li.Style4 /*Heading 3*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 0pt;
+		text-align: left;
+		list-style-type: none;
+		font-family: 'Arial', sans-serif;;
+		font-size: 12pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style5, li.Style5 /*Paragraph*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 21pt;
+		text-align: left;
+		list-style-type: none;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style6, li.Style6 /*List*/
+		{
+			margin-left: 14.25pt;
+		margin-right: 0pt;
+		text-indent: -14.25pt;
+		text-align: left;
+		list-style-type: none;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style7, li.Style7 /*Indent*/
+		{
+			margin-left: 108pt;
+		margin-right: 0pt;
+		text-indent: 0pt;
+		text-align: left;
+		list-style-type: none;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style8, li.Style8 /*Title*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 0pt;
+		text-align: center;
+		list-style-type: none;
+		font-family: 'Times New Roman', sans-serif;;
+		font-size: 24pt;font-weight: bold;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style9, li.Style9 /*Subtitle*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 0pt;
+		text-align: center;
+		list-style-type: none;
+		font-family: 'Times New Roman', sans-serif;;
+		font-size: 18pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	</style></head><body><div id="mc-region-1492" style="position: absolute; top: 8.25pt; left: 84pt; width: 308pt; "><a name="" /><p class="Style1"><span style="font-size: 10.266666666666667pt; "><b><span style="color: #800000; ">TREBOL CON CURVAS DE BEZIER RACIONALIZADAS</span></b></span></p></div><div id="mc-region-1148" style="position: absolute; top: 44.25pt; left: 6pt; width: 302.75pt; "><a name="" /><p class="Style1">Considere el polinomio de Bernstein bajo las siguientes condiciones:</p></div><div id="mc-region-1151" style="position: absolute; top: 69pt; left: 102pt; width: 23.25pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0002_92339250.JPG" id="generatedImage1151" path="TrebolBezier_images/IMG0002_92339250.JPG" style="width: 23.25pt;height: 12.75pt;"></img></div><div id="mc-region-1152" style="position: absolute; top: 69pt; left: 156pt; width: 55.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0003_92339250.JPG" id="generatedImage1152" path="TrebolBezier_images/IMG0003_92339250.JPG" style="width: 55.5pt;height: 12.75pt;"></img></div><div id="mc-region-1153" style="position: absolute; top: 69pt; left: 276pt; width: 33pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0004_92339296.JPG" id="generatedImage1153" path="TrebolBezier_images/IMG0004_92339296.JPG" style="width: 33pt;height: 12.75pt;"></img></div><div id="mc-region-1154" style="position: absolute; top: 98.25pt; left: 114pt; width: 162.75pt; background-color: inherit; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0005_92339296.JPG" id="generatedImage1154" path="TrebolBezier_images/IMG0005_92339296.JPG" style="width: 162.75pt;height: 27.75pt;"></img></div><div id="mc-region-1156" style="position: absolute; top: 146.25pt; left: 18pt; width: 101.75pt; "><a name="" /><p class="Style1">La curva de Bezier es:</p></div><div id="mc-region-824" style="position: absolute; top: 169.5pt; left: 126pt; width: 144pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0006_92339296.JPG" id="generatedImage824" path="TrebolBezier_images/IMG0006_92339296.JPG" style="width: 144pt;height: 43.5pt;"></img></div><div id="mc-region-1289" style="position: absolute; top: 182.25pt; left: 366pt; width: 46.25pt; background-color: inherit; "><a name="" /><p class="Style1">(Ec. 1)</p></div><div id="mc-region-1163" style="position: absolute; top: 230.25pt; left: 12pt; width: 397.25pt; "><a name="" /><p class="Style1">El vector de pesos modifica la curva. Los elementos primero y último son un factor de uno.</p></div><div id="mc-region-1169" style="position: absolute; top: 255pt; left: 90pt; width: 69.75pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0007_92339296.JPG" id="generatedImage1169" path="TrebolBezier_images/IMG0007_92339296.JPG" style="width: 69.75pt;height: 21pt;"></img></div><div id="mc-region-1170" style="position: absolute; top: 255pt; left: 198pt; width: 34.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0008_92339296.JPG" id="generatedImage1170" path="TrebolBezier_images/IMG0008_92339296.JPG" style="width: 34.5pt;height: 21pt;"></img></div><div id="mc-region-1171" style="position: absolute; top: 255pt; left: 264pt; width: 34.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0009_92339296.JPG" id="generatedImage1171" path="TrebolBezier_images/IMG0009_92339296.JPG" style="width: 34.5pt;height: 21pt;"></img></div><div id="mc-region-1165" style="position: absolute; top: 302.25pt; left: 12pt; width: 100.25pt; "><a name="" /><p class="Style1">La curva de pesos es:</p></div><div id="mc-region-830" style="position: absolute; top: 301.5pt; left: 138pt; width: 150pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0010_92339296.JPG" id="generatedImage830" path="TrebolBezier_images/IMG0010_92339296.JPG" style="width: 150pt;height: 43.5pt;"></img></div><div id="mc-region-1290" style="position: absolute; top: 320.25pt; left: 366pt; width: 44pt; background-color: inherit; "><a name="" /><p class="Style1">(Ec. 2)</p></div><div id="mc-region-1177" style="position: absolute; top: 362.25pt; left: 18pt; width: 182.75pt; "><a name="" /><p class="Style1">Por lo que la curva racional de Bezier es:</p></div><div id="mc-region-1174" style="position: absolute; top: 385.5pt; left: 78pt; width: 186.75pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0011_92339296.JPG" id="generatedImage1174" path="TrebolBezier_images/IMG0011_92339296.JPG" style="width: 186.75pt;height: 89.25pt;"></img></div><div id="mc-region-1291" style="position: absolute; top: 428.25pt; left: 366pt; width: 45.5pt; background-color: inherit; "><a name="" /><p class="Style1">(Ec. 3)</p></div><div id="mc-region-1184" style="position: absolute; top: 512.25pt; left: 24pt; width: 245pt; "><a name="" /><p class="Style1">Reescribiendo la ecuación 3 para cada eje coordenado:</p></div><div id="mc-region-1189" style="position: absolute; top: 541.5pt; left: 30pt; width: 166.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0012_92339343.JPG" id="generatedImage1189" path="TrebolBezier_images/IMG0012_92339343.JPG" style="width: 166.5pt;height: 43.5pt;"></img></div><div id="mc-region-1190" style="position: absolute; top: 548.25pt; left: 252pt; width: 79.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0013_92339343.JPG" id="generatedImage1190" path="TrebolBezier_images/IMG0013_92339343.JPG" style="width: 79.5pt;height: 27.75pt;"></img></div><div id="mc-region-1294" style="position: absolute; top: 572.25pt; left: 366pt; width: 43.25pt; background-color: inherit; "><a name="" /><p class="Style1">(Ec. 4)</p></div><div id="mc-region-1191" style="position: absolute; top: 583.5pt; left: 30pt; width: 166.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0014_92339343.JPG" id="generatedImage1191" path="TrebolBezier_images/IMG0014_92339343.JPG" style="width: 166.5pt;height: 43.5pt;"></img></div><div id="mc-region-1192" style="position: absolute; top: 596.25pt; left: 252pt; width: 79.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0015_92339343.JPG" id="generatedImage1192" path="TrebolBezier_images/IMG0015_92339343.JPG" style="width: 79.5pt;height: 27.75pt;"></img></div><div id="mc-region-1220" style="position: absolute; top: 692.25pt; left: 18pt; width: 64.25pt; "><a name="" /><p class="Style1"><b><span style="color: #800000; ">EJEMPLO #1</span></b></p></div><div id="mc-region-1222" style="position: absolute; top: 716.25pt; left: 18pt; width: 242pt; "><a name="" /><p class="Style1">Considere los puntos de control con valores aleatorios:</p></div><div id="mc-region-1223" style="position: absolute; top: 735pt; left: 30pt; width: 57.75pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0016_92339343.JPG" id="generatedImage1223" path="TrebolBezier_images/IMG0016_92339343.JPG" style="width: 57.75pt;height: 12.75pt;"></img></div><div id="mc-region-1224" style="position: absolute; top: 759pt; left: 78pt; width: 85.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0017_92339343.JPG" id="generatedImage1224" path="TrebolBezier_images/IMG0017_92339343.JPG" style="width: 85.5pt;height: 18pt;"></img></div><div id="mc-region-1225" style="position: absolute; top: 759pt; left: 180pt; width: 85.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0018_92339343.JPG" id="generatedImage1225" path="TrebolBezier_images/IMG0018_92339343.JPG" style="width: 85.5pt;height: 18pt;"></img></div><div id="mc-region-1227" style="position: absolute; top: 788.25pt; left: 18pt; width: 311pt; "><a name="" /><p class="Style1">En donde el primer y último elemento son iguales y están en el origen.</p></div><div id="mc-region-1228" style="position: absolute; top: 813pt; left: 102pt; width: 45pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0019_92339343.JPG" id="generatedImage1228" path="TrebolBezier_images/IMG0019_92339343.JPG" style="width: 45pt;height: 18pt;"></img></div><div id="mc-region-1229" style="position: absolute; top: 813pt; left: 180pt; width: 45pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0020_92339359.JPG" id="generatedImage1229" path="TrebolBezier_images/IMG0020_92339359.JPG" style="width: 45pt;height: 18pt;"></img></div><div id="mc-region-943" style="position: absolute; top: 870pt; left: 108pt; width: 242.25pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0022_92339359.JPG" id="generatedImage943" path="TrebolBezier_images/IMG0022_92339359.JPG" style="width: 242.25pt;height: 190.5pt;"></img></div><div id="mc-region-1231" style="position: absolute; top: 1058.25pt; left: 18pt; width: 413.75pt; "><a name="" /><p class="Style1">Nótese la modificación (curva oscura) que sufrió la curva original (curva clara).</p></div><div id="mc-region-1233" style="position: absolute; top: 1124.25pt; left: 12pt; width: 432.5pt; "><a name="" /><p class="Style1">Para graficar en simetría especular simplemente los valores del polígono de control se colocan en cada cuadrante.</p></div><div id="mc-region-1235" style="position: absolute; top: 1188pt; left: 18pt; width: 394.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0024_92339359.JPG" id="generatedImage1235" path="TrebolBezier_images/IMG0024_92339359.JPG" style="width: 394.5pt;height: 345.75pt;"></img></div><div id="mc-region-1296" style="position: absolute; top: 1568.25pt; left: 12pt; width: 64.25pt; "><a name="" /><p class="Style1"><b><span style="color: #800000; ">EJEMPLO #2</span></b></p></div><div id="mc-region-1297" style="position: absolute; top: 1586.25pt; left: 12pt; width: 426.5pt; "><a name="" /><p class="Style1">Para un arreglo polar, es necesario hacer un polígono de control para cada rotación. Considere el caso para:</p></div><div id="mc-region-1241" style="position: absolute; top: 1617pt; left: 126pt; width: 44.25pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0025_92339359.JPG" id="generatedImage1241" path="TrebolBezier_images/IMG0025_92339359.JPG" style="width: 44.25pt;height: 12.75pt;"></img></div><div id="mc-region-1298" style="position: absolute; top: 1634.25pt; left: 18pt; width: 49.25pt; "><a name="" /><p class="Style1">Por lo que</p></div><div id="mc-region-1435" style="position: absolute; top: 1659pt; left: 90pt; width: 75.75pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0026_92339375.JPG" id="generatedImage1435" path="TrebolBezier_images/IMG0026_92339375.JPG" style="width: 75.75pt;height: 12.75pt;"></img></div><div id="mc-region-1436" style="position: absolute; top: 1658.25pt; left: 216pt; width: 61.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0027_92339375.JPG" id="generatedImage1436" path="TrebolBezier_images/IMG0027_92339375.JPG" style="width: 61.5pt;height: 27.75pt;"></img></div><div id="mc-region-1440" style="position: absolute; top: 1700.25pt; left: 12pt; width: 317pt; "><a name="" /><p class="Style1">Considere los puntos de control del primer pétalo con valores aleatorios:</p></div><div id="mc-region-1441" style="position: absolute; top: 1719pt; left: 90pt; width: 61.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0028_92339375.JPG" id="generatedImage1441" path="TrebolBezier_images/IMG0028_92339375.JPG" style="width: 61.5pt;height: 18pt;"></img></div><div id="mc-region-1442" style="position: absolute; top: 1719pt; left: 216pt; width: 59.25pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0029_92339375.JPG" id="generatedImage1442" path="TrebolBezier_images/IMG0029_92339375.JPG" style="width: 59.25pt;height: 18pt;"></img></div><div id="mc-region-1446" style="position: absolute; top: 1754.25pt; left: 12pt; width: 408.5pt; "><a name="" /><p class="Style1">En donde el primer y último elemento (para formar el pétalo) son iguales y están en el origen.</p></div><div id="mc-region-1447" style="position: absolute; top: 1773pt; left: 90pt; width: 43.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0030_92339375.JPG" id="generatedImage1447" path="TrebolBezier_images/IMG0030_92339375.JPG" style="width: 43.5pt;height: 18pt;"></img></div><div id="mc-region-1448" style="position: absolute; top: 1773pt; left: 216pt; width: 41.25pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0031_92339375.JPG" id="generatedImage1448" path="TrebolBezier_images/IMG0031_92339375.JPG" style="width: 41.25pt;height: 18pt;"></img></div><div id="mc-region-1468" style="position: absolute; top: 1814.25pt; left: 12pt; width: 242.75pt; "><a name="" /><p class="Style1">Ahora el arreglo polar para el resto de los pétalos será:</p></div><div id="mc-region-1469" style="position: absolute; top: 1837.5pt; left: 84pt; width: 101.25pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0032_92339375.JPG" id="generatedImage1469" path="TrebolBezier_images/IMG0032_92339375.JPG" style="width: 101.25pt;height: 25.5pt;"></img></div><div id="mc-region-1470" style="position: absolute; top: 1839pt; left: 210pt; width: 75pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0033_92339375.JPG" id="generatedImage1470" path="TrebolBezier_images/IMG0033_92339375.JPG" style="width: 75pt;height: 38.25pt;"></img></div><div id="mc-region-1471" style="position: absolute; top: 1887pt; left: 84pt; width: 94.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0034_92339375.JPG" id="generatedImage1471" path="TrebolBezier_images/IMG0034_92339375.JPG" style="width: 94.5pt;height: 18pt;"></img></div><div id="mc-region-1472" style="position: absolute; top: 1887pt; left: 210pt; width: 93.75pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0035_92339390.JPG" id="generatedImage1472" path="TrebolBezier_images/IMG0035_92339390.JPG" style="width: 93.75pt;height: 18pt;"></img></div><div id="mc-region-1478" style="position: absolute; top: 1934.25pt; left: 18pt; width: 388.25pt; "><a name="" /><p class="Style1">En donde el primer y último elemento (para formar el pétalo) son iguales y están en el origen.</p></div><div id="mc-region-1479" style="position: absolute; top: 1959pt; left: 102pt; width: 43.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0036_92339390.JPG" id="generatedImage1479" path="TrebolBezier_images/IMG0036_92339390.JPG" style="width: 43.5pt;height: 18pt;"></img></div><div id="mc-region-1480" style="position: absolute; top: 1959pt; left: 228pt; width: 41.25pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0037_92339390.JPG" id="generatedImage1480" path="TrebolBezier_images/IMG0037_92339390.JPG" style="width: 41.25pt;height: 18pt;"></img></div><div id="mc-region-1481" style="position: absolute; top: 1977pt; left: 102pt; width: 61.5pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0038_92339390.JPG" id="generatedImage1481" path="TrebolBezier_images/IMG0038_92339390.JPG" style="width: 61.5pt;height: 18pt;"></img></div><div id="mc-region-1482" style="position: absolute; top: 1977pt; left: 228pt; width: 57pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0039_92339390.JPG" id="generatedImage1482" path="TrebolBezier_images/IMG0039_92339390.JPG" style="width: 57pt;height: 18pt;"></img></div><div id="mc-region-1488" style="position: absolute; top: 1998pt; left: 114pt; width: 176.25pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0041_92339390.JPG" id="generatedImage1488" path="TrebolBezier_images/IMG0041_92339390.JPG" style="width: 176.25pt;height: 141.75pt;"></img></div><div id="mc-region-1484" style="position: absolute; top: 2180.25pt; left: 18pt; width: 399.5pt; "><a name="" /><p class="Style1">La siguiente gráfica muestra el arreglo de pétalos usando la rotación polar de los puntos de control.</p></div><div id="mc-region-1282" style="position: absolute; top: 2220pt; left: 78pt; width: 252.75pt; "><a name="" /><img border="0" src="TrebolBezier_images/IMG0043_92339390.JPG" id="generatedImage1282" path="TrebolBezier_images/IMG0043_92339390.JPG" style="width: 252.75pt;height: 212.25pt;"></img></div><div id="mc-region-1490" style="position: absolute; top: 2498.25pt; left: 12pt; width: 115.25pt; "><a name="" /><p class="Style1">El archivo PDF está <b><u><a href="./Mathcad - TrebolBezier.pdf">aquí</a></u></b></p><br /><br /></div><div></div></body></html>
