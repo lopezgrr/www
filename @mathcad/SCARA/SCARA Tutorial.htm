@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Laboratorio virtual de Mecatr&oacute;nica FIME-UANL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#000000" text="#CCCCCC">
+<h1 align="center"><b><font color="#FFFF00">LABORATORIO VIRTUAL DE MECATR&Oacute;NICA</font></b></h1>
+<p align="center"><img src="SCARA.gif" width="315" height="467" border="3"></p>
+<h2 align="center"><font color="#00FFFF">An&aacute;lisis de la cadena cinem&aacute;tica 
+  de un robot SCARA RS40</font> </h2>
+<hr>
+<p align="center">&nbsp; </p>
+<ol>
+  <li><font color="#3366FF"><a href="SCARA%20paso01.jpg">Paso #1</a><br>
+    </font>Abra el archivo &quot;<a href="SCARA.zip">SCARA.SLDASM</a>&quot; SolidWorks 
+    2007 Assembly Document. Este archivo contiene la cadena cinem&aacute;tica 
+    de un robot tipo SCARA RS40, preparado para que usted pueda f&aacute;cilmente 
+    editar la posici&oacute;n, calcular los valores de rotaci&oacute;n y traslaci&oacute;n, 
+    observar el TCP, etc. El robot tiene un enlace interno a <font color="#FF0000">una 
+    tabla de dise&ntilde;o de EXCELL</font>, en donde cada vez que el archivo 
+    se graba, la tabla de dise&ntilde;o se actualiza con las nuevas posiciones. 
+    Esta tabla de dise&ntilde;o se utilizar&aacute; posteriormente como entrada 
+    de datos a <a href="SCARA.mcd">una hoja de MathCAD</a> en donde usted podr&aacute; 
+    probar las ecuaciones y los c&aacute;lculos de la cadena cinem&aacute;tica.<br>
+    Seleccione la vista dimetric, a alguna otra que usted considere c&oacute;moda 
+    para poder ver el &quot;esqueleto&quot; formado por l&iacute;neas auxiliares. 
+    No haga ninguna operaci&oacute;n que altere el dise&ntilde;o, ni tampoco mueva 
+    los miembros del robot. Observe en la base del robot el origen de coordenadas 
+    representado por los vectores XYZ como flechas de colores Roja-Verde-Azul 
+    (RGB). <br>
+    Seleccione medir (Measure) del men&uacute; de herramientas (Tools). Aparecer&aacute; 
+    el cuadro de di&aacute;logo de mediciones.<br>
+    <br>
+  </li>
+  <li><a href="SCARA%20paso02.jpg">Paso #2</a><font color="#3366FF"><br>
+    </font>La primera trasnformaci&oacute;n es una traslaci&oacute;n de dos segmentos, 
+    la cual puede ser medida seleccionando el punto final seg&uacute;n se muestra 
+    en la figura, En el cuadro de di&aacute;logo se actualizan las mediciones 
+    de la entidad (en este caso las coordenadas del punto). Este cuadro de di&aacute;logo 
+    modificar&aacute; el tipo de informaci&oacute;n de acuerdo a la selecci&oacute;n 
+    de medici&oacute;n.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso03.jpg">Paso #3<br>
+    </a></font>Seleccione el punto final de medici&oacute;n. La informaci&oacute;n 
+    del cuadro de di&aacute;logo de mediciones se actualizar&aacute;. Tome nota 
+    de la longitud de desplazameinto: <font color="#00FF00">692.64</font>. N&oacute;tese 
+    que seleecionar rectas permite medir distancias.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso04.jpg">Paso #4</a><br>
+    </font>Haga lo mismo con el punto inicial de la siguiente recta de traslaci&oacute;n.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso05.jpg">Paso #5</a><br>
+    </font>Y con el punto final de la siguiente recta de traslaci&oacute;n. Tome 
+    nota de la longitud de desplazamiento: <font color="#00FF00">230.00</font><font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso06.jpg">Paso #6</a><br>
+    </font>Repetir los pasos con el siguiente miembro de la cadena.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso07.jpg">Paso #7</a><br>
+    </font>Y revisar el valor de la traslaci&oacute;n.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso08.jpg">Paso #8</a><br>
+    </font>Igual que en los pasos anteriores. Observe que el valor de esta traslaci&oacute;n 
+    no es una constante del sistema, a diferencia de las anteriores las cuales 
+    son<font color="#3366FF"> <font color="#FF0000">valores fijos de construcci&oacute;n</font></font>, 
+    &eacute;sta tiene dependencia de la posici&oacute;n de traslaci&oacute;n del 
+    eje Z del robot!<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso09.jpg">Paso #9</a><br>
+    </font>La medici&oacute;n en esta posici&oacute;n ejemplo es de <font color="#00FF00">-217.9</font><font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso10.jpg">Paso #10</a><br>
+    </font>Y el valor del TCP para esta posici&oacute;n es de<font color="#3366FF"> 
+    <font color="#00FF00">(209.76, 424.70, -3.36)</font><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso11.jpg">Paso #11</a><br>
+    </font>Ahora se procede a medir los &aacute;ngulos.Seleccione para ello la 
+    vista superior (Top).<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso12.jpg">Paso #12</a><br>
+    </font>Mida la primera recta. Observe el cuadro de di&aacute;logo de mediciones.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso13.jpg">Paso #13</a><br>
+    </font>Mida la segunda recta. El cuadro de di&aacute;logo mostrar&aacute; 
+    el valor angular de la articulaci&oacute;n dos: <font color="#00FF00">91.59 
+    grados</font>.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso14.jpg">Paso #14</a><br>
+    </font>Finalmente mida la recta auxiliar de la articulaci&oacute;n uno. Observe 
+    el cuadro de di&aacute;logo; el valor angular de la articulaci&oacute;n uno 
+    es de <font color="#00FF00">36.57 grados</font>.<font color="#3366FF"> </font>Ahora 
+    ya fueron medidos todos los valores necesarios para que usted compruebe los 
+    c&aacute;lculos de posici&oacute;n de SolidWorks y MathCAD.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso15.jpg">Paso #15</a><br>
+    </font>Si desea repetir los pasos con otra posici&oacute;n, solamente &quot;tome&quot; 
+    el &uacute;ltimo miembro de la cadena y &quot;arr&aacute;strelo&quot;. Recuerde 
+    que mientras no grabe el archivo, la Tabla de Dise&ntilde;o (Design Table) 
+    de Excell no se actualizar&aacute;.<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso16.jpg">Paso #16</a><br>
+    </font>Para cada posici&oacute;n deber&aacute; tomar los valores angulares 
+    y el TCP de nuevo!<font color="#3366FF"><br>
+    <br>
+    </font></li>
+  <li><font color="#3366FF"><a href="SCARA%20paso17.jpg">Paso #17</a><br>
+    </font>Cuando todo est&eacute; listo, <font color="#FF0000">simplemente grabe 
+    y la tabla de dise&ntilde;o de Excell se actualizar&aacute;</font> (no modifique 
+    con Excell esta tabla, pues contiene informaci&oacute;n oculta que relaciona 
+    el esqueleto del robot con las celdas).<br>
+    <br>
+  </li>
+  <li>Paso #18<br>
+    Abra ahora el archivo de MathCAD &quot;<a href="SCARA.mcd">SCARA.mcd</a>&quot;. 
+    Los valores de la tabla de dise&ntilde;o son le&iacute;dos en la variable 
+    <font color="#00FF00">RyT</font> (Rotaciones y Traslaciones). Compruebe las 
+    ecuaciones y el resultado del <font color="#00FF00">TCP</font>.<br>
+    <br>
+  </li>
+  <li>Observe c&oacute;mo Solidworks almacena los &aacute;ngulos en la tabla de dise&ntilde;o. Haga click en las siguientes figuras para ver cotas y referencias angulares: </li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<table width="1324" border="5">
+  <tr>
+    <td><div align="center"><a href="00-00.png"><img src="00-00_t.png" width="356" height="200" border="0"></a></div></td>
+    <td><div align="center"><a href="00-30.png"><img src="00-30_t.png" width="356" height="200" border="0"></a></div></td>
+    <td><div align="center"><a href="00-60.png"><img src="00-60_t.png" width="356" height="200" border="0"></a></div></td>
+    <td><div align="center"><a href="00-90.png"><img src="00-90_t.png" width="356" height="200" border="0"></a></div></td>
+  </tr>
+  <tr>
+    <td><div align="center"><a href="00-00.png"><img src="00-00_t.png" width="356" height="200" border="0"></a></div></td>
+    <td><div align="center"><a href="30-00.png"><img src="30-00_t.png" width="356" height="200" border="0"></a></div></td>
+    <td><div align="center"><a href="60-00.png"><img src="60-00_t.png" width="356" height="200" border="0"></a></div></td>
+    <td><div align="center"><a href="90-00.png"><img src="90-00_t.png" width="356" height="200" border="0"></a></div></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
