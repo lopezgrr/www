@@ -1,0 +1,155 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="generator" content="Mathcad Professional 14.0" /><title>Grafica a nube de puntos en coordenadas esfericas</title><style type="text/css">
+				
+		p 
+		{ 
+			margin: 0 0 0 0; 
+			font-family: Arial, sans-serif;
+			font-size:10pt;
+			font-weight: normal;
+			font-style: normal;
+			vertical-align: baseline;
+			color: black;
+			text-decoration: none;			
+		}
+		div
+		{
+			border-width:0px;
+			border-style: solid;
+			border-color: red;
+			
+		}
+		
+			body
+			{			
+				background-color: #c0c0c0;				
+			}
+		
+		p img { vertical-align: middle; }
+		p b, li b { font-weight : bold; }
+		p i, li i { font-style : italic; }
+		p u, li u { text-decoration : underline; }
+		p so, li so { text-decoration : line-through; }
+		p sub, p sub { font-size : 70%; vertical-align: sub; }
+		p sup, p sup { font-size : 70%; vertical-align: super; }
+		ul
+		{
+			padding-left	: 2em; /* for mozilla list marker box */
+			margin-left		: 0;   /* for IE list marker box */
+		}
+		ol
+		{
+			padding-left	: 2em; /* for mozilla list marker box */
+			margin-right 	: -0.5em;
+			margin-left		: 0;   /* for IE list marker box */
+		}
+		
+		p.Style1, li.Style1 /*Normal*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style2, li.Style2 /*Heading 1*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 13.26315789473684pt;font-weight: bold;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style3, li.Style3 /*Heading 2*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 12pt;font-weight: bold;
+		font-style: italic;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style4, li.Style4 /*Heading 3*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 12pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style5, li.Style5 /*Paragraph*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 21pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style6, li.Style6 /*List*/
+		{
+			margin-left: 14.25pt;
+		margin-right: 0pt;
+		text-indent: -14.25pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style7, li.Style7 /*Indent*/
+		{
+			margin-left: 108pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style8, li.Style8 /*Title*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: center;
+		font-family: 'Times New Roman', sans-serif;;
+		font-size: 24pt;font-weight: bold;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style9, li.Style9 /*Subtitle*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: center;
+		font-family: 'Times New Roman', sans-serif;;
+		font-size: 18pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	</style></head><body><div id="mc-region-308" style="position: absolute; top: 14.25pt; left: 12pt; width: 408.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: center; list-style-type: none;"><b><span style="color: #008100; ">CONVERTIR UNA GRAFICA EN BLANCO/NEGRO A NUBE DE PUNTOS EN COORDENADAS ESFERICAS</span></b></p></div><div id="mc-region-303" style="position: absolute; top: 68.25pt; left: 12pt; width: 429.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">El primer paso es leer el archivo que contiene la gráfica a convertir, utilizando la función</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">interconstruída de MathCAD READBMP. Esta función admite como argumento un string</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">con el nombre del archivo en formato BMP. Como resultado, regresa una matriz 2D con</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">filas y columnas por cada pixel de la foto. Los valores de esta matriz son el tono de gris</span></p><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">de cada pixel en un rango 0-255, en donde 0 es negro y 255 blanco.</span></p></div><div id="mc-region-304" style="position: absolute; top: 146.25pt; left: 108pt; width: 153.75pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0001_9288453.PNG" id="generatedImage304" path=".\PicMap_images/IMG0001_9288453.PNG" style="width: 153.75pt;height: 13.5pt;"></img></div><div id="mc-region-231" style="position: absolute; top: 204pt; left: 60pt; width: 261pt; background-color: inherit; "><a name="" /><img border="0" src=".\PicMap_images/IMG0003_9288500.PNG" id="generatedImage231" path=".\PicMap_images/IMG0003_9288500.PNG" style="width: 261pt;height: 147pt;"></img></div><div id="mc-region-241" style="position: absolute; top: 374.25pt; left: 18pt; width: 377pt; "><a name="" /><p class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; text-align: left; list-style-type: none;">Los valores de filas y columnas puedenobtenerse con las funciones de MathCAD:</p></div><div id="mc-region-237" style="position: absolute; top: 398.25pt; left: 96pt; width: 105.75pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0004_9288531.PNG" id="generatedImage237" path=".\PicMap_images/IMG0004_9288531.PNG" style="width: 105.75pt;height: 13.5pt;"></img></div><div id="mc-region-238" style="position: absolute; top: 398.25pt; left: 216pt; width: 73.5pt; background-color: inherit; "><a name="" /><img border="0" src=".\PicMap_images/IMG0005_9288562.PNG" id="generatedImage238" path=".\PicMap_images/IMG0005_9288562.PNG" style="width: 73.5pt;height: 13.5pt;"></img></div><div id="mc-region-239" style="position: absolute; top: 416.25pt; left: 96pt; width: 105.75pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0006_9288593.PNG" id="generatedImage239" path=".\PicMap_images/IMG0006_9288593.PNG" style="width: 105.75pt;height: 13.5pt;"></img></div><div id="mc-region-240" style="position: absolute; top: 416.25pt; left: 216pt; width: 78pt; background-color: inherit; "><a name="" /><img border="0" src=".\PicMap_images/IMG0007_9288625.PNG" id="generatedImage240" path=".\PicMap_images/IMG0007_9288625.PNG" style="width: 78pt;height: 13.5pt;"></img></div><div id="mc-region-249" style="position: absolute; top: 470.25pt; left: 18pt; width: 404pt; "><a name="" /><p class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-align: left;">y las variables índices para modificarcada valor de la matriz de pixeles:</p></div><div id="mc-region-245" style="position: absolute; top: 494.25pt; left: 30pt; width: 87.75pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0008_9288656.PNG" id="generatedImage245" path=".\PicMap_images/IMG0008_9288656.PNG" style="width: 87.75pt;height: 13.5pt;"></img></div><div id="mc-region-246" style="position: absolute; top: 494.25pt; left: 210pt; width: 93pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0009_9288687.PNG" id="generatedImage246" path=".\PicMap_images/IMG0009_9288687.PNG" style="width: 93pt;height: 13.5pt;"></img></div><div id="mc-region-73" style="position: absolute; top: 560.25pt; left: 12pt; width: 425pt; "><a name="" /><p class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">Para hacer la conversión a coordenadas esféricas es necesario convertir todos los pixeles (filas x columnas) en 3 </span><span style="font-size: 10.266666666666667pt; ">vectores que representan los valores de X, Y, Z</span><span style="font-size: 10.266666666666667pt; ">.</span></p></div><div id="mc-region-124" style="position: absolute; top: 614.25pt; left: 114pt; width: 137.25pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0010_9288703.PNG" id="generatedImage124" path=".\PicMap_images/IMG0010_9288703.PNG" style="width: 137.25pt;height: 15.75pt;"></img></div><div id="mc-region-195" style="position: absolute; top: 654.75pt; left: 78pt; width: 85.5pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0011_9288734.PNG" id="generatedImage195" path=".\PicMap_images/IMG0011_9288734.PNG" style="width: 85.5pt;height: 29.25pt;"></img></div><div id="mc-region-196" style="position: absolute; top: 654.75pt; left: 198pt; width: 92.25pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0012_9288765.PNG" id="generatedImage196" path=".\PicMap_images/IMG0012_9288765.PNG" style="width: 92.25pt;height: 29.25pt;"></img></div><div id="mc-region-197" style="position: absolute; top: 704.25pt; left: 72pt; width: 132pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0013_9288796.PNG" id="generatedImage197" path=".\PicMap_images/IMG0013_9288796.PNG" style="width: 132pt;height: 15.75pt;"></img></div><div id="mc-region-198" style="position: absolute; top: 704.25pt; left: 240pt; width: 96.75pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0014_9288812.PNG" id="generatedImage198" path=".\PicMap_images/IMG0014_9288812.PNG" style="width: 96.75pt;height: 15.75pt;"></img></div><div id="mc-region-199" style="position: absolute; top: 734.25pt; left: 72pt; width: 129pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0015_9288843.PNG" id="generatedImage199" path=".\PicMap_images/IMG0015_9288843.PNG" style="width: 129pt;height: 15.75pt;"></img></div><div id="mc-region-200" style="position: absolute; top: 734.25pt; left: 240pt; width: 93.75pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0016_9288875.PNG" id="generatedImage200" path=".\PicMap_images/IMG0016_9288875.PNG" style="width: 93.75pt;height: 15.75pt;"></img></div><div id="mc-region-201" style="position: absolute; top: 758.25pt; left: 72pt; width: 100.5pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0017_9288906.PNG" id="generatedImage201" path=".\PicMap_images/IMG0017_9288906.PNG" style="width: 100.5pt;height: 15.75pt;"></img></div><div id="mc-region-202" style="position: absolute; top: 758.25pt; left: 240pt; width: 63.75pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0018_9288937.PNG" id="generatedImage202" path=".\PicMap_images/IMG0018_9288937.PNG" style="width: 63.75pt;height: 15.75pt;"></img></div><div id="mc-region-211" style="position: absolute; top: 794.25pt; left: 12pt; width: 425pt; "><a name="" /><p class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">Para graficar 3D es necesario un </span><span style="font-size: 10.266666666666667pt; ">vector </span><span style="font-size: 10.266666666666667pt; "><i>(world)</i></span><span style="font-size: 10.266666666666667pt; "> que contiene los valores de X, Y, Z en la columna cero. La columna uno es para establecer un fondo de colores que hagan un mejor constraste</span><span style="font-size: 10.266666666666667pt; ">.</span></p></div><div id="mc-region-212" style="position: absolute; top: 848.25pt; left: 342pt; width: 76.5pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0019_9288968.PNG" id="generatedImage212" path=".\PicMap_images/IMG0019_9288968.PNG" style="width: 76.5pt;height: 49.5pt;"></img></div><div id="mc-region-136" style="position: absolute; top: 888pt; left: 48pt; width: 226.5pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0021_9289000.PNG" id="generatedImage136" path=".\PicMap_images/IMG0021_9289000.PNG" style="width: 226.5pt;height: 262.5pt;"></img></div><div id="mc-region-261" style="position: absolute; top: 1190.25pt; left: 24pt; width: 358.25pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">Es posible contruir la matriz B copiando en sus columnas los vectores xyz:</span></p></div><div id="mc-region-263" style="position: absolute; top: 1214.25pt; left: 126pt; width: 143.25pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0022_9289031.PNG" id="generatedImage263" path=".\PicMap_images/IMG0022_9289031.PNG" style="width: 143.25pt;height: 13.5pt;"></img></div><div id="mc-region-264" style="position: absolute; top: 1250.25pt; left: 36pt; width: 113.25pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0023_9289062.PNG" id="generatedImage264" path=".\PicMap_images/IMG0023_9289062.PNG" style="width: 113.25pt;height: 15.75pt;"></img></div><div id="mc-region-265" style="position: absolute; top: 1250.25pt; left: 204pt; width: 118.5pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0024_9289093.PNG" id="generatedImage265" path=".\PicMap_images/IMG0024_9289093.PNG" style="width: 118.5pt;height: 15.75pt;"></img></div><div id="mc-region-321" style="position: absolute; top: 1292.25pt; left: 90pt; width: 87pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0025_9289125.PNG" id="generatedImage321" path=".\PicMap_images/IMG0025_9289125.PNG" style="width: 87pt;height: 24pt;"></img></div><div id="mc-region-322" style="position: absolute; top: 1292.25pt; left: 180pt; width: 87pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0026_9289156.PNG" id="generatedImage322" path=".\PicMap_images/IMG0026_9289156.PNG" style="width: 87pt;height: 24pt;"></img></div><div id="mc-region-257" style="position: absolute; top: 1292.25pt; left: 282pt; width: 86.25pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0027_9289171.PNG" id="generatedImage257" path=".\PicMap_images/IMG0027_9289171.PNG" style="width: 86.25pt;height: 24pt;"></img></div><div id="mc-region-323" style="position: absolute; top: 1346.25pt; left: 24pt; width: 318.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">y guardar la matriz B en un archivo de texto, separado por comas:</span></p></div><div id="mc-region-324" style="position: absolute; top: 1368pt; left: 156pt; width: 86.25pt; background-color: inherit; "><a name="" /><img border="0" src=".\PicMap_images/IMG0029_9289203.PNG" id="generatedImage324" path=".\PicMap_images/IMG0029_9289203.PNG" style="width: 86.25pt;height: 63.75pt;"></img></div><div id="mc-region-115" style="position: absolute; top: 1454.25pt; left: 18pt; width: 369.5pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;"><span style="font-size: 10.266666666666667pt; ">La importación de datos en un programa de CAD se muestra a continuación:</span></p></div><div id="mc-region-279" style="position: absolute; top: 1494pt; left: 30pt; width: 378.75pt; "><a name="" /><img border="0" src=".\PicMap_images/IMG0031_9289234.PNG" id="generatedImage279" path=".\PicMap_images/IMG0031_9289234.PNG" style="width: 378.75pt;height: 235.5pt;"></img></div><div id="mc-region-294" style="position: absolute; top: 1754.25pt; left: 48pt; width: 194pt; "><a name="" /><p class="Style1" style="text-indent: 0pt; text-align: left; list-style-type: none;">El archivo <b><u><a href="./Mathcad - PicMap.pdf">PDF</a></u></b><b> </b>está disponible en este link.</p></div><div></div></body></html>
