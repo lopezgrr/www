@@ -1,0 +1,201 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <title>Proyecto</title>
+</head>
+<body bgcolor="#CCCCCC">
+<center>
+  <p><font size="+3">Dise&ntilde;o y construcci&oacute;n de una m&aacute;quina 
+    de medici&oacute;n manual </font></p>
+  <p><img SRC="articulacion.gif" height=600 width=960 border="5" alt="Proyecto de robots"> 
+    <br>
+    &nbsp; <br>
+  </p>
+  <p>&nbsp;</p>
+  <p align="left">&nbsp; <br>
+    <font size="5">La digitalizaci&oacute;n de objetos tridimensionales se ha 
+    convertido en una de las herramientas m&aacute;s &uacute;tiles en el desarrollo 
+    de productos debido a la creciente utilizaci&oacute;n de las t&eacute;cnicas 
+    de la ingenier&iacute;a inversa en la manufactura. La reproducci&oacute;n 
+    de la geometr&iacute;a de los productos proporciona ventajas relacionadas 
+    con la reducci&oacute;n de tiempos y costos con un alto grado de precisi&oacute;n.</font></p>
+  <p align="left"><font size="5">Este proyecto propone el dise&ntilde;o y la implementaci&oacute;n 
+    de una cadena cinem&aacute;tica dotada de codificadores de posici&oacute;n 
+    para ser utilizada como instrumento de medici&oacute;n tridimensional que 
+    permita reproducir las geometr&iacute;as utilizando un programa computacional 
+    de dise&ntilde;o propio y una interfase a un sistema de CAD comercial. El 
+    trabajo comprende desde el dise&ntilde;o y maquinado de eslabones de la cadena 
+    cinem&aacute;tica, hasta la implementaci&oacute;n de las ecuaciones y los 
+    algoritmos en una interfase hombre-m&aacute;quina. Como resultado final, se 
+    espera poder utilizar el instrumento para medir geometr&iacute;as 3D y reconstruirlas 
+    en un sistema de CAD comercial.</font></p>
+  <p align="left"><font size="5">El prop&oacute;sito del trabajo es:</font></p>
+  <p align="left"><font size="5"><br>
+    &#149; dise&ntilde;o y construcci&oacute;n de la cadena cinem&aacute;tica,<br>
+    &#149; dise&ntilde;o y construcci&oacute;n de las articulaciones con <a href="../Encoder%2063QDL-3-P">codificadores</a>,<br>
+    &#149; interfase entre el usuario y la m&aacute;quina.<br>
+    </font></p>
+  <hr>
+  <p align="left">&nbsp;</p>
+  <p align="center"><font size="5"><b>Resumen</b><br>
+    </font></p>
+  <p align="left"><font size="5">El siguiente documento representa la continuaci&oacute;n 
+    de un proyecto de dise&ntilde;o y construcci&oacute;n de un brazo articulado 
+    de seis grados de libertad, el cual se realizo en la clase de Arquitectura 
+    de Robots de la carrera Ingeniero en Mecatr&oacute;nica de la FIME/UANL. En 
+    este proyecto lleva a cabo el dise&ntilde;o, ensamble, programaci&oacute;n 
+    e interface de usuario que permite tomar lecturas de posici&oacute;n de cada 
+    uno de los ejes del robot, desplegarlos en pantalla y enviarlos por el puerto 
+    serial a petici&oacute;n del usuario, la complejidad por la cantidad de ejes, 
+    la precisi&oacute;n que requieren las mediciones y la velocidad de procesamiento 
+    son el reto t&eacute;cnico mas grande. A continuaci&oacute;n se describen 
+    a detalle cada uno de los sistemas que se integraron as&iacute; como su programaci&oacute;n. 
+    <br>
+    </font></p>
+  <p align="center"><font size="5"><b>Introducci&oacute;n</b></font></p>
+  <p align="left"><font size="5">De acuerdo con el dise&ntilde;o del brazo articulado 
+    de seis grados de libertad, el sistema de retroalimentaci&oacute;n de posici&oacute;n 
+    es un mini encoder cuadr&aacute;tico de alta resoluci&oacute;n de la marca 
+    Gray Hill, este encoder Modelo 63QDL-3-C cuenta con 1024 pulsos por revoluci&oacute;n 
+    y una salida cuadr&aacute;tica con l&oacute;gica TTL (5 volts).<br>
+    Para poder decodificar la se&ntilde;al de estos encoders se identifico un 
+    circuito integrado de la marca Agilent HCTL-2020 el cual su funci&oacute;n 
+    principal es decodificar los pulsos de un encoder de salida cuadr&aacute;tica 
+    y colocarlos en un registro de 16 Bits para luego ser le&iacute;do de manera 
+    paralela por un microprocesador.<br>
+    La interface entre el microprocesador y el decodificador se lleva a cabo por 
+    un GAL16V8D de la marca Lattice el cual es un arreglo l&oacute;gico programable 
+    universal que hace la funci&oacute;n de multiplexar los 6 encoders con el 
+    bus PCI del Microprocesador.<br>
+    El microprocesador seleccionado es un microprocesador AMD Elan SC520 32 Bit 
+    133 MHz programable en C/C++ a trav&eacute;s de el compilador de la marca 
+    Paradigm.<br>
+    </font></p>
+  <p align="center"><font size="5"><font color="#FF0000"><b><font color="#000000">&iquest;Qu&eacute; 
+    es un Encoder?</font></b></font></font></p>
+  <p align="left"><font size="5">Los encoders rotativos o <i>quadrature encoders</i> 
+    son unos dispositivos que se utilizan como sensores de posici&oacute;n, ya 
+    que permiten medir con exactitud tanto la direcci&oacute;n como la magnitud 
+    de un desplazamiento de su eje.</font></p>
+  <p align="center"><font size="5"> <br>
+    <img src="Encoders.jpg" width="154" height="131" border="5"><br>
+    </font></p>
+  <p align="left"><font size="5">En su interior estos encoders llevan un disco 
+    con marcas y dos sensores &oacute;pticos: </font></p>
+  <p align="center"><font size="5"><br>
+    <img src="qeim-funcionamiento.gif" width="469" height="277"> </font></p>
+  <p align="left">&nbsp;</p>
+  <p align="left"><font size="5">Esto permite que la se&ntilde;al que los encoders 
+    generan al girar el disco sea distinta seg&uacute;n se gire en un sentido 
+    o en el contrario:</font></p>
+  <p align="center"><img src="qeim-disco.jpg" width="300" height="300"></p>
+  <p align="left"><font size="5">Las marcas del disco, o la posici&oacute;n de 
+    los sensores respecto a la misma, est&aacute; desfasada 90&ordm;, como en 
+    la imagen siguiente: Esto permite que la se&ntilde;al que los encoders generan 
+    al girar el disco sea distinta seg&uacute;n se gire en un sentido o en el 
+    contrario:</font></p>
+  <p align="center"><img src="qeim-direccion.jpg" width="404" height="383" border="5"></p>
+  <p align="left"><font size="5">El sistema de control y adquisici&oacute;n de 
+    datos</font></p>
+  <p align="center"><img src="5D%20straight.jpg" width="625" height="349" border="5"></p>
+  <p align="left"><font size="5">El sistema 586-drive es un controlador programable 
+    en C/C++ basado en un procesador Elan AMD SC520 de 32 Bit a 133 MHz. Este 
+    sistema combina un procesador de alto desempe&ntilde;o de la generaci&oacute;n 
+    586 con un extensivo grupo de caracter&iacute;sticas de Entrada y Salida industriales 
+    en una solo tarjeta, ideal para productos de fabricantes de equipo original 
+    (OEM).<br>
+    El SC520 integra un CPU Am586 y una unidad de punto flotante compatible con 
+    ANSI/IEEE 754. El SC520 tiene un total de siete timers incluyendo timers de 
+    interrupci&oacute;n programables (PIT) y timers de prop&oacute;sito general 
+    (GP) , m&aacute;s un timer de software. Un sistema de tiempo real (RTC) provee 
+    el calendario y la hora del d&iacute;a y 144 bytes de RAM respaldada por bater&iacute;a. 
+    Trece l&iacute;neas de entrada/salida multifuncionales programables por el 
+    usuario est&aacute;n tambi&eacute;n disponibles. Una interface serial s&iacute;ncrona 
+    (SSI) que soporta comunicaci&oacute;n full-duplex en comunicaciones Bi-Direccionales 
+    de alta velocidad.<br>
+    Por dise&ntilde;o, 256KW de memoria SRAM de bajo voltaje y 55 ns de velocidad 
+    est&aacute;n instaladas para permitir periodos m&aacute;s largos de bater&iacute;a 
+    de respaldo; Esto requiere dos estados de espera m&aacute;s lentos para accesar 
+    la memoria. Opcionalmente, si no se requiere respaldo de bater&iacute;a, memoria 
+    SRAM de alta velocidad 20ns puede ser instalada para permitir un desempe&ntilde;o 
+    m&aacute;s alto para operaciones de estado de espera cero.<br>
+    En adici&oacute;n a la memoria flash montada en la tarjeta a trav&eacute;s 
+    de montaje superficial, un Circuito Integrado con socket DIP de 32 pines nos 
+    permite usar ROM/Flash para aplicaciones de usuario comunes. Una interface 
+    de 50 pines soporta tarjetas removibles CompactFlash de bajo costo de hasta 
+    2GB de almacenamiento masivo con compatibilidad FAT para soportar archivo 
+    de sistema Windows. <br>
+    Una EEPROM de 512/2K bytes puede ser instalada. La 5D puede ser alimentada 
+    por una fuente individual no regulada en un rango de 8V a 30V gracias al regulador 
+    de 5V de alta eficiencia que se encuentra instalado en la tarjeta.<br>
+    Un modulo Ethernet de alta velocidad puede ser instalado para proporcionar 
+    conectividad a una red 100M BaseT. El hardware LSI TCP/IP provee soporte para 
+    los protocolos TCP/IP, UDP, ICMP y ARP en hardware. Con 16KB de buffer interno 
+    para transmisi&oacute;n y recibo, el modulo Ethernet entrega </font><font size="5">conectividad 
+    a Internet y protocolos de procesamiento desde el procesador anfitri&oacute;n. 
+    El sistema puede f&aacute;cilmente manejar trafico TCP/IP por hasta 200 Kbytes/s. 
+    Ejemplos de HTTP, Telnet, FTP est&aacute;n disponibles. <br>
+    Hasta 4 puertos seriales RS232 (2 del SC520, y 2 del SCC2691) est&aacute;n 
+    disponibles. Dos puertos pueden ser configurados desde f&aacute;brica como 
+    RS485.<br>
+    Como configuraci&oacute;n inicial, siete entradas de alto voltaje (30V), y 
+    catorce drives tipo emisor com&uacute;n (ULN2003A) de alto voltaje son instalados 
+    en sockets tipo DIP. Cada driver es capaz de aterrizar 350mA a 50V por l&iacute;nea. 
+    Estos drives pueden de manera directa controlar Bobinas, Relevadores o Luce. 
+    Opcionalmente, Doce canales DAC pueden ser instalados en su lugar.<br>
+    Cuatro opto acopladores de alto aislamiento al voltaje (PS2701,NEC) pueden 
+    ser instalados para proporcional entradas &oacute;pticamente aisladas . Diecis&eacute;is 
+    entradas de canales adicionales son proporcionadas con un ADC de 24 Bits ( 
+    LTC2448), conectados a trav&eacute;s de resistencias buffer configurables 
+    y blocks de terminales de tornillo. Drivers de resistencia variable pueden 
+    ser instalados para permitir rangos de resistencia variable (hasta 30V) los 
+    cuales pueden ser procesados como se&ntilde;ales an&aacute;logas o digitales. 
+    Con un rango de muestreo pico de 5 MHz estos ADC trabajan bien directamente 
+    con se&ntilde;ales an&aacute;logas, celdas de carga, divisores de corriente, 
+    RTD's , sensores resistivos y termocoples en modo diferencial . Un sensor 
+    de temperatura interno de precisi&oacute;n (LT1019/REF02) como referencia 
+    de la temperatura local es usado en aplicaciones con termocoples.<br>
+    La SC520 trabaja con m&uacute;ltiples tarjetas de expansi&oacute;n como son 
+    UR8, C24, P100, QD8 y P300. <br>
+    Un LCD grafico de 192X128 pixeles puede ser instalado reemplazando catorce 
+    drives de alto voltaje.<br>
+    </font></p>
+  <p align="center"><font size="5"><b>La tarjeta de expansi&oacute;n para adquisici&oacute;n 
+    de datos</b><br>
+    </font></p>
+  <p align="left"><font size="5">La tarjeta QD8 permite controlador (SC520) tener 
+    una interface de conexi&oacute;n con los encoder de cuadratura, usados para 
+    generar pulsos de posici&oacute;n en un lazo cerrado de control en una aplicaci&oacute;n 
+    de movimiento. La tarjeta QD8 se interconecta con una controlador (SC520) 
+    a trav&eacute;s de un bus de datos de 8 bit de alta velocidad a trav&eacute;s 
+    de los conectores J1 y J2.<br>
+    </font></p>
+  <p align="center"><img src="QD8.JPG" width="645" height="429" border="5"></p>
+  <p align="left"><font size="5">El sistema electr&oacute;nico completo:</font></p>
+  <p align="center"><a href="PA030011.JPG"><img src="PA030011t.jpg" width="360" height="270" border="5"></a></p>
+  <p align="left"><a href="QD8%20%2B%20586Drive.jpg">Folleto publicitario</a> 
+    del sistema QD8+586Drive de la compa&ntilde;&iacute;a <a href="http://www.tern.com">TERN</a> 
+  </p>
+  <hr>
+  <p align="center">&nbsp;</p>
+</center>
+<center>
+  <p align="center">&nbsp;</p>
+</center>
+<blockquote> 
+  <p align="center"><a href="Proyecto%20PARO%20Gantt%20Chart.mpp"><img src="Proyecto%20PARO%20Gantt%20Chart.gif" width="1070" height="538" border="0"></a> 
+  <center>
+    <p>&nbsp;</p>
+  </center>
+</blockquote>
+<center>
+  <p align="left"><font size="5">Para mayores informes contactar con: <a href="mailto:Prof.Dr.ELopez@gmail.com">Prof.Dr. 
+    Eugenio L&oacute;pez G.</a></font>
+  <p align="left">&nbsp;
+  <p align="left">&nbsp;
+</center>
+
+</body>
+</html>
