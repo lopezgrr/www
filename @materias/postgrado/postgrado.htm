@@ -7,7 +7,7 @@
 </head>
 <body bgcolor="#CCCCCC" background="cb5f80.jpg">
 <center>
-  <p align="left"><a href="Elopez.fime.uanl.mx"><img src="../../ELOPEZ.gif" width="120" height="50" border="0"></a> 
+  <p align="left"><a href="../../index.html"><img src="../../ELOPEZ.gif" width="120" height="50" border="0"></a> 
   <p align="left"> 
   <table width="75%" border="1" bgcolor="#cb5f80" align="center">
     <tr> 
@@ -129,38 +129,46 @@
             <blockquote>
               <div align="center"></div>
               <blockquote>
-                <p align="center"><font size="5"><strong>Tema: </strong>Dise&ntilde;o y construcci&oacute;n de un robot industrial KUKA en un ambiente virtual.</font></p>
+                <p align="center"><font size="5"><strong>Tema: </strong>Los cuaterniones como herramienta para el an&aacute;lisis de la cadena cinem&aacute;tica de un robot industrial.</font></p>
               </blockquote>
-              <p align="justify"><strong>Descripci&oacute;n: </strong>Los programas de computadora para dise&ntilde;o, simulaci&oacute;n y animaci&oacute;n han evolucionado de una forma tal que pueden ser utilizados para modelar sistemas mec&aacute;nicos, lo cual permite cuantificar su espacio de trabajo, hacer an&aacute;lisis de movimientos de baja precisi&oacute;n, preveer algunas colisiones, etc. Esta propuesta de trabajo considera que la adaptaci&oacute;n de geometr&iacute;as de robots a un ambiente del software permite modelar en forma virtual un robot paralelo en relativamente poco tiempo y esfuerzo. </p>
-              <p><strong>Objetivos: </strong>Modelar/adaptar un robot KUKA (las geometr&iacute;as en crudo podr&aacute;n descargarse de internet si est&aacute;n a disposici&oacute;n) en el ambiente 3D utilizando su cadena cinem&aacute;tica y documentar sus propiedades matem&aacute;ticas b&aacute;sicas. Como informaci&oacute;n complementaria deber&aacute; generarse fotos y videos virtuales del robot en movimiento. </p>
+              <p align="justify"><strong>Descripci&oacute;n: </strong> Los cuaterniones son n&uacute;meros hipercomplejos de 4 componentes. En &uacute;ltimos a&ntilde;os han crecido notablemente la cantidad de implementaciones de cuaterniones en diversas disciplinas atra&iacute;das por notables ventajas relacionadas con la simplicidad, eficiencia y caracter&iacute;sticas algebraicas. La cinem&aacute;tica del manipulador industrial trata del estudio anal&iacute;tico del movimiento del robot con respecto a un sistema de coordenadas de referencia fijo. Toda cadena cinem&aacute;tica abierta responde a un modelo cinem&aacute;tico mediante el cual se modela la relaci&oacute;n entre sus variables. En la actualidad existen diferentes m&eacute;todos para resolver la cinem&aacute;tica de los brazos rob&oacute;ticos. Esta propuesta de trabajo considera el uso de la herramienta computacional basada en n&uacute;meros complejos que permite modelar un robot en relativamente poco tiempo y esfuerzo. Este trabajo detalla su uso en rob&oacute;tica para representar rotaciones y compara los c&aacute;lculos con el m&eacute;todo de rotaciones de matrices tradicionalmente usado para este fin. </p>
+              <p><strong>Objetivos: </strong>Modelar/adaptar un robot industrial (las geometr&iacute;as en crudo podr&aacute;n descargarse de internet si est&aacute;n a disposici&oacute;n) en el ambiente 3D <a href="http://www.parallemic.org/RoKiSim.html">RoKiSim</a> utilizando su cadena cinem&aacute;tica y documentar sus propiedades matem&aacute;ticas b&aacute;sicas utilizando cuaterniones 
+
+
+ (n&uacute;meros complejos). 
+
+
+ Como informaci&oacute;n complementaria deber&aacute; generarse animaciones de los c&aacute;lculos vectoriales del robot. Como referencia v&eacute;ase <em>&quot;Accurate Computation of Quaternions from Rotation Matrices&quot;</em> (<a href="Accurate Computation of Quaternions from Rotation Matrices.pdf">link</a>) (<a href="https://www.desmos.com/calculator/kppqvzzkdk">Desmos</a>) (<a href="https://danceswithcode.net/engineeringnotes/quaternions/quaternions.html">link</a>) </p>
+              <p align="center"><a href="https://www.desmos.com/calculator/kppqvzzkdk"><img src="QuaternionsCalculator.jpg" width="125" height="125" border="0"></a></p>
               <p><strong>Entregables:</strong></p>
-              <p><font color="#FFFF00"><strong>En el ex&aacute;men de medio t&eacute;rmino. Exposici&oacute;n Powerpoint del proceso de construcci&oacute;nde en 20 mins.</strong></font></p>
+              <p><font color="#FFFF00"><strong>En el ex&aacute;men de medio t&eacute;rmino. Exposici&oacute;n Powerpoint del proceso de c&aacute;lculo de rotaciones con n&uacute;meros complejos.</strong></font></p>
             </blockquote>
             <ul>
-              <li> Registro de equipo hecha al inicio del curso. (0%)</li>
-              <li>Archivo de cadena cinem&aacute;tica y todas las restricciones geom&eacute;tricas y los elementos de render en formato nativo. (40%)</li>
-              <li>Macro para el c&aacute;lculo del TCP y el posicionamiento manual de las articulaciones del robot utilizando <font color="#FFFFFF">DIAL de mouse y entrada num&eacute;rica</font> por teclado para cada eje. (50%) </li>
-              <li>10 renders HD con representaci&oacute;n en foto realismo 3D. Incluye propiedades &oacute;pticas de materiales, transformaciones de posici&oacute;n, vista de &aacute;reas, asignaci&oacute;n de fuentes de iluminaci&oacute;n, sombreado o transparencia y la proyecci&oacute;n desde diferentes &aacute;ngulos. (10%). Ejemplo:
+              <li> Registro de robot hecha al inicio del curso. (0%)</li>
+              <li>Archivo de cadena cinem&aacute;tica y todas las restricciones geom&eacute;tricas y los elementos de render en formato nativo. (50%)</li>
+              <li>C&aacute;lculo de rotaciones  y el posicionamiento manual de las articulaciones del robot utilizando <font color="#FFFFFF">DIAL de mouse y entrada num&eacute;rica</font> por teclado para cada eje.</li>
+              <li>10 
+
+
+ ejemplos num&eacute;ricos de rotaciones y traslaciones en el espacio 3D con representaci&oacute;n en foto realismo animado . Incluye propiedades &oacute;pticas de materiales, transformaciones de posici&oacute;n, vista de &aacute;reas, asignaci&oacute;n de fuentes de iluminaci&oacute;n, sombreado o transparencia y la proyecci&oacute;n desde diferentes &aacute;ngulos. (5%). Ejemplo:
                 <p align="center"><img src="Render%20KUKA.jpg" width="614" height="538"></p>
                 <p><font color="#FFFF00"><strong>En el ex&aacute;men final del curso. Exposici&oacute;n Powerpoint del c&aacute;lculo cinem&aacute;tico y su comprobaci&oacute;n en 20 mins.</strong></font></p>
               </li>
             </ul>
             <ul>
-              <li>Reporte t&eacute;cnico del proceso de construcci&oacute;n: documento de word de cuando menos diez p&aacute;ginas explicando a detalle los aspectos del trabajo, con texto explicativo de los entregables y gr&aacute;ficas de pantalla. (30%)</li>
-              <li>Hoja de MathCAD con las transformaciones y ecuaciones del robot en cinem&aacute;tica directa, as&iacute; como los valores num&eacute;ricos para la realizaci&oacute;n de los videos. (50%)</li>
-              <li>5 videos HD del robot en movimiento utilizando la macro de c&aacute;lculo TCP desde diferentes vistas. (20%) </li>
+              <li> Exposici&oacute;n Powerpoint del c&aacute;lculo cinem&aacute;tico y su comprobaci&oacute;n (20 mins. todos los integrantes). (10%) </li>
+              <li>Reporte t&eacute;cnico del proceso de elaboraci&oacute;n: documento de word de cuando menos diez p&aacute;ginas explicando a detalle los aspectos del trabajo, con texto explicativo de los entregables y gr&aacute;ficas de pantalla. (25%)</li>
+              <li> Hoja de MathCAD explicativa a cerca de las transformaciones y ecuaciones del robot en cinem&aacute;tica directa utilizando cuaterniones, as&iacute; como los valores num&eacute;ricos para diferentes posiciones. (25%) </li>
+              <li> 5 posiciones HD del robot demostrando <font color="#00FFFF">los valores num&eacute;ricos calculados con cuaterniones</font> contra <font color="#00FFFF">(1) los de la simulaci&oacute;n RoKiSim</font> as&iacute; como el resultado de <font color="#00FFFF">(2) las ecuaciones usando transformaciones</font>. (40%) </li>
             </ul>
             <blockquote>
               <p><strong>R&uacute;brica:</strong></p>
-              <p align="justify">Para que el PIA pueda acreditar calificaci&oacute;n, el robot de cada equipo deber&aacute; estar autorizado por el profesor. El puntaje se calcula como se mostr&oacute; en el apartado anterior, en <font color="#FFFFFF">dos</font> partes (medio t&eacute;rmino y ordianrio) del periodo que dura el curso; La calificaci&oacute;n del PIA corresponde al 30% de la calificaci&oacute;n total del curso. El desarrollo del trabajo PIA deber&aacute; mostrarse para su discusi&oacute;n en <font color="#FFFFFF">todas</font> las clases MS Teams.</p>
+              <p align="justify">Para que el PIA pueda acreditar calificaci&oacute;n, el robot de cada equipo (o estudiante seg&uacute;n el caso) deber&aacute; estar autorizado por el profesor. El puntaje se calcula como se mostr&oacute; en el apartado anterior, en <font color="#FFFFFF">dos</font> partes (medio t&eacute;rmino y ordianrio) del periodo que dura el curso; La calificaci&oacute;n del PIA corresponde al 30% de la calificaci&oacute;n total del curso. El desarrollo del trabajo PIA deber&aacute; mostrarse para su discusi&oacute;n en <font color="#FFFFFF">todas</font> las clases.</p>
               <p align="justify">&nbsp;</p>
             </blockquote>
           </li>
       </ol>        </td>
-      <td width="13%"><p align="center">Fecha de entrega: 
-  
-
-   Revise el reglamento de evaluaciones de la UANL: <a href="http://transparencia.uanl.mx/secciones/informacion_general/recursos_humanos/archivos/07examenes.pdf">LINK</a></p>
+      <td width="13%"><p align="center">Revise el reglamento de evaluaciones de la UANL: <a href="http://transparencia.uanl.mx/secciones/informacion_general/recursos_humanos/archivos/07examenes.pdf">LINK</a></p>
         <p align="center"> La evaluaci&oacute;n de los aprendizajes: Enfoque en la educaci&oacute;n a distancia ( <a href="https://estrategia-digital.uanl.mx/wp-content/uploads/2020/05/evaluacion-de-aprendizajes.pdf">Link </a>) </p>
       <p align="center"> Examenes se aplican en fecha oficial de escolar FIME. </p>
       <p align="center"> Entrega de PE + PIA al final del curso </p></td>
@@ -169,7 +177,7 @@
       <td width="12%" height="117"> 
         <div align="center"> 
           <p><b><font size="4">Tetramestre</font><font size="4"><br>
-            13/may - 19/ago 2025</font></b></p>
+            </font></b></p>
         </div>
       </td>
       <td width="75%" height="117">
@@ -177,23 +185,23 @@
         <ol>
           <li>El plan de trabajo por sesiones que a continuaci&oacute;n se muestra se ir&aacute; depurando y detallando conforme transcurra el tiempo. </li>
           <li>
-            <div align="justify">Las actividades deber&aacute;n entregarse al final del curso en su portafolio de evidencias 100%. Cada estudiante deber&aacute; entregar su portafolio en forma digital de manera individual. Evidencia de copia invalida a los portafolios involucrados. El nombre del archivo pdf del portafolio de evidencias deber&aacute; ser la matr&iacute;cula del estudiante. </div>
+            <div align="justify">Las actividades deber&aacute;n entregarse por medio de la plataforma NEXUS hasta la fecha l&iacute;mite programada en el sistema; as&iacute; como tambi&eacute;n al final del curso en su portafolio de evidencias 100%. Cada estudiante deber&aacute; entregar su portafolio en forma digital de manera individual. Evidencia de copia invalida a los portafolios involucrados. El nombre del archivo pdf del portafolio de evidencias deber&aacute; ser la matr&iacute;cula del estudiante. </div>
           </li>
           <li>
-            <div align="justify">Para poder acreditar una calificaci&oacute;n, el estudiante deber&aacute; entregar de forma digital su Portafolio de Evidencias <strong>100%</strong>, a m&aacute;s tardar el viernes 19 de abril del 2022 a las 12:00 horas. El portafolio de evidencias es un documento pdf con separadores virtuales (bookmark) para cada actividad. El portafolio deber&aacute; contener los ex&aacute;menes 1P y 2P debidamente rotulados (nombre, matr&iacute;cula y hora de clase) preferentemente contestados a mano y digitalizados para a&ntilde;adirse al portafolio de evidencias. El nombre del archivo pdf del portafolio de evidencias deber&aacute; ser la matr&iacute;cula del estudiante; ejemplo: <font color="#FFFFFF">1724407.PDF</font> </div>
+            <div align="justify">Para poder acreditar una calificaci&oacute;n, el estudiante deber&aacute; entregar de forma digital su Portafolio de Evidencias <strong>100%</strong>. El portafolio de evidencias es un documento pdf con separadores virtuales (bookmark) para cada actividad.  El nombre del archivo pdf del portafolio de evidencias deber&aacute; ser la matr&iacute;cula del estudiante; ejemplo: <font color="#FFFFFF">1724407.PDF</font> </div>
           </li>
           <li>
-            <div align="justify">Para poder acreditar una calificaci&oacute;n, el estudiante deber&aacute; entregar de forma digital  su Portafolio de Evidencias y el <em>Producto Integrador de Aprendizaje</em>. El Producto Integrador de Aprendizaje consta de UN documento<font color="#FFFFFF"> PIA.ZIP</font> que acredita a <strong>TODOS</strong> los estudiantes del equipo por medio de una portada que especifique a los estudiantes involucrados. </div>
+            <div align="justify">Para poder acreditar una calificaci&oacute;n, el estudiante deber&aacute; entregar de forma digital  su <em>Producto Integrador de Aprendizaje</em>. El reporte del Producto Integrador de Aprendizaje consta de UN documentoPDF<font color="#FFFFFF"> </font> que acredita de manera individual a <strong></strong> los estudiantes del equipo (si fuese el caso) por medio de una portada que especifique a los estudiantes involucrados. </div>
           </li>
           <li>
-            <div align="justify">Los ex&aacute;menes de medio curso y final se entregar&aacute;n debidamente rotulados, de no cumplirse este requisito, el examen ser&aacute; calificado con <strong>CERO</strong>. </div>
+            <div align="justify">Los ex&aacute;menes de medio curso y final se presentar&aacute;n de manera programada por medio de la plataforma NEXUS. No habr&aacute; oportunidad de reprogramar fecha de examen, por lo que se recomienda revisar el calendario del plan de trabajo; quien no presente acredita NP (cero) <strong></strong>. </div>
           </li>
           <li>
-            <div align="justify">Las sesiones de MicroSoft Teams en l&iacute;nea son obligatorias para los estudiantes y <strong>no ser&aacute;n grabadas ni retransmitidas</strong>. Los estudiantes deber&aacute;n participar en clase, por lo que su conexci&oacute;n deber&aacute; incluir c&aacute;mara, micr&oacute;fono y la posibilidad de compartir las aplicaciones de computadora necesarias para la clase. Quien desee participar en las clases en l&iacute;nea, deber&aacute; estar en minuta del departamento de escolar de FIME as&iacute; como tambi&eacute;n registrarse y comprobar su registro en el grupo MS-Teams de clase.</div>
+            <div align="justify">Las sesiones de MicroSoft Teams en l&iacute;nea son opcionales para los estudiantes y <strong>no ser&aacute;n grabadas ni retransmitidas</strong>. Los estudiantes deber&aacute;n participar en clase, por lo que su conexci&oacute;n deber&aacute; incluir c&aacute;mara, micr&oacute;fono y la posibilidad de compartir las aplicaciones de computadora necesarias para la clase. Quien desee participar en las clases en l&iacute;nea, deber&aacute; estar en minuta del departamento de escolar de FIME as&iacute; como tambi&eacute;n registrarse y comprobar su registro en el grupo MS-Teams de clase.</div>
           </li>
         </ol>        
         <p>&nbsp;</p></td>
-      <td width="13%" height="117">Calendario 2022 (<a href="https://www.uanl.mx/wp-content/uploads/2021/08/calendario-uanl-2022-23-web-final.pdf">PDF</a>) </td>
+      <td width="13%" height="117">Calendario 2024 (<a href="https://www.fime.uanl.mx/wp-content/uploads/2024/01/Calendario-Semestral-Ene-Jun-2024.pdf">PDF</a>) </td>
     </tr>
     <tr> 
       <td width="12%"> 
@@ -207,8 +215,11 @@
 Manual del usuario del robot del laboratorio (<a href="Scorbot-ER%20IX%20User%20Manual.pdf">pdf</a>) <br>
 Gu&iacute;a r&aacute;pida del robot del laboratorio (<a href="GUIA%20DEL%20SCORBOT%20ER-VII.pdf">pdf</a>) </p>
         <p>Manual del robot KUKA (<a href="../732/Programacion_de_robots_KUKA.pdf">pdf</a>) <br>
-        How to build a station in RoboDK (<a href="https://robodk.com/doc/en/RoboDK-Doc-EN-Getting-Started.pdf">link</a>) </p>
-        <p>Modelo 3D SolidWorks del Scorbot (<a href="http://elopez.fime.uanl.mx/@materias/732/Scorbot%20SolidWorks.rar">rar</a>) </p>
+        Estudio y modelamiento del robot KUKA KR 6 (<a href="Estudio%20y%20modelamiento%20del%20robot%20KUKA%20KR%206.pdf">pdf</a>) </p>
+        <p>Simulador KUKA (<a href="https://www.parallemic.org/RoKiSim.html">link</a>)         <br>
+        How to build a station in RoboDK (<a href="https://robodk.com/doc/en/RoboDK-Doc-EN-Getting-Started.pdf">link</a>)
+        </p>
+        <p>Modelo 3D SolidWorks del Scorbot (<a href="../../@materias/732/Scorbot%20SolidWorks.rar">rar</a>) </p>
       <p>Formaciones Online de KUKA (<a href="https://www.kuka.com/es-es/prensa/webinars/formulario-grabaciones/formaciones-online-de-kuka">Link</a>)</p></td>
       <td width="13%"> 
         <div align="left">.</div>
@@ -270,37 +281,28 @@ Gu&iacute;a r&aacute;pida del robot del laboratorio (<a href="GUIA%20DEL%20SCORB
       <th width="144" bgcolor="#CC9900" scope="col"><font color="#FFFF00"><strong>FECHA</strong></font></th>
       <th width="268" bgcolor="#CC9900" scope="col"><font color="#FFFF00"><strong>TEMA</strong></font></th>
       <th width="301" scope="col"><font color="#FFFF00"><strong>MATERIAL ONLINE <a name="PosgradoOnline"></a><br>
-      <em>(Clase as&iacute;ncrona)</em></strong></font> <font color="#FFFF00"><strong>     </strong></font></th>
-      <th width="216" scope="col"><p><font color="#960000"><strong><font color="#FFFF00">SESI&Oacute;N ONLINE<br>
-      </font></strong></font><font color="#FFFF00"><em>(Requisito su registro en grupo MS-Teams)</em></font></p></th>
+      <em>(Complemento de clase as&iacute;ncrona)</em></strong></font> <font color="#FFFF00"><strong>     </strong></font></th>
+      <th width="216" scope="col"><p><font color="#960000"><strong><font color="#FFFF00">SESI&Oacute;N As&iacute;ncrona <br>
+      </font></strong></font><font color="#FFFF00"><em>(Requisito su registro en grupo Nexus)</em></font></p></th>
       <th width="306" scope="col"><p><font color="#FFFF00"><strong>ACTIVIDAD DEL ESTUDIANTE<br>
-      </strong><em>(Se detallar&aacute;n oportunamente)</em></font> </p></th>
+      </strong><em>(Se detallar&aacute;n oportunamente como asignaci&oacute;n en NEXUS)</em></font> </p></th>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
       <th scope="row"><p><font color="#FFFFFF">(01)</font></p>
-      <p><font color="#960000">13/may/2025</font></p></th>
+      <p> <font color="#960000">13/may/2025</font></p></th>
       <td>Introducci&oacute;n al curso, log&iacute;stica y encuadre. Rob&oacute;tica en FIME para los <strong><font color="#660000">ingenieros</font></strong> en mecatr&oacute;nica.</td>
       <td bgcolor="#CC9999"><ul>
+          <li>Calendario UANL (<a href="https://www.fime.uanl.mx/wp-content/uploads/2024/01/Calendario-Semestral-Ene-Jun-2024.pdf">URL</a>) </li>
           <li>Programa de clase Mecatr&oacute;nica (<a href="2%20PROGRAMA%20ROBOTICA.pdf">pdf</a>)</li>
           <li>Programa de clase Mecatr&oacute;nica (<a href="580%20PA%20ROBOTICA.pdf">pdf</a>)</li>
       </ul></td>
-      <td><div align="center">Link</div></td>
-      <td><p>Incluir en su portafolio de evidencias:</p>
-        <ul>
-          <li>El programa de la clase </li>
-          <li>Material OnLine de esta fila </li>
-          <li>Capturas de pantalla del software instalado y funcionando (<font color="#660000"><strong>versi&oacute;n completa o de evaluaci&oacute;n</strong></font>) en su computadora de trabajo:
-              <ol>
-                <li>MathCad R14</li>
-                <li>Solidworks 2016</li>
-                <li>Rhinoceros </li>
-              </ol>
-          </li>
-      </ul></td>
+      <td><div align="center">Bienvenida al curso (<a href="https://youtu.be/rruDuvWzjPs">Link</a>) </div></td>
+      <td><strong>01)</strong> Ensayo
+      <p>Haga un reporte en archivo PDF que incluya el <font color="#660000">programa de la clase</font> con un ensayo corto (una cuartilla) de sus expectativas de este curso para reforzar sus actividades acad&eacute;micas y profesionales.</p></td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
       <th scope="row"><p><font color="#FFFFFF">(02)</font></p>
-      <p><font color="#960000">20/may/2025</font></p></th>
+      <p> <font color="#960000">20/may/2025</font></p></th>
       <td><p>Definici&oacute;n de robot y sus diferencias con respecto a otras m&aacute;quinas.</p>
           <p>Caracter&iacute;sticas particulares de los robots. Partes que componen un robot industrial.</p>
           <p>Aplicaciones de los robots industriales.</p>
@@ -312,14 +314,25 @@ Gu&iacute;a r&aacute;pida del robot del laboratorio (<a href="GUIA%20DEL%20SCORB
           <li>Video: Robot data (<a href="https://www.youtube.com/watch?v=9h8vbl1j6_E">Kuka</a>) </li>
           <li>Ejercicios (<a href="../../@mathcad/mathcad.html">todos los pdf de la lista</a>) </li>
       </ul></td>
-      <td><div align="center">Link</div></td>
+      <td><div align="center"><a href="https://youtu.be/0Xi3b305aXA">Link</a> en estructura Nexus </div></td>
       <td>
-        <p>&nbsp;</p>
-      <p>&nbsp;</p></td>
+        <p><strong>02)</strong> Incluir en su portafolio de evidencias:</p>
+        <ul>
+          <li>El programa de la clase </li>
+          <li>Material OnLine de esta fila </li>
+          <li>Capturas de pantalla del software instalado y funcionando (<font color="#660000">versi&oacute;n completa o de evaluaci&oacute;n</font>) en su computadora de trabajo:
+              <ol>
+                <li>MathCad R14</li>
+                <li>RoKiSim 1.7 </li>
+                <li>Solidworks 2016</li>
+                <li>Rhinoceros </li>
+              </ol>
+          </li>
+      </ul></td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
       <th scope="row"><p><font color="#FFFFFF">(03)</font></p>
-      <p><font color="#960000">27/may/2025</font></p></th>
+      <p> <font color="#960000">27/may/2025</font></p></th>
       <td><p>Transformaciones geom&eacute;tricas:</p>
           <ul>
             <li>Introducci&oacute;n</li>
@@ -329,30 +342,36 @@ Gu&iacute;a r&aacute;pida del robot del laboratorio (<a href="GUIA%20DEL%20SCORB
           <p>Movimientos r&iacute;gidos y transformaciones homog&eacute;neas. Composici&oacute;n de transformaciones homog&eacute;neas. <br>
         </p></td>
       <td><ul>
-          <li>@Tema 3 - Transformaciones 2D.<a href="http://elopez.fime.uanl.mx/@materias/732/@Tema%203%20-%20Transformaciones%202D.pdf">pdf</a></li>
-          <li>El mundo 2D.<a href="http://elopez.fime.uanl.mx/@materias/732/@Transf%20geom%202D!!!!.pdf">pdf</a></li>
-          <li>Transformaciones y proyecciones.<a href="http://elopez.fime.uanl.mx/@materias/732/3%20Transformaciones.pdf">pdf</a></li>
+          <li>@Tema 3 - Transformaciones 2D.<a href="../../@materias/732/@Tema%203%20-%20Transformaciones%202D.pdf">pdf</a></li>
+          <li>El mundo 2D.<a href="../../@materias/732/@Transf%20geom%202D!!!!.pdf">pdf</a></li>
+          <li>Transformaciones y proyecciones.<a href="../../@materias/732/3%20Transformaciones.pdf">pdf</a></li>
       </ul></td>
-      <td><div align="center">Link</div></td>
-      <td><p>&nbsp;</p>
-        <blockquote>&nbsp;</blockquote></td>
+      <td><div align="center"><a href="https://youtu.be/uhFhZ5IsCbY">Link</a> en estructura Nexus</div></td>
+      <td><p><strong>03)</strong> Incluir en su portafolio de evidencias:</p>
+          <ul>
+            <li>El material de clase OnLine de esta fila </li>
+            <li>Utilizar el ejercicio &quot;<a href="../../@mathcad/Rotaciones3D/Rotaciones3D.html">Rotaciones 3D</a>&quot; (p&aacute;g 1,2,3) usando como punto P su matr&iacute;cula de la sig manera</li>
+          </ul>
+          <blockquote>
+            <p>ej. mat <font color="#FF0000">158</font><font color="#0000FF">16</font><font color="#00FF00">96</font> P=(<font color="#00FF00">96</font>, <font color="#0000FF">16</font>, <font color="#FF0000">158</font>) </p>
+      </blockquote></td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
       <th scope="row"><p><font color="#FFFFFF">(04)</font></p>
-      <p><font color="#960000">03/jun/2025</font></p></th>
+      <p> <font color="#960000">03/jun/2025</font></p></th>
       <td><p>Matrices homog&eacute;neas.<br>
         Sistemas de ejes <br>
       La transformaci&oacute;n geom&eacute;trica de rotaci&oacute;n.</p>
         <p>Cinem&aacute;tica directa de posici&oacute;n. Definici&oacute;n y m&eacute;todo.</p>
         <p>Cinem&aacute;tica directa de posici&oacute;n. Ejercicio 2D y 3D. </p></td>
       <td><ul>
-        <li>Ejercicio &quot;<a href="http://elopez.fime.uanl.mx/@mathcad/Rotaciones3D/Rotaciones3D.html">Rotaciones 3D</a>&quot;</li>
-        <li>TCP del robot 2D &quot;<a href="http://elopez.fime.uanl.mx/@mathcad/Rotaciones3D/Rotaciones3D.html">Rotaciones 3D</a>&quot; pag4</li>
+        <li>Ejercicio &quot;<a href="../../@mathcad/Rotaciones3D/Rotaciones3D.html">Rotaciones 3D</a>&quot;</li>
+        <li>TCP del robot 2D &quot;<a href="../../@mathcad/Rotaciones3D/Rotaciones3D.html">Rotaciones 3D</a>&quot; pag4</li>
         <li>Dise&ntilde;o y construcci&oacute;n de un brazo digitalizador como m&aacute;quina de coordenadas manual para la captura de objetos 3D (<a href="http://ingenierias.uanl.mx/63/documentos/diseno_y_construccion.pdf">PDF</a>) </li>
-        <li>Robot SCARA (<a href="http://elopez.fime.uanl.mx/@mathcad/SCARA/SCARA%20Tutorial.htm">URL</a>)</li>
+        <li>Robot SCARA (<a href="../../@mathcad/SCARA/SCARA%20Tutorial.htm">URL</a>)</li>
       </ul></td>
-      <td><div align="center">Link</div></td>
-      <td><p><strong>01)</strong> Reporte de la soluci&oacute;n del TCP del robot de la pagina 4 del (<a href="http://elopez.fime.uanl.mx/@mathcad/Rotaciones3D/Rotaciones3D.html">URL</a>).</p>
+      <td><div align="center"><a href="https://youtu.be/z7c6IMNHlNk">Link</a> en estructura Nexus</div></td>
+      <td><p><strong>04)</strong> Reporte de la soluci&oacute;n del TCP del robot de la pagina 4 del (<a href="../../@mathcad/Rotaciones3D/Rotaciones3D.html">URL</a>).</p>
         <p>En donde</p>
         <blockquote>
           <p>L=(5.83, 4.24)</p>
@@ -361,205 +380,233 @@ Gu&iacute;a r&aacute;pida del robot del laboratorio (<a href="GUIA%20DEL%20SCORB
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
       <th scope="row"><p><font color="#FFFFFF">(05)</font></p>
-      <p><font color="#960000">10/jun/2025</font></p></th>
+      <p> <font color="#960000">10/jun/2025</font></p></th>
       <td><p>Cinem&aacute;tica directa de posici&oacute;n. Ejercicio 3D con robot SCARA de Solidworks. </p>
       <p>Cinem&aacute;tica inversa vs Cinem&aacute;tica directa </p>
       <p><font color="0">Soluci&oacute;n geom&eacute;trica cinem&aacute;tica inversa. Ejercicio 3D con robot SCARA de Solidworks.</font></p></td>
       <td><ul>
         <li>Dise&ntilde;o de una interfaz para la producci&oacute;n de fisiogramas en el espacio R3 de un robot (<a href="http://ingenierias.uanl.mx/69/documentos/diseno_de_una_interfaz.pdf">PDF</a>)</li>
-        <li><a href="http://elopez.fime.uanl.mx/@academica/A3_9.pdf">Art&iacute;culo</a> Evaluaci&oacute;n de caracter&iacute;sticas dimensionales y de color de piezas producidas en prototipos r&aacute;pidos.</li>
+        <li><a href="../../@academica/A3_9.pdf">Art&iacute;culo</a> Evaluaci&oacute;n de caracter&iacute;sticas dimensionales y de color de piezas producidas en prototipos r&aacute;pidos.</li>
         <li><a href="http://ingenierias.uanl.mx/63/documentos/diseno_y_construccion.pdf">Art&iacute;culo</a> Dise&ntilde;o y construcci&oacute;n de un brazo digitalizador para la captura de geometr&iacute;as.</li>
         <li><a href="https://www.youtube.com/watch?v=a2W6AKJ8Xps">Video1</a> FaroArm Move Device Position.</li>
         <li><a href="https://www.youtube.com/watch?v=xIexKEDLIiA">Video2</a> Faro Gage - Personal Coordinate Measuring Machine. Model: F04 R26.8</li>
         <li><a href="https://www.youtube.com/watch?v=M9rL-5oIXPI">Video1</a> Arquitectura de robots con SolidWorks.</li>
         <li> <a href="https://www.youtube.com/watch?v=kfzG1zm-zrY">Video2</a> Cinem&aacute;tica directa por medio de transformaciones geom&eacute;tricas.</li>
-        <li>An&aacute;lisis de la cadena cinem&aacute;tica de un robot SCARA RS40. <font color="0"><a href="http://elopez.fime.uanl.mx/@mathcad/SCARA/SCARA.pdf">SCARA con SolidWorks &amp; MathCAD r14</a></font></li>
-        </ul></td>
-      <td><div align="center">Link</div></td>
-      <td><p>&nbsp;</p>
-      </td>
+        <li>An&aacute;lisis de la cadena cinem&aacute;tica de un robot SCARA RS40. <font color="0"><a href="../../@mathcad/SCARA/SCARA.pdf">SCARA con SolidWorks &amp; MathCAD r14</a></font></li>
+        <li><font color="0">Cinem&aacute;ticas (<a href="https://www.youtube.com/watch?v=3fbmguBgVPA">Video</a>) </font></li>
+        <li><font color="0">Singularidades (<a href="https://www.youtube.com/watch?v=lD2HQcxeNoA">Video</a>)</font></li>
+        <li>Manipulator Singularities (<a href="https://www.youtube.com/watch?v=n2nqs8ZW-4c">Video</a>) </li>
+        <li> Cinem&aacute;tica inversa 3D de un robot IRB120 en RoKiSim (<a href="https://www.youtube.com/watch?v=7DeYwdhR_Og">Video</a>) </li>
+      </ul></td>
+      <td><div align="center">
+        <p><a href="https://youtu.be/ayrzNoYeRls">Link</a> en estructura Nexus</p>
+        <p><a href="https://www.youtube.com/watch?v=Tz0doW-CSy4&list=PLbaHv3Nt7hKGx4fb36I7vneoPfzWG0FD4&index=8">Link</a> en estructura Nexus</p>
+      </div></td>
+      <td><p><strong>05)</strong> Hacer el ejercicio con el robot SCARA (<a href="../../@mathcad/SCARA/SCARA%20Tutorial.htm">URL</a>) poniendo los valores angulares de posici&oacute;n seg&uacute;n su matr&iacute;cula:</p>
+        <p>ej. mat. 1578029 L<font size="2">3</font>=157 Theta=(29, 80) </p>      </td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
       <th scope="row"><p><font color="#FFFFFF">(06)</font></p>
-      <p><font color="#960000">17/jun/2025</font></p></th>
+      <p> <font color="#960000">17/jun/2025</font></p></th>
       <td><p><font color="0">I</font><font color="0">nterpolaci&oacute;n y ajuste a<br>
   curvas.</font></p>
       <p><font color="0">Puntos y posiciones.</font></p></td>
       <td><ul>
         <li><a href="https://www.youtube.com/watch?v=VwM8xfHIU9w&amp;t=58s">Video1</a> Qualify Reports</li>
         <li> <a href="https://www.youtube.com/watch?v=YkQw7ycfQCk">Video2</a> Fit points to Sphere</li>
-        <li><font color="0"><a href="http://elopez.fime.uanl.mx/@mathcad/SCARA/SCARA%20Tutorial.htm">Laboratorio virtual</a> An&aacute;lisis de la cadena cinem&aacute;tica de un robot SCARA RS40.</font></li>
-        <li><font color="0"><a href="http://elopez.fime.uanl.mx/@academica/A4_28.pdf">Art&iacute;culo</a> Dise&ntilde;o de una interfaz para la producci&oacute;n de fisiogramas en el espacio R3 de un robot.</font></li>
+        <li><font color="0"><a href="../../@mathcad/SCARA/SCARA%20Tutorial.htm">Laboratorio virtual</a> An&aacute;lisis de la cadena cinem&aacute;tica de un robot SCARA RS40.</font></li>
+        <li><font color="0"><a href="../../@academica/A4_28.pdf">Art&iacute;culo</a> Dise&ntilde;o de una interfaz para la producci&oacute;n de fisiogramas en el espacio R3 de un robot.</font></li>
       </ul></td>
-      <td><div align="center">Link</div></td>
+      <td><div align="center"><a href="https://youtu.be/ogi0hSAk4E0">Link</a> en estructura Nexus</div></td>
       <td>&nbsp;</td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
-      <th scope="row"><p><font color="#FFFFFF">(07)</font></p>
-      <p><font color="#960000">24/jun/2025</font></p></th>
-      <td><p><font color="0">I</font><font color="0">nterpolaci&oacute;n y ajuste a<br>
-  curvas.</font></p>
-      <p><font color="0">Interpolaci&oacute;n lineal. El segmento de recta 3D.</font></p></td>
-      <td><ul>
-        <li><a href="https://www.youtube.com/watch?v=MIOOwcWQDe4">Video</a> Tendencia lineal de un conjunto de puntos en Excel.</li>
-        <li>Ajuste lineal (<a href="https://www.desmos.com/calculator/jwquvmikhr?lang=es">link</a>) </li>
-      </ul></td>
-      <td><div align="center">Link</div></td>
-      <td><p><strong>02)</strong> Para la posici&oacute;n TCP dada por la matr&iacute;cula del estudiante en el robot SCARA de Solidworks, encontrar las dos soluciones de cinem&aacute;tica inversa (los valores {Theta} de cada eje).</p>
-        <p>Ejemplo: matr&iacute;cula <font color="#FF0000">15</font>7<font color="#FF00FF">80</font><font color="#0000FF">29</font></p>
-      <p>TCPx=<font color="#FF00FF">80</font>, TCPy=(100+<font color="#FF0000">15)</font>=115, TCPz=<font color="#0000FF">29</font></p></td>
-    </tr>
-    <tr bordercolor="#000000" bgcolor="#CC9999">
-      <th scope="row"><p><font color="#FFFFFF">(08)</font></p>      
-        <p><font color="#960000">01/jul/2025</font></p></th>
-      <td><p><font color="0">Cambio de base. Funciones 3D.</font></p>      </td>
-      <td><ul>
-        <li><font color="0"><a href="http://elopez.fime.uanl.mx/@mathcad/Interpolaciones/Interpolaciones.pdf">Interpolaci&oacute;n lineal y circular 3D por cambio de base.</a> Ejercicio. </font></li>
-        <li><a href="https://www.youtube.com/watch?v=1EYPzwnU_dE">Video</a> Cambio de base: un ejemplo de c&aacute;lculo.</li>
-        <li><a href="http://elopez.fime.uanl.mx/@mathcad/Rodonea3D/Rodonea3D.pdf">Rodonea 3D por cambio de base</a> Sistemas afines de coordenadas con cambio de base</li>
-        <li>Archivo Geogebra (<a href="Rodonea%20geogebra-export.ggb">Ejercicio</a>) usando <a href="https://www.geogebra.org/3d">https://www.geogebra.org/3d</a></li>
-      </ul>        
-      <p>&nbsp;</p>        <p>&nbsp;</p></td>
-      <td><div align="center">Link</div></td>
-      <td><p>&nbsp;</p>      
-      </td>
-    </tr>
-    <tr bordercolor="#000000" bgcolor="#CC9999">
-      <th bgcolor="#CC9900" scope="row"><font color="#865802">08/jul/2025</font></th>
+      <th bgcolor="#CC9900" scope="row"> <font color="#865802">08/jul/2025</font></th>
       <td bgcolor="#CC9900"><div align="center"><strong><font color="#865802">EXAMEN ESCRITO DE MEDIO T&Eacute;RMINO </font></strong></div></td>
       <td bgcolor="#CC9900"><div align="center"><font color="#865802"><strong>EXAMEN ESCRITO DE MEDIO T&Eacute;RMINO </strong></font></div></td>
       <td bgcolor="#CC9900"><div align="center"><font color="#865802"><strong><font color="#865802">EXAMEN</font> ESCRITO DE MEDIO T&Eacute;RMINO </strong></font></div></td>
-      <td bgcolor="#CC9900"><div align="center"><font color="#865802"><strong>Unidades (01) - (07) </strong></font></div></td>
+      <td bgcolor="#CC9900"><div align="center"><font color="#865802"><strong>Unidades (02) - (06) </strong></font></div></td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
-      <th scope="row"><p><font color="#FFFFFF">(09)</font></p>
-        <p><font color="#960000">15/jul/2025</font></p></th>
+      <th scope="row"><p><font color="#FFFFFF">(07)</font></p>
+        <p> <font color="#960000">15/jul/2025</font></p></th>
       <td><p><font color="#000000">Exposici&oacute;n <strong><font color="#FFFF00">de entregables</font></strong> de medio t&eacute;rmino por equipos </font>de PIAs </p>      </td>
       <td><div align="center">
         <p><br>
             <strong>EXPOSICI&Oacute;N  DE PIAs</strong></p>
         <ul>
           <li>
-            <div align="left">Cada equipo expone 30 minutos (10 minutos por integrante).</div>
+            <div align="left">Cada estudiante expone 20 minutos.</div>
           </li>
           <li>
             <div align="left">Al t&eacute;rmino de la exposici&oacute;n habr&aacute; una sesi&oacute;n de 30 min de preguntas y respuestas.</div>
           </li>
           <li>
-            <div align="left">Las preguntas del p&uacute;blico ser&aacute;n respondidas por <font color="#FFFF00">cualquier</font> integrante del equipo expositor. </div>
+            <div align="left">Si aplica, las preguntas del p&uacute;blico ser&aacute;n respondidas por <font color="#FFFF00">cualquier</font> integrante del equipo expositor. </div>
           </li>
         </ul>
       </div>
         <p>&nbsp;</p></td>
-      <td><div align="center"><font color="#000000">Link</font></div></td>
+      <td><div align="center">N/A</div></td>
       <td><p align="center"><font color="#000000">Exposici&oacute;n <strong><font color="#FFFF00">de entregables</font></strong> de medio t&eacute;rmino por equipos </font>de PIAs </p></td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
-      <th scope="row"><p><font color="#FFFFFF">(10)</font></p>
-        <p><font color="#960000">22/jul/2025</font></p></th>
-      <td><p><font color="0">Interpolaci&oacute;n circular y arcos.</font></p>
+      <th scope="row"><p><font color="#FFFFFF">(08)</font></p>      
+      <p> <font color="#960000">24/jun/2025</font></p></th>
+      <td><p><font color="0">I</font><font color="0">nterpolaci&oacute;n y ajuste a<br>
+  curvas.</font></p>
+      <p><font color="0">Interpolaci&oacute;n lineal. El segmento de recta 3D.</font></p></td>
+      <td><ul>
+        <li><a href="https://www.youtube.com/watch?v=MIOOwcWQDe4">Video</a> Tendencia lineal de un conjunto de puntos en Excel.</li>
+        <li>Ajuste lineal (<a href="https://www.desmos.com/calculator/jwquvmikhr?lang=es">link</a>)</li>
+      </ul></td>
+      <td><div align="center"><a href="https://youtu.be/kAYTrX8jEXw">Link</a> en estructura Nexus</div></td>
+      <td><p><strong>08)</strong> Para la posici&oacute;n TCP dada por la matr&iacute;cula del estudiante en el robot SCARA de Solidworks, encontrar las dos soluciones de cinem&aacute;tica inversa (los valores {Theta} de cada eje).</p>      
+        <p>Ejemplo: matr&iacute;cula <font color="#FF0000">15</font>7<font color="#FF00FF">80</font><font color="#0000FF">29</font></p>
+      <p>TCPx=<font color="#FF00FF">80</font>, TCPy=(100+<font color="#FF0000">15)</font>=115, TCPz=<font color="#0000FF">29</font></p></td>
+    </tr>
+    <tr bordercolor="#000000" bgcolor="#CC9999">
+      <th scope="row"><p><font color="#FFFFFF">(09)</font></p>        
+        <p> <font color="#960000">01/jul/2025</font></p></th>
+      <td><p><font color="0">Cambio de base. Funciones 3D.</font></p>
       </td>
       <td><ul>
-        <li><font color="0"><a href="http://elopez.fime.uanl.mx/@mathcad/Interpolaciones/Interpolaciones.pdf">Interpolaci&oacute;n lineal y circular 3D por cambio de base.</a> Ejercicio. </font></li>
-        <li><font color="0"><a href="http://elopez.fime.uanl.mx/@academica/Art%204%20SOMIM%202018.pdf">Art&iacute;culo</a> Determinaci&oacute;n del error funcional de un prototipo digitalizador 3D utilizando patrones de calibraci&oacute;n.</font></li>
+        <li></li>
+        <li><font color="0"><a href="../../@mathcad/Interpolaciones/Interpolaciones.pdf">Interpolaci&oacute;n lineal y circular 3D por cambio de base.</a> Ejercicio. </font></li>
+        <li><a href="https://www.youtube.com/watch?v=1EYPzwnU_dE">Video</a> Cambio de base: un ejemplo de c&aacute;lculo.</li>
+        <li><a href="../../@mathcad/Rodonea3D/Rodonea3D.pdf">Rodonea 3D por cambio de base</a> Sistemas afines de coordenadas con cambio de base</li>
+        <li>Archivo Geogebra (<a href="Rodonea%20geogebra-export.ggb">Ejercicio</a>) usando <a href="https://www.geogebra.org/3d">https://www.geogebra.org/3d</a></li>
       </ul>      <p>&nbsp;</p></td>
       <td><div align="center">
-        <p>Link</p>
-        <p>Link2</p>
-      </div></td>
-      <td><p><font color="0"><strong>03)</strong> Hacer un reporte  utilizando <font color="#0000FF">SolidMotion</font> del robot SCARA de Solidworks realizando la trayectoria <font color="#0000FF">circular</font>. Se debe entregar el  reporte, incluyendo:</font></p>      
+        <p><a href="https://youtu.be/pgus4Xj0PRI">Link</a> en estructura Nexus</p>
+        </div></td>
+      <td><p><font color="0"><strong>09)</strong> Hacer un reporte de una trayectoria lineal de un robot propuesto de RoKiSim. El reporte debe incluir:</font></p>        
         <ul>
-          <li>Archivo de Word, MathCAD , Rhino y Solidworks. </li>
+          <li>Archivo de Word, MathCAD, Rhino, Solidworks y archivos de simulaci&oacute;n RoKiSim. </li>
           <li>An&aacute;lisis de cinem&aacute;tica inversa para los puntos <strong><br>
-    Pini</strong>=(72.28, 523.93, -393.39)<br>
-    <strong>Qmed</strong>=(330.74, 446.64, -219.94) <br>
-    <strong>Rfin</strong>=(360.96, 572.66, 171.81) </li>
-        </ul>
-        <p>La ecuaci&oacute;n del movimiento.</p>
-        <ul>
-          <li><font color="0">Valores XYZ de <font color="#0000FF">tres puntos</font><font color="0"><font color="#0000FF"> equidistantes</font></font><font color="#0000FF"> intermedios</font> interpolados en la trayectoria.</font></li>
+    Pini</strong>=(seleccionar un punto)<br>
+    <strong>Qfin</strong>=(seleccionar un punto) </li>
+          <li>La ecuaci&oacute;n del movimiento.</li>
+          <li><font color="0">Valores XYZ de <font color="#660000">tres puntos equidistantes intermedios</font> interpolados en la trayectoria.</font></li>
         </ul></td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
-      <th scope="row"><p><font color="#FFFFFF">(11)</font></p>
-        <p><font color="#960000">29/jul/2025</font></p></th>
-      <td><font color="0">Curvas de forma libre. Curvas de Bezier.</font></td>
+      <th scope="row"><p><font color="#FFFFFF">(10)</font></p>        
+        <p> <font color="#960000">22/jul/2025</font></p></th>
+      <td><font color="0">Interpolaci&oacute;n circular y arcos.</font></td>
       <td><ul>
-          <li><a href="https://www.desmos.com/calculator/s78usaowv9?lang=es">Ejercicio</a> interactivo algoritmo de De Casteljau (desmos.com) </li>
-          <li><a href="https://www.geogebra.org/classic/ae78qdjr">Ejercicio1</a> interactivo algoritmo de De Casteljau (Geogebra) </li>
-          <li><a href="https://www.geogebra.org/classic/ek5t3vqh">Ejercicio2</a> interactivo algoritmo de De Casteljau (Geogebra) </li>
-          <li><font color="0"><a href="http://elopez.fime.uanl.mx/@mathcad/Bezier/Mathcad%20-%20Bezier.pdf">Representaci&oacute;n param&eacute;trica de la curva de Bezier</a> Ejercicio. </font></li>
-          <li><a href="http://ingenierias.uanl.mx/11/pdf/11_Eugenio_Lopez_et_al_Maquinado_suc.pdf">Art&iacute;culo</a> Maquinado de una sucesi&oacute;n de curvas.</li>
-          <li><font color="0"><a href="http://elopez.fime.uanl.mx/@mathcad/TrebolBezier/Mathcad%20-%20TrebolBezier.pdf">Trebol con curvas de Bezier racionalizadas</a> Ejercicio. </font></li>
-          <li><a href="http://elopez.fime.uanl.mx/@academica/SOMIM%202012%20v4b.pdf">Art&iacute;culo</a> Propuesta de transici&oacute;n geom&eacute;trica para la mejora de desempe&ntilde;o en uniones de fundici&oacute;n tipo &ldquo;T&rdquo;.</li>
+          <li><font color="0"><a href="../../@mathcad/Interpolaciones/Interpolaciones.pdf">Interpolaci&oacute;n lineal y circular 3D por cambio de base.</a> Ejercicio. </font></li>
+          <li> Interpolaci&oacute;n circular de un robot UR5 en el ambiente RoKiSim (<a href="https://www.youtube.com/watch?v=315ihutuEAQ">Video</a>) </li>
+          <li><font color="0"><a href="../../@academica/Art%204%20SOMIM%202018.pdf">Art&iacute;culo</a> Determinaci&oacute;n del error funcional de un prototipo digitalizador 3D utilizando patrones de calibraci&oacute;n.</font></li>
           </ul></td>
-      <td><div align="center">Link</div></td>
+      <td><div align="center"><a href="https://youtu.be/iYPmoX1RNBY">Link</a> en estructura Nexus</div></td>
       <td><div align="center">
-        <p align="left"><font color="0"><strong>04)</strong> Hacer un reporte utilizando <font color="#0000FF">SolidMotion</font> del robot SCARA de Solidworks realizando la trayectoria de <font color="#0000FF">Bezier</font> para el <strong>pol&iacute;gono de control {P}</strong>. Se debe entregar el reporte, incluyendo:</font></p>
-        <div align="left">
+        <p align="left"><font color="0"><strong>10)</strong> Hacer un reporte utilizando <font color="#660000">RoKiSim</font> de un robot  realizando la trayectoria <font color="#660000">circular</font>. Se debe entregar el reporte, incluyendo:</font></p>
+        <div align="justify">
           <ul>
-              <li>Archivo de Word, MathCAD , Rhino y Solidworks. </li>
-              <li>
-                Pol&iacute;gono de control {P}.<strong><br>
-                </strong>P0 = (<font color="#0000FF">72.280,523.930,-393.390</font>),<br>
-          P1 = (<font color="#0000FF">399.344,365.563,-340.472</font>),<br>
-          P2 = (<font color="#0000FF">538.720,423.562,27.222</font>), <br>
-          P3 = (<font color="#0000FF">360.960,572.660,171.810</font>) </li>
-              <li>La ecuaci&oacute;n del movimiento.</li>
-              <li><font color="0">Cinem&aacute;tica inversa de <font color="#0000FF">tres puntos </font><font color="0"><font color="#0000FF">equidistantes</font></font> <font color="#0000FF">intermedios</font> interpolados en la trayectoria.</font></li>
-            </ul>
+              <li>Archivo de Word, MathCAD , Rhino, Solidworks y los archivos de simulaci&oacute;n RoKiSim. </li>
+              <li>An&aacute;lisis de cinem&aacute;tica inversa para los puntos <strong><br>
+          Pini</strong>=(seleccionar un punto)<br>
+          <strong>Qmed</strong>=(seleccionar un punto) <br>
+          <strong>Rfin</strong>=(seleccionar un punto) </li>
+          </ul>
         </div>
+        <p align="justify">La ecuaci&oacute;n del movimiento.</p>
+        <div align="justify">
+          <ul>
+              <li><font color="0">Valores XYZ de <font color="#660000">tres puntos</font><font color="#0000FF"><font color="0"> equidistantes</font> <font color="#660000">intermedios</font></font> interpolados en la trayectoria.</font></li>
+          </ul>
+        </div>
+        <div align="justify"></div>
+        <div align="left"></div>
       </div>
       </td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
-      <th scope="row"><p><font color="#FFFFFF">(12)</font></p>
-        <p><font color="#960000">05/ago/2025</font></p></th>
-      <td>Superficies de tensor</td>
+      <th scope="row"><p><font color="#FFFFFF">(11)</font></p>        
+        <p> <font color="#960000">29/jul/2025</font></p></th>
+      <td><font color="0">Curvas de forma libre. Curvas de Bezier.</font></td>
       <td><ul>
-        <li><a href="http://elopez.fime.uanl.mx/@mathcad/SupTensorBezier/Mathcad%20-%20SupTensorBezier.pdf">Superficies de tensor con curvas de Bezier</a>. Ejercicio.</li>
+        <li><a href="https://www.desmos.com/calculator/s78usaowv9?lang=es">Ejercicio</a> interactivo algoritmo de De Casteljau (desmos.com) </li>
+        <li><a href="https://www.geogebra.org/classic/ae78qdjr">Ejercicio1</a> interactivo algoritmo de De Casteljau (Geogebra) </li>
+        <li><a href="https://www.geogebra.org/classic/ek5t3vqh">Ejercicio2</a> interactivo algoritmo de De Casteljau (Geogebra) </li>
+        <li><font color="0"><a href="../../@mathcad/Bezier/Mathcad%20-%20Bezier.pdf">Representaci&oacute;n param&eacute;trica de la curva de Bezier</a> Ejercicio. </font></li>
+        <li><a href="http://ingenierias.uanl.mx/11/pdf/11_Eugenio_Lopez_et_al_Maquinado_suc.pdf">Art&iacute;culo</a> Maquinado de una sucesi&oacute;n de curvas.</li>
+        <li><font color="0"><a href="../../@mathcad/TrebolBezier/Mathcad%20-%20TrebolBezier.pdf">Trebol con curvas de Bezier racionalizadas</a> Ejercicio. </font></li>
+        <li><a href="../../@academica/SOMIM%202012%20v4b.pdf">Art&iacute;culo</a> Propuesta de transici&oacute;n geom&eacute;trica para la mejora de desempe&ntilde;o en uniones de fundici&oacute;n tipo &ldquo;T&rdquo;.</li>
+        <li></li>
         </ul>      </td>
       <td><div align="center">
-        <p>Link</p>
+        <p><a href="https://youtu.be/ZP46LdvLOWo">Link</a> en estructura Nexus</p>
         </div></td>
-      <td><p>&nbsp;</p>
-      </td>
+      <td><p>&nbsp;</p>        
+        <p align="left"><font color="0"><strong>11)</strong> Hacer un reporte utilizando <font color="#660000">RoKiSim</font> de un robot  realizando la trayectoria de <font color="#660000">Bezier</font> para el <strong>pol&iacute;gono de control {P}</strong>. Se debe entregar el reporte, incluyendo:</font></p>
+        <div align="left">
+          <ul>
+            <li>Archivo de Word, MathCAD , Rhino y Solidworks. </li>
+            <li> Pol&iacute;gono de control {P}.<strong><br>
+              </strong>P0 = (<font color="#660000">selecionar un punto</font>),<br>
+      P1 = (<font color="#660000">seleccionar un punto</font>),<br>
+      P2 = (<font color="#660000">seleccionar un punto</font>), <br>
+      P3 = (<font color="#660000">seleccionar un punto</font>) </li>
+            <li>La ecuaci&oacute;n del movimiento.</li>
+            <li><font color="0">Cinem&aacute;tica inversa de <font color="#660000">tres puntos equidistantes</font> <font color="#660000">intermedios</font> interpolados en la trayectoria.</font></li>
+          </ul>
+        </div></td>
+    </tr>
+    <tr bordercolor="#000000" bgcolor="#CC9999">
+      <th scope="row"><p><font color="#FFFFFF">(12)</font></p>
+      <p><font color="#960000"> 05/ago/2025</font></p></th>
+      <td>Superficies de tensor</td>
+      <td><a href="../../@mathcad/SupTensorBezier/Mathcad%20-%20SupTensorBezier.pdf">Superficies de tensor con curvas de Bezier</a>. Ejercicio.</td>
+      <td><div align="center"><a href="https://youtu.be/_NBtHezdDjQ">Link</a> en estructura Nexus</div></td>
+      <td><p><font color="0"><strong>12)</strong> Hacer un reporte utilizando <font color="#660000">RoKiSim</font> de un robot propuesto realizando la trayectoria <font color="#660000">racional de Bezier</font> <strong>W=(1,50,50,1)</strong> para el <strong>pol&iacute;gono de control {P}</strong>. Se debe entregar el reporte, incluyendo:</font></p>
+        <ul>
+          <li>Archivo de Word, MathCAD , Rhino y Solidworks. </li>
+          <li>Pol&iacute;gono de control {P}.<strong><br>
+            </strong>P0 = (<font color="#660000">selecionar un punto</font>),<br>
+    P1 = (<font color="#660000">selecionar un punto</font>),<br>
+    P2 = (<font color="#660000">selecionar un punto</font>), <br>
+    P3 = (<font color="#660000">selecionar un punto</font>) </li>
+          <li>La ecuaci&oacute;n del movimiento.</li>
+          <li><font color="0">Cinem&aacute;tica inversa de <font color="#660000">tres puntos equidistantes</font> <font color="#660000">intermedios</font> interpolados en la trayectoria.</font></li>
+      </ul></td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9999">
       <th scope="row"><p><font color="#FFFFFF">(13)</font></p>
-        <p><font color="#960000">12/ago/2025</font></p></th>
+        <p> <font color="#960000">12/ago/2025</font></p></th>
       <td><font color="#000000">Exposici&oacute;n <font color="#FFFF00"><strong>final</strong></font> por equipos </font>de PIAs</td>
       <td><p align="center"><br>
         <strong>EXPOSICI&Oacute;N DE PIAs</strong></p>
         <ul>
           <li>
-            <div align="left">Cada equipo expone 30 minutos (10 minutos por integrante).</div>
+            <div align="left">Cada estudiante expone 20 minutos.</div>
           </li>
           <li>
             <div align="left">Al t&eacute;rmino de la exposici&oacute;n habr&aacute; una sesi&oacute;n de 30 min de preguntas y respuestas.</div>
           </li>
           <li>
-            <div align="left">Las preguntas del p&uacute;blico ser&aacute;n respondidas por <font color="#FFFF00">cualquier</font> integrante del equipo expositor. <br>
+            <div align="left">Si aplica, las preguntas del p&uacute;blico ser&aacute;n respondidas por <font color="#FFFF00">cualquier</font> integrante del equipo expositor. <br>
             </div>
           </li>
         </ul>        </td>
-      <td><div align="center"></div></td>
+      <td><div align="center">N/A</div></td>
       <td><p><font color="#000000">Exposici&oacute;n <font color="#FFFF00"><strong>final</strong></font> por equipos </font>de PIAs</p>
       </td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9900">
-      <th scope="row"><font color="#865802">19/ago/2025</font></th>
+      <th scope="row"> <font color="#865802">19/ago/2025</font></th>
       <td><div align="center"><font color="#865802">EXAMEN ORDINARIO </font></div></td>
       <td><div align="center"><font color="#865802">EXAMEN ORDINARIO </font></div></td>
       <td><div align="center"><font color="#865802">EXAMEN ORDINARIO </font></div></td>
-      <td><div align="center"><font color="#865802">EXAMEN ORDINARIO </font></div></td>
+      <td><div align="center"><font color="#865802"><strong>Unidades (08) - (12) </strong></font></div></td>
     </tr>
     <tr bordercolor="#000000" bgcolor="#CC9900">
       <th scope="row"><font color="#865802">19/ago/2025</font></th>
       <td><div align="center"><font color="#865802">EXAMEN EXTRAORDINARIO</font></div></td>
       <td><div align="center"><font color="#865802">EXAMEN EXTRAORDINARIO </font></div></td>
       <td><div align="center"><font color="#865802">EXAMEN EXTRAORDINARIO </font></div></td>
-      <td><div align="center"><font color="#865802">EXAMEN EXTRAORDINARIO </font></div></td>
+      <td><div align="center"><font color="#865802"><strong>Unidades (02) - (12)</strong></font></div></td>
     </tr>
   </table>
   <p align="left"> 
