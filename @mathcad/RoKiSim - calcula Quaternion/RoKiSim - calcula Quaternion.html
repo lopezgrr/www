@@ -1,0 +1,155 @@
+<html><head><meta http-equiv="content-type" content="text/html; charset=UTF-8" /><meta name="generator" content="Mathcad Professional 14.0" /><title>RoKiSim - calcula Quaternion</title><style type="text/css">
+				
+		p 
+		{ 
+			margin: 0 0 0 0; 
+			font-family: Arial, sans-serif;
+			font-size:10pt;
+			font-weight: normal;
+			font-style: normal;
+			vertical-align: baseline;
+			color: black;
+			text-decoration: none;			
+		}
+		div
+		{
+			border-width:0px;
+			border-style: solid;
+			border-color: red;
+			
+		}
+		
+			body
+			{			
+				background-color: #fff;				
+			}
+		
+		p img { vertical-align: middle; }
+		p b, li b { font-weight : bold; }
+		p i, li i { font-style : italic; }
+		p u, li u { text-decoration : underline; }
+		p so, li so { text-decoration : line-through; }
+		p sub, p sub { font-size : 70%; vertical-align: sub; }
+		p sup, p sup { font-size : 70%; vertical-align: super; }
+		ul
+		{
+			padding-left	: 2em; /* for mozilla list marker box */
+			margin-left		: 0;   /* for IE list marker box */
+		}
+		ol
+		{
+			padding-left	: 2em; /* for mozilla list marker box */
+			margin-right 	: -0.5em;
+			margin-left		: 0;   /* for IE list marker box */
+		}
+		
+		p.Style1, li.Style1 /*Normal*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style2, li.Style2 /*Heading 1*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 13.26315789473684pt;font-weight: bold;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style3, li.Style3 /*Heading 2*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 12pt;font-weight: bold;
+		font-style: italic;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style4, li.Style4 /*Heading 3*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 12pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style5, li.Style5 /*Paragraph*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-indent: 21pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style6, li.Style6 /*List*/
+		{
+			margin-left: 14.25pt;
+		margin-right: 0pt;
+		text-indent: -14.25pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style7, li.Style7 /*Indent*/
+		{
+			margin-left: 108pt;
+		margin-right: 0pt;
+		text-align: left;
+		font-family: 'Arial', sans-serif;;
+		font-size: 10pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style8, li.Style8 /*Title*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: center;
+		font-family: 'Times New Roman', sans-serif;;
+		font-size: 24pt;font-weight: bold;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	
+		p.Style9, li.Style9 /*Subtitle*/
+		{
+			margin-left: 0pt;
+		margin-right: 0pt;
+		text-align: center;
+		font-family: 'Times New Roman', sans-serif;;
+		font-size: 18pt;font-weight: normal;
+		font-style: normal;
+		vertical-align: baseline;
+		
+		}
+	</style></head><body><div id="mc-region-760" style="position: absolute; top: 11.25pt; left: 30pt; width: 402.5pt; "><a name="" /><p class="Style1" style="text-align: center;"><span style="font-size: 13.26315789473684pt; font-family: 'Arial Rounded MT Bold', sans-serif;">Cálculo del cuaternion de la orientación del porta-herramienta en el programa de simulación RoKiSim</span></p></div><div id="mc-region-757" style="position: absolute; top: 66pt; left: 6pt; width: 426.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0002_1136346500.PNG" id="generatedImage757" path=".\RoKiSim - calcula Quaternion_images/IMG0002_1136346500.PNG" style="width: 426.75pt;height: 19.5pt;"></img></div><div id="mc-region-901" style="position: absolute; top: 114pt; left: 24pt; width: 396pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0004_1136346500.PNG" id="generatedImage901" path=".\RoKiSim - calcula Quaternion_images/IMG0004_1136346500.PNG" style="width: 396pt;height: 282.75pt;"></img></div><div id="mc-region-825" style="position: absolute; top: 440.25pt; left: 24pt; width: 404.75pt; "><a name="" /><ul><li class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; list-style-type: disc;">Descargue el programa de simulación</li><li class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; list-style-type: disc;">Cargue el robot default (ABB_IRB120.xml)</li><li class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; list-style-type: disc;">Del menú FILE, remueva la herramienta</li><li class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; list-style-type: disc;">Presione INIT para resetear la posición del robot</li><li class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; list-style-type: disc;">Copie los valores angulares de esta hoja de MathCAD en cada articulación del robot </li><li class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; list-style-type: disc;">Una vez en posición, observe el cuaternión resultado de esta hoja de cálculo y compárelo con el de la simulación RoKiSim</li><li class="Style1" style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; list-style-type: disc;">Por razones de cálculo, es posible que en algunos casos los resultados sean los valores complementarios</li></ul></div><div id="mc-region-927" style="position: absolute; top: 590.25pt; left: 12pt; width: 278.75pt; "><a name="" /><p class="Style1">Referencia: https://www.youtube.com/watch?v=0FbDyWXemLw</p></div><div id="mc-region-920" style="position: absolute; top: 638.25pt; left: 18pt; width: 414.5pt; background-color: #408080; "><a name="" /><p class="Style1" style="text-align: center;"><span style="color: #0ff; ">ECUACIONES DE CUATERNIONES</span></p></div><div id="mc-region-964" style="position: absolute; top: 674.25pt; left: 54pt; width: 50pt; "><a name="" /><p class="Style1"><b>Rotación</b> </p></div><div id="mc-region-975" style="position: absolute; top: 674.25pt; left: 276pt; width: 74.75pt; "><a name="" /><p class="Style1"><b>Complemento</b> </p></div><div id="mc-region-922" style="position: absolute; top: 693pt; left: 42pt; width: 150pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0005_1136346500.PNG" id="generatedImage922" path=".\RoKiSim - calcula Quaternion_images/IMG0005_1136346500.PNG" style="width: 150pt;height: 33pt;"></img></div><div id="mc-region-923" style="position: absolute; top: 729pt; left: 42pt; width: 153.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0006_1136346500.PNG" id="generatedImage923" path=".\RoKiSim - calcula Quaternion_images/IMG0006_1136346500.PNG" style="width: 153.75pt;height: 33pt;"></img></div><div id="mc-region-976" style="position: absolute; top: 705.75pt; left: 270pt; width: 120.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0007_1136346500.PNG" id="generatedImage976" path=".\RoKiSim - calcula Quaternion_images/IMG0007_1136346500.PNG" style="width: 120.75pt;height: 83.25pt;"></img></div><div id="mc-region-925" style="position: absolute; top: 765pt; left: 42pt; width: 147.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0008_1136346546.PNG" id="generatedImage925" path=".\RoKiSim - calcula Quaternion_images/IMG0008_1136346546.PNG" style="width: 147.75pt;height: 33pt;"></img></div><div id="mc-region-926" style="position: absolute; top: 813.75pt; left: 48pt; width: 257.25pt; background-color: #ffdfdf; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0009_1136346546.PNG" id="generatedImage926" path=".\RoKiSim - calcula Quaternion_images/IMG0009_1136346546.PNG" style="width: 257.25pt;height: 83.25pt;"></img></div><div id="mc-region-971" style="position: absolute; top: 848.25pt; left: 336pt; width: 74.75pt; "><a name="" /><p class="Style1"><b>Multiplicación</b> </p></div><div id="mc-region-981" style="position: absolute; top: 954.75pt; left: 24pt; width: 402.5pt; "><a name="" /><p class="Style1"><span style="font-size: 12pt; "><b>NOTA:</b></span></p><p class="Style1">Aunque MathCAD permite a través de las preferencias determinar el valor índice de inicio para el uso de los contadores de posición en vectores y matrices, es mucho más claro declarar una variable DUMMY (que no se utiliza, pero ocupa un lugar) para el elemento <u>CERO</u> del vector de juntas del robot en MathcAD y de esta manera hacer compatible los índices con la simulación RoKiSim, en donde el contador de juntas inicia en <u>UNO.</u></p></div><div id="mc-region-5225" style="position: absolute; top: 1065pt; left: 180pt; width: 54.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0010_1136346546.PNG" id="generatedImage5225" path=".\RoKiSim - calcula Quaternion_images/IMG0010_1136346546.PNG" style="width: 54.75pt;height: 12.75pt;"></img></div><div id="mc-region-3334" style="position: absolute; top: 1256.25pt; left: 12pt; width: 414.5pt; background-color: #408080; "><a name="" /><p class="Style1" style="text-align: center;"><span style="color: #0ff; ">POSICIÓN #0</span></p></div><div id="mc-region-5242" style="position: absolute; top: 1290pt; left: 12pt; width: 327.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0012_1136346546.PNG" id="generatedImage5242" path=".\RoKiSim - calcula Quaternion_images/IMG0012_1136346546.PNG" style="width: 327.75pt;height: 236.25pt;"></img></div><div id="mc-region-5244" style="position: absolute; top: 1315.5pt; left: 342pt; width: 88.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0013_1136346562.PNG" id="generatedImage5244" path=".\RoKiSim - calcula Quaternion_images/IMG0013_1136346562.PNG" style="width: 88.5pt;height: 111.75pt;"></img></div><div id="mc-region-3344" style="position: absolute; top: 1593pt; left: 18pt; width: 404.25pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0014_1136346562.PNG" id="generatedImage3344" path=".\RoKiSim - calcula Quaternion_images/IMG0014_1136346562.PNG" style="width: 404.25pt;height: 18pt;"></img></div><div id="mc-region-3349" style="position: absolute; top: 1620pt; left: 192pt; width: 225pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0016_1136346562.PNG" id="generatedImage3349" path=".\RoKiSim - calcula Quaternion_images/IMG0016_1136346562.PNG" style="width: 225pt;height: 81pt;"></img></div><div id="mc-region-3346" style="position: absolute; top: 1622.25pt; left: 54pt; width: 101.25pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0017_1136346562.PNG" id="generatedImage3346" path=".\RoKiSim - calcula Quaternion_images/IMG0017_1136346562.PNG" style="width: 101.25pt;height: 62.25pt;"></img></div><div id="mc-region-3352" style="position: absolute; top: 1706.25pt; left: 216pt; width: 203.75pt; "><a name="" /><p class="Style1">Los valores de RoKiSim son:</p><p class="Style1">(0.70711, 0.00000, 0.70711, 0.00000)</p></div><div id="mc-region-5172" style="position: absolute; top: 1886.25pt; left: 12pt; width: 414.5pt; background-color: #408080; "><a name="" /><p class="Style1" style="text-align: center;"><span style="color: #0ff; ">POSICIÓN #1</span></p></div><div id="mc-region-5247" style="position: absolute; top: 1920pt; left: 6pt; width: 327.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0019_1136346562.PNG" id="generatedImage5247" path=".\RoKiSim - calcula Quaternion_images/IMG0019_1136346562.PNG" style="width: 327.75pt;height: 235.5pt;"></img></div><div id="mc-region-5246" style="position: absolute; top: 1945.5pt; left: 342pt; width: 88.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0020_1136346562.PNG" id="generatedImage5246" path=".\RoKiSim - calcula Quaternion_images/IMG0020_1136346562.PNG" style="width: 88.5pt;height: 111.75pt;"></img></div><div id="mc-region-5182" style="position: absolute; top: 2223pt; left: 18pt; width: 404.25pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0021_1136346562.PNG" id="generatedImage5182" path=".\RoKiSim - calcula Quaternion_images/IMG0021_1136346562.PNG" style="width: 404.25pt;height: 18pt;"></img></div><div id="mc-region-5259" style="position: absolute; top: 2256pt; left: 192pt; width: 225pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0023_1136346562.PNG" id="generatedImage5259" path=".\RoKiSim - calcula Quaternion_images/IMG0023_1136346562.PNG" style="width: 225pt;height: 71.25pt;"></img></div><div id="mc-region-5184" style="position: absolute; top: 2252.25pt; left: 54pt; width: 102pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0024_1136346562.PNG" id="generatedImage5184" path=".\RoKiSim - calcula Quaternion_images/IMG0024_1136346562.PNG" style="width: 102pt;height: 62.25pt;"></img></div><div id="mc-region-5185" style="position: absolute; top: 2336.25pt; left: 216pt; width: 203.75pt; "><a name="" /><p class="Style1">Los valores de RoKiSim son:</p><p class="Style1">(0.51947, -0.14965, 0.81800, 0.19658)</p></div><div id="mc-region-5131" style="position: absolute; top: 2498.25pt; left: 6pt; width: 414.5pt; background-color: #408080; "><a name="" /><p class="Style1" style="text-align: center;"><span style="color: #0ff; ">POSICIÓN #2</span></p></div><div id="mc-region-5249" style="position: absolute; top: 2532pt; left: 6pt; width: 328.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0026_1136346562.PNG" id="generatedImage5249" path=".\RoKiSim - calcula Quaternion_images/IMG0026_1136346562.PNG" style="width: 328.5pt;height: 236.25pt;"></img></div><div id="mc-region-5250" style="position: absolute; top: 2557.5pt; left: 342pt; width: 88.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0027_1136346562.PNG" id="generatedImage5250" path=".\RoKiSim - calcula Quaternion_images/IMG0027_1136346562.PNG" style="width: 88.5pt;height: 111.75pt;"></img></div><div id="mc-region-5140" style="position: absolute; top: 2835pt; left: 12pt; width: 404.25pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0028_1136346562.PNG" id="generatedImage5140" path=".\RoKiSim - calcula Quaternion_images/IMG0028_1136346562.PNG" style="width: 404.25pt;height: 18pt;"></img></div><div id="mc-region-5141" style="position: absolute; top: 2862pt; left: 210pt; width: 181.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0030_1136346562.PNG" id="generatedImage5141" path=".\RoKiSim - calcula Quaternion_images/IMG0030_1136346562.PNG" style="width: 181.5pt;height: 66.75pt;"></img></div><div id="mc-region-5142" style="position: absolute; top: 2864.25pt; left: 48pt; width: 106.5pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0031_1136346562.PNG" id="generatedImage5142" path=".\RoKiSim - calcula Quaternion_images/IMG0031_1136346562.PNG" style="width: 106.5pt;height: 62.25pt;"></img></div><div id="mc-region-5143" style="position: absolute; top: 2942.25pt; left: 210pt; width: 203.75pt; "><a name="" /><p class="Style1">Los valores de RoKiSim son:</p><p class="Style1">(0.50007, -0.56168, -0.65777, 0.04232)</p></div><div id="mc-region-5118" style="position: absolute; top: 3122.25pt; left: 6pt; width: 414.5pt; background-color: #408080; "><a name="" /><p class="Style1" style="text-align: center;"><span style="color: #0ff; ">POSICIÓN #3</span></p></div><div id="mc-region-5252" style="position: absolute; top: 3150pt; left: 6pt; width: 328.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0033_1136346562.PNG" id="generatedImage5252" path=".\RoKiSim - calcula Quaternion_images/IMG0033_1136346562.PNG" style="width: 328.5pt;height: 236.25pt;"></img></div><div id="mc-region-5253" style="position: absolute; top: 3181.5pt; left: 342pt; width: 88.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0034_1136346578.PNG" id="generatedImage5253" path=".\RoKiSim - calcula Quaternion_images/IMG0034_1136346578.PNG" style="width: 88.5pt;height: 111.75pt;"></img></div><div id="mc-region-5127" style="position: absolute; top: 3459pt; left: 12pt; width: 404.25pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0035_1136346578.PNG" id="generatedImage5127" path=".\RoKiSim - calcula Quaternion_images/IMG0035_1136346578.PNG" style="width: 404.25pt;height: 18pt;"></img></div><div id="mc-region-5128" style="position: absolute; top: 3486pt; left: 180pt; width: 228pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0037_1136346578.PNG" id="generatedImage5128" path=".\RoKiSim - calcula Quaternion_images/IMG0037_1136346578.PNG" style="width: 228pt;height: 83.25pt;"></img></div><div id="mc-region-5129" style="position: absolute; top: 3488.25pt; left: 48pt; width: 101.25pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0038_1136346578.PNG" id="generatedImage5129" path=".\RoKiSim - calcula Quaternion_images/IMG0038_1136346578.PNG" style="width: 101.25pt;height: 62.25pt;"></img></div><div id="mc-region-5130" style="position: absolute; top: 3566.25pt; left: 210pt; width: 203.75pt; "><a name="" /><p class="Style1">Los valores de RoKiSim son:</p><p class="Style1">(0.02889, 0.70838, 0.44152, 0.54993)</p></div><div id="mc-region-5111" style="position: absolute; top: 3740.25pt; left: 18pt; width: 414.5pt; background-color: #408080; "><a name="" /><p class="Style1" style="text-align: center;"><span style="color: #0ff; ">POSICIÓN #4</span></p></div><div id="mc-region-5257" style="position: absolute; top: 3774pt; left: 6pt; width: 328.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0040_1136346578.PNG" id="generatedImage5257" path=".\RoKiSim - calcula Quaternion_images/IMG0040_1136346578.PNG" style="width: 328.5pt;height: 236.25pt;"></img></div><div id="mc-region-5256" style="position: absolute; top: 3799.5pt; left: 342pt; width: 88.5pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0041_1136346578.PNG" id="generatedImage5256" path=".\RoKiSim - calcula Quaternion_images/IMG0041_1136346578.PNG" style="width: 88.5pt;height: 111.75pt;"></img></div><div id="mc-region-5114" style="position: absolute; top: 4077pt; left: 24pt; width: 404.25pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0042_1136346578.PNG" id="generatedImage5114" path=".\RoKiSim - calcula Quaternion_images/IMG0042_1136346578.PNG" style="width: 404.25pt;height: 18pt;"></img></div><div id="mc-region-5115" style="position: absolute; top: 4104pt; left: 204pt; width: 222.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0044_1136346578.PNG" id="generatedImage5115" path=".\RoKiSim - calcula Quaternion_images/IMG0044_1136346578.PNG" style="width: 222.75pt;height: 81pt;"></img></div><div id="mc-region-5116" style="position: absolute; top: 4106.25pt; left: 60pt; width: 101.25pt; background-color: #ff8080; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0045_1136346578.PNG" id="generatedImage5116" path=".\RoKiSim - calcula Quaternion_images/IMG0045_1136346578.PNG" style="width: 101.25pt;height: 62.25pt;"></img></div><div id="mc-region-5117" style="position: absolute; top: 4184.25pt; left: 222pt; width: 203.75pt; "><a name="" /><p class="Style1">Los valores de RoKiSim son:</p><p class="Style1">(0.35747, 0.35429, 0.85953, 0.08893)</p></div><div id="mc-region-5220" style="position: absolute; top: 4362.75pt; left: 6pt; width: 428.75pt; "><a name="" /><p class="Style1" style="text-align: center;"><span style="font-size: 12pt; "><b>Resultados</b></span></p></div><div id="mc-region-5221" style="position: absolute; top: 4374pt; left: 12pt; width: 417.75pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0047_1136346578.PNG" id="generatedImage5221" path=".\RoKiSim - calcula Quaternion_images/IMG0047_1136346578.PNG" style="width: 417.75pt;height: 19.5pt;"></img></div><div id="mc-region-5224" style="position: absolute; top: 4410pt; left: 114pt; width: 161.25pt; "><a name="" /><img border="0" src=".\RoKiSim - calcula Quaternion_images/IMG0049_1136346578.PNG" id="generatedImage5224" path=".\RoKiSim - calcula Quaternion_images/IMG0049_1136346578.PNG" style="width: 161.25pt;height: 528.75pt;"></img></div><div></div></body></html>
