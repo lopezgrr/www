@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?validation-md5-digest 977b6c97c0e6d82a9b3649f90e744e53?>
+<?validation-md5-digest defa2bfc04059575b6d94433d6b643ca?>
 <worksheet version="3.0.3" xmlns="http://schemas.mathsoft.com/worksheet30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ws="http://schemas.mathsoft.com/worksheet30" xmlns:ml="http://schemas.mathsoft.com/math30" xmlns:u="http://schemas.mathsoft.com/units10" xmlns:p="http://schemas.mathsoft.com/provenance10" xmlns:prd="http://schemas.mathsoft.com/point-release-data">
 	<pointReleaseData/>
 	<metadata>
@@ -13,9 +13,9 @@
 			<revisedBy>Elopez</revisedBy>
 		</userData>
 		<identityInfo>
-			<revision>19</revision>
+			<revision>20</revision>
 			<documentID>E6848268-5926-4ED9-8E98-EA14DCD06088</documentID>
-			<versionID>2E81E3C1-4CF4-45AB-B9A2-B853CE64B5B8</versionID>
+			<versionID>CD18C3EB-F4F7-418B-8C47-7613376340D6</versionID>
 			<parentVersionID>00000000-0000-0000-0000-000000000000</parentVersionID>
 			<branchID>00000000-0000-0000-0000-000000000000</branchID>
 		</identityInfo>
@@ -125,7 +125,7 @@ Integrados de Manufactura\par
 		</editor>
 		<fileFormat image-type="image/png" image-quality="75" save-numeric-results="true" exclude-large-results="true" save-text-images="false" screen-dpi="96"/>
 		<miscellaneous>
-			<handbook handbook-region-tag-ub="5257" can-delete-original-handbook-regions="true" can-delete-user-regions="true" can-print="true" can-copy="true" can-save="true" file-permission-mask="4294967295"/>
+			<handbook handbook-region-tag-ub="5259" can-delete-original-handbook-regions="true" can-delete-user-regions="true" can-print="true" can-copy="true" can-save="true" file-permission-mask="4294967295"/>
 		</miscellaneous>
 	</settings>
 	<regions>
@@ -171,7 +171,7 @@ Integrados de Manufactura\par
 				</p>
 			</text>
 		</region>
-		<region region-id="964" left="54" top="674.25" width="45" height="12" align-x="71.25" align-y="684" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="964" left="54" top="674.25" width="43.5" height="12" align-x="71.25" align-y="684" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="false">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<b>Rotación</b>
@@ -187,13 +187,13 @@ Integrados de Manufactura\par
 				</p>
 			</text>
 		</region>
-		<region region-id="922" left="42" top="693" width="150" height="33" align-x="71.25" align-y="714" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="922" left="42" top="693" width="155.25" height="33" align-x="75" align-y="714" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315780900" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320761988" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315780820" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320761228" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -234,17 +234,17 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="5">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="148.5" height="31.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="153.75" height="31.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="923" left="42" top="729" width="153.75" height="33" align-x="73.5" align-y="750" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="923" left="42" top="729" width="155.25" height="33" align-x="75" align-y="750" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782180" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764548" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782140" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764508" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -285,17 +285,17 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="6">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="152.25" height="31.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="153.75" height="31.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="976" left="270" top="705.75" width="120.75" height="83.25" align-x="353.25" align-y="750" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="976" left="270" top="705.75" width="122.25" height="83.25" align-x="354" align-y="750" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="3CFC80C6-E81C-49D7-A721-14FBCA61C950" version-id="34C3ECF9-8AAC-4F2A-8C2E-8F8601E00718" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782740" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="3CFC80C6-E81C-49D7-A721-14FBCA61C950" version-id="34C3ECF9-8AAC-4F2A-8C2E-8F8601E00718" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764628" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782980" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764908" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -344,17 +344,17 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="7">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="119.25" height="81.75" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="120.75" height="81.75" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="925" left="42" top="765" width="147.75" height="33" align-x="70.5" align-y="786" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="925" left="42" top="765" width="152.25" height="33" align-x="73.5" align-y="786" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782900" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320761228" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315781940" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763788" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -395,17 +395,17 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="8">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="146.25" height="31.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="150.75" height="31.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="926" left="48" top="813.75" width="267.75" height="83.25" align-x="102" align-y="858" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ffdfdf" tag="">
+		<region region-id="926" left="48" top="813.75" width="259.5" height="83.25" align-x="103.5" align-y="858" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ffdfdf" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782180" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764828" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782660" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764788" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -661,7 +661,7 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="9">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="266.25" height="81.75" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="258" height="81.75" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -673,7 +673,7 @@ Integrados de Manufactura\par
 				</p>
 			</text>
 		</region>
-		<region region-id="981" left="24" top="954" width="397.5" height="91.5" align-x="39.75" align-y="966" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="981" left="24" top="954.75" width="397.5" height="74.25" align-x="39.75" align-y="966" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<f size="12">
@@ -684,13 +684,13 @@ Integrados de Manufactura\par
 				</p>
 			</text>
 		</region>
-		<region region-id="5225" left="180" top="1065" width="57" height="12.75" align-x="224.25" align-y="1074" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="5225" left="180" top="1065" width="56.25" height="12.75" align-x="223.5" align-y="1074" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782860" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764588" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782420" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763748" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -704,11 +704,11 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="10">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="55.5" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="54.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="3334" left="12" top="1256.25" width="409.5" height="12.75" align-x="12" align-y="1266" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
+		<region region-id="3334" left="12" top="1256.25" width="409.5" height="12" align-x="12" align-y="1266" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
 			<text use-page-width="false" push-down="true" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="center" list-style-type="inherit" tabs="inherit">
 					<c val="#0ff">POSICIÓN #0</c>
@@ -721,7 +721,7 @@ Integrados de Manufactura\par
 			</picture>
 			<rendering item-idref="12"/>
 		</region>
-		<region region-id="5244" left="342" top="1315.5" width="92.25" height="111.75" align-x="354.75" align-y="1374" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="5244" left="342" top="1315.5" width="89.25" height="111.75" align-x="354.75" align-y="1374" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">θ</ml:id>
@@ -742,13 +742,13 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="13"/>
 		</region>
-		<region region-id="3344" left="18" top="1593" width="413.25" height="18" align-x="72.75" align-y="1602" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="3344" left="18" top="1593" width="426" height="18" align-x="72.75" align-y="1602" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782180" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763908" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782540" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764348" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -842,7 +842,7 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="14">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="411.75" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="424.5" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -856,10 +856,10 @@ Integrados de Manufactura\par
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782460" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763708" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782660" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764828" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -883,13 +883,13 @@ Integrados de Manufactura\par
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="3352" left="216" top="1706.25" width="198.75" height="25.5" align-x="222.75" align-y="1716" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="3352" left="216" top="1706.25" width="198.75" height="24" align-x="222.75" align-y="1716" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Los valores de RoKiSim son:</p>
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">(0.70711, 0.00000, 0.70711, 0.00000)</p>
 			</text>
 		</region>
-		<region region-id="5172" left="12" top="1886.25" width="409.5" height="12.75" align-x="12" align-y="1896" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
+		<region region-id="5172" left="12" top="1886.25" width="409.5" height="12" align-x="12" align-y="1896" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
 			<text use-page-width="false" push-down="true" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="center" list-style-type="inherit" tabs="inherit">
 					<c val="#0ff">POSICIÓN #1</c>
@@ -902,7 +902,7 @@ Integrados de Manufactura\par
 			</picture>
 			<rendering item-idref="19"/>
 		</region>
-		<region region-id="5246" left="342" top="1945.5" width="92.25" height="111.75" align-x="354.75" align-y="2004" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="5246" left="342" top="1945.5" width="89.25" height="111.75" align-x="354.75" align-y="2004" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">θ</ml:id>
@@ -923,13 +923,13 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="20"/>
 		</region>
-		<region region-id="5182" left="18" top="2223" width="413.25" height="18" align-x="72.75" align-y="2232" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="5182" left="18" top="2223" width="426" height="18" align-x="72.75" align-y="2232" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315781940" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764628" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782660" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764388" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1023,13 +1023,13 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="21">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="411.75" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="424.5" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="5183" left="192" top="2250" width="225" height="81" align-x="192" align-y="2250" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="5259" left="192" top="2256" width="225" height="71.25" align-x="192" align-y="2256" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<picture>
-				<png item-idref="22" display-width="223.5" display-height="79.5"/>
+				<png item-idref="22" display-width="223.5" display-height="69.75"/>
 			</picture>
 			<rendering item-idref="23"/>
 		</region>
@@ -1037,10 +1037,10 @@ Integrados de Manufactura\par
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782900" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764308" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782740" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763908" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1064,13 +1064,13 @@ Integrados de Manufactura\par
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="5185" left="216" top="2336.25" width="198.75" height="25.5" align-x="222.75" align-y="2346" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="5185" left="216" top="2336.25" width="198.75" height="24" align-x="222.75" align-y="2346" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Los valores de RoKiSim son:</p>
-				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">(0.70711, 0.00000, 0.70711, 0.00000)</p>
+				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">(0.51947, -0.14965, 0.81800, 0.19658)</p>
 			</text>
 		</region>
-		<region region-id="5131" left="6" top="2498.25" width="409.5" height="12.75" align-x="6" align-y="2508" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
+		<region region-id="5131" left="6" top="2498.25" width="409.5" height="12" align-x="6" align-y="2508" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
 			<text use-page-width="false" push-down="true" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="center" list-style-type="inherit" tabs="inherit">
 					<c val="#0ff">POSICIÓN #2</c>
@@ -1083,13 +1083,13 @@ Integrados de Manufactura\par
 			</picture>
 			<rendering item-idref="26"/>
 		</region>
-		<region region-id="5250" left="342" top="2557.5" width="92.25" height="111.75" align-x="354.75" align-y="2616" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="5250" left="342" top="2557.5" width="89.25" height="111.75" align-x="354.75" align-y="2616" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782740" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764708" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782900" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764308" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1115,17 +1115,17 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="27">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="90.75" height="110.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="87.75" height="110.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="5140" left="12" top="2835" width="413.25" height="18" align-x="66.75" align-y="2844" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="5140" left="12" top="2835" width="426" height="18" align-x="66.75" align-y="2844" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315781940" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764788" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782180" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764948" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1219,7 +1219,7 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="28">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="411.75" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="424.5" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -1233,10 +1233,10 @@ Integrados de Manufactura\par
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782460" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763788" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782660" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764828" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1260,13 +1260,13 @@ Integrados de Manufactura\par
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="5143" left="210" top="2942.25" width="198.75" height="25.5" align-x="216.75" align-y="2952" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="5143" left="210" top="2942.25" width="198.75" height="24" align-x="216.75" align-y="2952" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Los valores de RoKiSim son:</p>
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">(0.50007, -0.56168, -0.65777, 0.04232)</p>
 			</text>
 		</region>
-		<region region-id="5118" left="6" top="3122.25" width="409.5" height="12.75" align-x="6" align-y="3132" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
+		<region region-id="5118" left="6" top="3122.25" width="409.5" height="12" align-x="6" align-y="3132" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
 			<text use-page-width="false" push-down="true" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="center" list-style-type="inherit" tabs="inherit">
 					<c val="#0ff">POSICIÓN #3</c>
@@ -1279,7 +1279,7 @@ Integrados de Manufactura\par
 			</picture>
 			<rendering item-idref="33"/>
 		</region>
-		<region region-id="5253" left="342" top="3181.5" width="92.25" height="111.75" align-x="354.75" align-y="3240" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="5253" left="342" top="3181.5" width="89.25" height="111.75" align-x="354.75" align-y="3240" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">θ</ml:id>
@@ -1300,13 +1300,13 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="34"/>
 		</region>
-		<region region-id="5127" left="12" top="3459" width="413.25" height="18" align-x="66.75" align-y="3468" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="5127" left="12" top="3459" width="426" height="18" align-x="66.75" align-y="3468" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782300" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763948" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782580" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763908" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1400,7 +1400,7 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="35">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="411.75" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="424.5" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -1414,10 +1414,10 @@ Integrados de Manufactura\par
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782180" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764668" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782260" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764308" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1441,13 +1441,13 @@ Integrados de Manufactura\par
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="5130" left="210" top="3566.25" width="198.75" height="25.5" align-x="216.75" align-y="3576" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="5130" left="210" top="3566.25" width="198.75" height="24" align-x="216.75" align-y="3576" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Los valores de RoKiSim son:</p>
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">(0.02889, 0.70838, 0.44152, 0.54993)</p>
 			</text>
 		</region>
-		<region region-id="5111" left="18" top="3740.25" width="409.5" height="12.75" align-x="18" align-y="3750" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
+		<region region-id="5111" left="18" top="3740.25" width="409.5" height="12" align-x="18" align-y="3750" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#408080" tag="">
 			<text use-page-width="false" push-down="true" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="center" list-style-type="inherit" tabs="inherit">
 					<c val="#0ff">POSICIÓN #4</c>
@@ -1460,7 +1460,7 @@ Integrados de Manufactura\par
 			</picture>
 			<rendering item-idref="40"/>
 		</region>
-		<region region-id="5256" left="342" top="3799.5" width="92.25" height="111.75" align-x="354.75" align-y="3858" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="5256" left="342" top="3799.5" width="89.25" height="111.75" align-x="354.75" align-y="3858" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">θ</ml:id>
@@ -1481,13 +1481,13 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="41"/>
 		</region>
-		<region region-id="5114" left="24" top="4077" width="413.25" height="18" align-x="78.75" align-y="4086" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="5114" left="24" top="4077" width="426" height="18" align-x="78.75" align-y="4086" show-border="false" show-highlight="true" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782340" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764268" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782620" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763868" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1581,7 +1581,7 @@ Integrados de Manufactura\par
 			</math>
 			<rendering item-idref="42">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="411.75" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="424.5" height="16.5" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -1595,10 +1595,10 @@ Integrados de Manufactura\par
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782740" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320763828" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="315782820" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="C933C668-5102-49D1-AE5C-C9C940D87963" version-id="5916FB2B-2E5D-4170-B55B-7E0F1F21939A" branch-id="00000000-0000-0000-0000-000000000000" revision-num="320764628" is-modified="false" region-id="0" href="D:\VIDEOS CLASES ONLINE 2020-2022\Videos\Quaternions\quaternions v3 - RoKiSim.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1622,7 +1622,7 @@ Integrados de Manufactura\par
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="5117" left="222" top="4184.25" width="198.75" height="25.5" align-x="228.75" align-y="4194" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
+		<region region-id="5117" left="222" top="4184.25" width="198.75" height="24" align-x="228.75" align-y="4194" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="#ff8080" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Los valores de RoKiSim son:</p>
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">(0.35747, 0.35429, 0.85953, 0.08893)</p>
@@ -18322,108 +18322,610 @@ UprPNdpdkce6HNe98ad29r/7Ph6a+yNC2bwJi40e4ghlpOJo93Yn3KkdpnhLsdEryHeWTSF6
 ylBDz1oZt6t6W5+9tgCuQMgtri249sT/aGjojyw+exwd2O5SbHSM6X8eVweipww19JTLwL+h
 sGC3UgF1ufbE/2j4WH983jg6tt2l2BAIBAKBQNAUUmwIBAKBQCBoiLfhf2Qx9nylHRF7AAAA
 AElFTkSuQmCC</item>
-		<item item-id="22">iVBORw0KGgoAAAANSUhEUgAAASoAAABqCAIAAACEd4ugAAAAAXNSR0IArs4c6QAAAARnQU1B
-AACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAmASURBVHhe7Z3Nedw4DIa3ohx9SA1b
-hE8pIg34mmfb8D1lpIE0kQ52AQIEQRLUaCyZ1Mx+7yHGH0GR4jdysvto/voDAFgE5AfAMiA/
-AJYB+QGwDMgPgGVAfgAsA/IDYBmQHwDLgPwAWAbkB8AyID8AlgH5AbAMyA+AZUB+ACzjTPm9
-v/7FvL6rP4UlkwJwCrvkp0dcGB/0A0r49fbCQ1/efmlgSFt5kvxS23ub0KD+ivNmPfMHQr/w
-CVvB3XYckIfipvyq4145Z7K/8adcAjeVM0LW/tZBMZ2R83fnEHetaCd9zzlbcb3dPcgt+ekH
-mH1+eb/YyXp9r4rVEXQ83aTkveacbKaGC7llQXc9qPSTVul8owaTOqiFK+7SQ/pinkvXehXu
-WtFOwoXP2IoL7u8hbshPz3bZWV4/w3uQky85VJQglmyUDmHHj1ZbWldO4v3VnNKW6Cot6+bJ
-0VQ1nDRDtRrIpVJRPOnp8ylCbtVJL4X58veXl7c39t20TL6kl9fXFGuu25XWF2lzcYHUkpUv
-TEg1NmkOSbemXWajbRmaXWtejcpUE3zWVnC5n+fB2Sc/3Q/GRdQs25Fz/1S7mLeR3Gp7pVpG
-a2Kws5uVedLv+lMnLWOGkyqUL35xuFLGcAO2ukg1MmERrtDiCuohA+UauGU2+KekE21zTVGY
-nuOpyH1CCeGkbZ+GUVu+MmnFXcnyzbVnqQlmsYgf6JGZOZvquFk2tHke5Ju78BNwr/zSXmqk
-S+aAKqGB6nS0jPDDNWGbzGjekGRX2Uyar6Z0H06qUL50M8dHuYP7yA8jgkWaFNdnKN6XieHL
-GH+ZdOlc+k4aoTJZV5XvJhXCoCNu60eR3S+f7D4itmCRJkWuru5DW2FlT8E5f/dTcqB5+hV0
-TyXhh2vCNrb2pdJujssQg0nLmOGkCuVLN3N8lDsckB8XZ0fifVkTj6Ak/37PBWr6VTDh8M2e
-RNzWjyK7Xz7ZfURswSJN2cGtoBvYLvuBuSW/tGGE7Uxx+qNsgbqOsfsrBRJiO3Iad3vWdlLf
-Lw0ZT6pQzK6Ui0ulWDnWReiHWyJjEZ9yNg8kuy9To0wR8Ovtlf6ereX8q6Jrmgb5btZmZBtx
-283Fql02jmssK1h9MFDND2yFa/AM3JQfwzthlC3R8CDA2+vhXdOYFDTD/SQUc67+245te13p
-21Rz5vqtSQUKlnsqFe5qiVzeRMgt4xIWqVN2xfyvDBTvy7yhtW7FirtOf8k8pL4eiyTqFdVL
-ZzbaCt1izZbWti7JClbjB5YRH9sKDvULeFx2ye/peba7+qz4T4enAPIT0ictFHhl+Ln5XOKD
-/ABYCOQHwDIgPwCWAfkBsAzID4BlQH4ALAPyA2AZkB8Ay4D8AFgG5AfAMiA/AJYB+Z3MdwAG
-6BFxQH4nQ7v8LwAdkN8MID8QAvnNAPIDIZDfDCA/EAL5zQDyAyGQ3wwgPxDyyfKzN+R8HhOm
-OAzkB0IOya+8c4qJRAD5JSL5/fym+/btp0Y8fXZP5PePrynw9cdvjfTs6eOZeSWez5v3QhyT
-381zD/klevnRwZEjw+elO359dk+EDDl1lBocPzdbLur7ePbM20fIuHUly+a9FKfKzytBbIuQ
-kT6V9CGZ4vX3fjClqi1jtNQVcVWqCaboA+xrajKd/OzkuCNT6LN7Ii7kkjU+IXbQx9Fn90Rc
-yCVrglGOPbMEHUrIJa/MMfnp6U54JRBia+S9/WYMVsLmK/xkhC/T1znym+WKDm9MYUOTwREu
-nc+W/IKT0mf3RMoxJr89z4rPSHnQx9Fn90R2Xkk7ytFn90T2zHstpjz9+Nx7oi9CEHylDbfU
-RoT+1GEC6Y2Fuq3xacyRXzp+afUbRy+XJEZ9jD67J0LcvJJwlNFn90SIHTtwJWbJb6PSoKA9
-nfqBYusz0EX6yopLiHBLfvaJXeizeyJ3sqvP513JqnmvxdnyywedzaIK9xujEKrFBevhOaSt
-XFGpCaZw3zaShtDPot2pdPIrZ4dOTmcF2T2RDs4MjmVJrbqSKfNenWPyS8/5DJ9sPuHi9N+V
-IQnCx2vkUcUlzXDCbCsifE0zhavTHlyg5mR6+aXDI+SDUx2iLrsr0kAFnfryIJfo+sy5khnz
-Xp1D8lsM6esSf7O7TSS/z4cO50WO5XWu5GI8nvzcw+9BxLdIfvQsuciZv86VXI1Hfvo9Dmue
-fuDyQH4zgPxACOQ3A8gPhEB+M4D8QAjkNwPaZQBC9Ig4ID8AlgH5AbAMyA+AZUB+ACwD8gNg
-GZAfAMuA/ABYBuQHwDIgv5PR/8IKQIceEQfkdzK0y/p/GQHggPxmAPmBEMhvBpAfCIH8ZgD5
-gRDIbwaQHwiB/GYA+YEQyG8GkB8IOSq/9uWa+7H3c97LhweuI5Ifv9SSqd9/maMJfj1YVdZl
-mZ/fqhaNWxNP2sWPuD1xQY4mnmSld3NIfvV7a/kNgHfo4gFV9GEC+eVXX45egUm3mu/yoEyz
-HPbHoXE7Bt3a+BG351bB86z0fg7Jz33fQkIU5XWVbRaqIrkSYL/2ZJR+/VixGX6zZ4rUPdIL
-P/vKdhrxxZpKL798qkY3U6ODMu+UkkTjVowmbeJHXDZqbhVodFDmnVKSaNyK0aRN/IjLxmEO
-yU9lUEjvnTZ5EN4W7NXUJeXeVi1BFkkOeZsKJcsD+WFbNEZWWFkCyeCIzjqTXn7lDkb30u50
-WFbOAVN7rVsxmrSJH3GTVbFd8Ewr/QCz5Je0oVikTzFjAYvt/7R4PIolapJcyJ1PvxKKypoB
-dxzK0aRN/IjLRs1mQQlFZc2AUpJo3IrRpE38iMvGYQ7Jb+8vn/SnVVq2Nwwf6W3/p8U3RHsB
-Efbys1vY/myOVZeuskwT8G7pqbTdBj+PuPbTGBc8+EpP4JD8+NjXp5zPuIghhbTAiaEMKWV5
-oOHqA1sjZZR2iiov8h1jgfz49PCnQv7nA7unzc0dlQnkKvlgKOwG/zI46tbED7h3TNqsZVQm
-1Etr3CUrPYND8iP4PGdMQhbU7wnLDyAfISTInu9CfhYL09sWKaPSzMEomzZrjodY0Twi+X06
-v398O+2Y7Ob/M+kpHJWf4o8+6FgiP3B9TpJfeb5BhQGQHwg5TX5gA8gPhEB+M4D8QAjkNwPI
-D4RAfjOA/EAI5DcD2mUAQvSIOCA/AJYB+QGwDMgPgGVAfgAsA/IDYBmQHwDLgPwAWAbkB8Ay
-ID8AlgH5AbAMyA+AZUB+ACwD8gNgGZAfAMuA/ABYxJ8//wFnwqqjJELIjwAAAABJRU5ErkJg
-gg==</item>
-		<item item-id="23">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
-FoZh2P7tfv8fo8c+hyA7eI8AAAAASUVORK5CYII=</item>
+		<item item-id="22">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</item>
+		<item item-id="23">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</item>
 		<item item-id="24">iVBORw0KGgoAAAANSUhEUgAAAIgAAABTCAYAAABEQ0++AAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAYQSURBVHhe7Z09mqM4EIYd7Qk2dT65
 swkn4hDEHfYZ+gh9mo72JhyGVem3EKWSaMBi3F/wPmNLQsbUS0mA2nObPz5mAEpAkCcwjcP8
