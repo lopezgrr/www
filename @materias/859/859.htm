@@ -4,6 +4,14 @@
    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
    <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
    <title>Prof.Dr. E. L&oacute;pez - Visi&oacute;n Computacional</title>
+   <style type="text/css">
+<!--
+.style1 {	font-size: 24px;
+	font-weight: bold;
+}
+.style3 {font-size: 24}
+-->
+   </style>
 </head>
 <body bgcolor="#CCCCCC" background="cb5f80.jpg">
 <center>
@@ -578,5 +586,261 @@ Dise&ntilde;o del algoritmo formas
   <p align="left"> 
 </center>
 <p align="center"><img src="Lenses - Fvalue.gif" width="500" height="500"> 
+<p align="center">
+<table width="1618" border="5">
+  <tr>
+    <th bgcolor="#E6FFE6" scope="col">Propuesta de PIA </th>
+  </tr>
+  <tr>
+    <th bgcolor="#E6FFE6" scope="row"><h2 style="text-align: center;">Contenido </h2>
+      <h2 style="text-align: center;"><span style="color: rgb(184, 49, 47); background-color: rgb(247, 218, 100);">EN CONSTRUCCI&Oacute;N: Revise continuamente la actualizaci&oacute;n de esta propuesta</span></h2>
+      <p> <br>
+      </p>
+      <h2 style="text-align:center;"><span style="color: rgb(44, 130, 201);">Producto Integrador de Aprendizaje<br>
+        Visi&oacute;n Computacional (folio 859)</span></h2>
+      <p> <br>
+      </p>
+      <p style="text-align: center;"><img src="IMG_0009.jpg" width="357" height="247" class="fr-fic fr-dii" style="width: 357px;" data-fr-image-pasted="true"></p>
+      <p> <br>
+      </p>
+      <h3 style="text-align:center; font-size: 24px; font-weight: bold;">Detecci&oacute;n y cuantificaci&oacute;n de agujeros y patrones de deformaciones en placas de acr&iacute;lico mediante fotoelasticidad digital y procesamiento de im&aacute;genes</h3>
+      <p style="text-align:center;"> <br>
+      </p>
+      <p align="left"><span style="font-size: 24px;">INTRODUCCI&Oacute;N</span></p>
+      <p align="left"><span style="font-size: 18px;">La fotoelasticidad es un m&eacute;todo experimental basado en la birefringencia &oacute;ptica que permite analizar el campo de esfuerzos y deformaciones en materiales transparentes sometidos a cargas mec&aacute;nicas. Al iluminar una placa de acr&iacute;lico deformada utilizando una fuente de luz polarizada y un filtro analizador (polarizador cruzado), se generan patrones de interferencia conocidos como franjas isocrom&aacute;ticas, las cuales se visualizan como un mapa de colores tipo arcoiris sobre un fondo negro.<br>
+            <br>
+            Este proyecto propone aplicar t&eacute;cnicas de Visi&oacute;n Computacional para dos tareas clave:</span></p>
+      <ul>
+        <li style="font-size: 18px;">
+          <div align="left">La inspecci&oacute;n geom&eacute;trica para detectar, contar y medir el tama&ntilde;o de los agujeros en la placa a pesar de la distorsi&oacute;n visual provocada por los esfuerzos mec&aacute;nicos.</div>
+        </li>
+        <li style="font-size: 18px;">
+          <div align="left">La segmentaci&oacute;n y cuantificaci&oacute;n crom&aacute;tica para extraer la escala de colores de interferencia y calcular el porcentaje de &aacute;rea que ocupa cada tono en la imagen resultante.</div>
+        </li>
+      </ul>
+      <p align="left"> <br>
+          <span style="font-size: 18px;">OBJETIVO GENERAL</span> <br>
+          <span style="font-size: 18px;">Desarrollar un sistema automatizado de visi&oacute;n por computadora capaz de cuantificar la geometr&iacute;a de los agujeros (conteo y tama&ntilde;o) y analizar la distribuci&oacute;n de colores de interferencia en una placa de acr&iacute;lico de 3 mm bajo ligera deformaci&oacute;n, utilizando im&aacute;genes obtenidas mediante luz polarizada.<br>
+          </span> <br>
+          <u><span style="font-size: 18px;">Objetivos Espec&iacute;ficos</span></u></p>
+      <div align="left">
+        <ul>
+          <li style="font-size: 18px;">Preprocesamiento: aplicar filtros de correcci&oacute;n de iluminaci&oacute;n, reducci&oacute;n de ruido y calibraci&oacute;n espacial sobre la imagen fotogr&aacute;fica con fondo negro.</li>
+            <li style="font-size: 18px;">Detecci&oacute;n Geom&eacute;trica: segmentar y localizar los agujeros de la placa, generando una lista con sus coordenadas y dimensiones (di&aacute;metro/&aacute;rea en p&iacute;xeles o unidades m&eacute;tricas).</li>
+            <li style="font-size: 18px;">An&aacute;lisis crom&aacute;tico: mapear el espacio de color de la imagen para identificar la escala de colores del arcoiris generada por el patr&oacute;n fotoel&aacute;stico.</li>
+            <li style="font-size: 18px;">Cuantificaci&oacute;n estad&iacute;stica: Calcular el porcentaje de &aacute;rea que representa cada color/franja de esfuerzo dentro de la zona de inter&eacute;s de la placa.</li>
+        </ul>
+      </div>      <p align="left"><span style="font-size: 18px;">METODOLOG&Iacute;A PROPUESTA<br>
+        El desarrollo del proyecto se estructurar&aacute; en cuatro etapas principales:</span><strong><br>
+      </strong></p>
+      <p align="left" style="margin-left: 40px;"><span style="color: rgb(71, 85, 119);"><span style="font-size: 18px;background-color: rgb(204, 204, 204);">Etapa 1: Adquisici&oacute;n de la imagen y configuraci&oacute;n experimental</span></span></p>
+      <p align="left" style="margin-left:40px;"><span style="font-size: 18px;"><u>Montaje &oacute;ptico</u>: Disposici&oacute;n de una fuente de luz polarizada difusa, la placa de acr&iacute;lico de 3 mm bajo carga controlada (deformaci&oacute;n ligera), y una c&aacute;mara digital equipada con un filtro polarizador cruzado (analizador).</span></p>
+      <p align="left" style="margin-left:40px;"><span style="font-size: 18px;"><u>Captura</u>: Obtenci&oacute;n de la fotograf&iacute;a digital de alta resoluci&oacute;n con fondo negro y los caracter&iacute;sticos patrones de colores de arco&iacute;ris. Las im&aacute;genes deber&aacute;n tomarse con la estaci&oacute;n de fotoelasticidad del laboratorio de INOVACI&Oacute;N de la FIME (los estudiantes har&aacute;n cita para el uso del laboratorio). Las geometr&iacute;as de las placas ser&aacute;n autorizadas por el profesor con anterioridad.</span></p>
+      <p align="left" style="margin-left:40px;"><span style="background-color: rgb(204, 204, 204);"><span style="color: rgb(40, 50, 78);"><span style="font-size: 18px;"><br>
+        Etapa 2: Procesamiento y cuantificaci&oacute;n de agujeros<br>
+      </span></span></span></p>
+      <p align="left" style="margin-left:40px;"><span style="font-size: 18px;"><u>Transformaci&oacute;n y Binarizaci&oacute;n</u>: Conversi&oacute;n de la imagen a escala de grises y aplicaci&oacute;n de umbralizaci&oacute;n adaptativa o detecci&oacute;n de bordes (Canny) para aislar el contorno de los agujeros.</span></p>
+      <p align="left" style="margin-left:40px;"><span style="font-size: 18px;"><u>Morfolog&iacute;a matem&aacute;tica</u>: Uso de operaciones morfol&oacute;gicas (apertura y cierre) para eliminar el ruido generado por las franjas de colores.<br>
+            <u>Extracci&oacute;n de caracter&iacute;sticas</u>: Etiquetado de componentes conexos y c&aacute;lculo de propiedades geom&eacute;tricas (regionprops en librer&iacute;as como OpenCV o scikit-image) para determinar el conteo total de agujeros y el tama&ntilde;o individual (&aacute;rea y radio equivalente).<br>
+      </span></p>
+      <p align="left" style="margin-left:40px;"> <br>
+      </p>
+      <p align="left" style="margin-left:40px;"><span style="font-size: 18px;background-color: rgb(204, 204, 204);"><span style="color: rgb(40, 50, 78);">Etapa 3: An&aacute;lisis de la escala de colores (Fotoelasticidad)</span> <br>
+      </span></p>
+      <p align="left" style="margin-left:40px;"><span style="font-size: 18px;"><u>Conversi&oacute;n de espacio de color</u>: Transformaci&oacute;n de la imagen original del espacio RGB a espacios m&aacute;s adecuados para la segmentaci&oacute;n crom&aacute;tica, como HSV (Tono, Saturaci&oacute;n y Valor) o CIELAB.<br>
+            <u>Agrupamiento crom&aacute;tico (Clustering)</u>: Aplicaci&oacute;n de algoritmos de agrupamiento como K-Means para aislar los rangos tonales espec&iacute;ficos correspondientes a la gama del arco&iacute;ris (rojo, amarillo, verde, azul, violeta).<br>
+            <u>Generaci&oacute;n de la escala</u>: Creaci&oacute;n de una paleta de colores representativa detectada en la muestra.<br>
+      </span></p>
+      <p align="left" style="margin-left:40px;"> <br>
+      </p>
+      <p align="left" style="margin-left:40px;"><span style="font-size: 18px;background-color: rgb(204, 204, 204);"><span style="color: rgb(40, 50, 78);">Etapa 4: C&aacute;lculo de porcentajes e informe de resultados</span></span></p>
+      <p align="left" style="margin-left:40px;"><span style="font-size: 18px;"><u>Conteo de p&iacute;xeles por tono</u>: Conteo del n&uacute;mero de p&iacute;xeles pertenecientes a cada cl&uacute;ster de color dentro de la m&aacute;scara de la placa de acr&iacute;lico.<br>
+            <u>C&aacute;lculo porcentual</u>: Determinaci&oacute;n de la proporci&oacute;n de cada color respecto al &aacute;rea total analizada.<br>
+            <u>Salida de datos</u>: Generaci&oacute;n de un reporte tabular con el listado de agujeros y sus tama&ntilde;os, acompa&ntilde;ado de un gr&aacute;fico de distribuci&oacute;n porcentual de los colores.</span></p>
+      <p align="left">xxxx </p>
+      <p align="left" class="style1"> Resultados esperados </p>
+      <p align="left"><span style="font-size: 18px;">El cuadro experimental deber&aacute; contar con 10 placas diferentes (con condiciones, geometr&iacute;a, agujeros, etc diferentes).</span></p>
+      <p align="left"><span style="font-size: 18px;">Las conclusiones deber&aacute;n relacionar los resultados tanto individuales como globales de cada caso del cuadro experimental.&nbsp;</span></p>
+      <p align="left"><span style="font-size: 18px;">Al finalizar se entregar&aacute; un informe t&eacute;cnico (PDF) con los resultados globales del cuadro experimental que incluir&aacute;: El script funcional (en Python) y an&aacute;lisis en Excel de cada experimento que justifique los valores encontrados de cada variable. Para cada experimento deber&aacute; calcularse:<br>
+      </span></p>
+      <div align="left">
+        <ul>
+          <li><span style="font-size: 18px;">Inventario geom&eacute;trico: una lista detallada por cada agujero detectado que indique su identificador, coordenadas centrales $(X, Y)$ y tama&ntilde;o estimado en mil&iacute;metros o p&iacute;xeles.</span></li>
+            <li><span style="font-size: 18px;">&nbsp;Paleta y distribuci&oacute;n crom&aacute;tica: La escala de colores identificada en el patr&oacute;n de interferencia y una tabla con los porcentajes de &aacute;rea correspondientes a cada franja de color en la imagen.</span></li>
+            <li><span style="font-size: 18px;">Validaci&oacute;n visual: Im&aacute;genes intermedias y finales que muestren la superposici&oacute;n de las detecciones (contornos de agujeros y segmentaci&oacute;n de colores).</span></li>
+        </ul>
+      </div>      <p align="left">xxxxx </p>
+      <p align="left" class="style1"> R&uacute;brica adicional a las generales usadas en este curso </p>
+      <div align="left">
+        <ul>
+          <li><span style='font-family:"Arial",sans-serif;'>Se crear&aacute;n equipos de trabajo. El profesor determinar&aacute; los integrantes de cada equipo utilizando la lista de clase.<br>
+            </span></li>
+            <li><span style='font-family:"Arial",sans-serif;'>Hacer el reporte t&eacute;cnico siguiendo el formato del m&eacute;todo cient&iacute;fico en Word y convertirlo a PDF, con capturas de pantalla, diagramas de los algoritmos y secuencia del procesamiento de datos en las funciones de OpenCV.</span></li>
+            <li><span style='font-family:"Arial",sans-serif;'>Incluir el proceso de construcci&oacute;n explicando a detalle los aspectos del trabajo, con texto explicativo de los entregables, algoritmos, ecuaciones, gr&aacute;ficas y capturas de pantalla.</span></li>
+            <li><span style='font-family:"Arial",sans-serif;'>Utilice Excel y una hoja de MathCAD para trasladar los c&aacute;lculos a su reporte PDF.</span></li>
+            <li>El reporte consta de un archivo PDF que contiene toda la informaci&oacute;n pertinente del desarrollo del trabajo, y deber&aacute; tener una estructura de trabajo cient&iacute;fico:
+              <ol>
+                <li>T&iacute;tulo</li>
+                    <li>Resumen + Abstract</li>
+                    <li>Introducci&oacute;n</li>
+                    <li>Objetivos</li>
+                    <li>Marco te&oacute;rico</li>
+                    <li>Explicaci&oacute;n de la estructura y desarrollo del trabajo</li>
+                    <li>Cuadro experimental</li>
+                    <li>Resultados</li>
+                    <li>Conclusiones</li>
+                    <li>Referencias + Bibliograf&iacute;a</li>
+              </ol>
+            </li>
+        </ul>
+      </div>      <p align="left" style="margin-left: 40px;">El reporte PDF deber&aacute; entregarse de manera <strong>individual&nbsp;</strong>(el mismo documento de todos y cada uno de los integrantes del equipo, inclusive la portada) <span style="background-color: rgb(247, 218, 100);">en tiempo y forma por medio de la plataforma NEXUS</span> (cualquier <u>otra forma de entrega no se considera v&aacute;lida</u>).</p>
+      <div align="center" style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'>
+        <table border="1" cellpadding="0" cellspacing="0" style="width:17.0cm;border-collapse:collapse;border:none;" width="643">
+          <tbody>
+            <tr></tr>
+            <tr>
+              <td style="border:none;padding:0cm 0cm 0cm 0cm;" width="8.864696734059098%">
+                <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;'> <br>
+              </p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;line-height:115%;font-size:16px;font-family:"Aptos",sans-serif;text-align:justify;'> <br>
+      </p>
+      <p align="left" class="style3">xxxxx </p>
+      <p align="left" class="style1"> C&oacute;digo ejemplo </p>
+      <p align="left"><strong><span style="background-color: rgb(247, 218, 100);">Nota: Este c&oacute;digo es un punto de partida sugerido. Debe expandirse para hacer los c&aacute;lculos que el PIA solicita.</span></strong></p>
+      <p align="left"> <br>
+      </p>
+      <p align="left"> <br>
+        import cv2 <br>
+        import numpy as np <br>
+        <br>
+        def fotoelastica(ruta_imagen, factor_mm_por_pixel=0.1): <br>
+      &nbsp; &nbsp; &quot;&quot;&quot; <br>
+      &nbsp; &nbsp; Procesa una fotograf&iacute;a de una placa de acr&iacute;lico bajo luz polarizada para: <br>
+      &nbsp; &nbsp; 1. Detectar agujeros, cuantificarlos y medir su tama&ntilde;o en mm. <br>
+      &nbsp; &nbsp; 2. Segmentar el patr&oacute;n de colores HSV y calcular su porcentaje de &aacute;rea. <br>
+      &nbsp; &nbsp; &quot;&quot;&quot; <br>
+      &nbsp; &nbsp; # 1. Cargar la imagen <br>
+      &nbsp; &nbsp; img = cv2.imread(ruta_imagen) <br>
+      &nbsp; &nbsp; if img is None: <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; print(&quot;Error al cargar la imagen.&quot;) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; return <br>
+        <br>
+      &nbsp; &nbsp; # Convertir a escala de grises y al espacio de color HSV <br>
+      &nbsp; &nbsp; gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) <br>
+      &nbsp; &nbsp; hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) <br>
+        <br>
+      &nbsp; &nbsp; # ---------------------------------------------------- <br>
+      &nbsp; &nbsp; # ETAPA 1: Detecci&oacute;n y Cuantificaci&oacute;n de Agujeros <br>
+      &nbsp; &nbsp; # ---------------------------------------------------- <br>
+      &nbsp; &nbsp; # Umbralizaci&oacute;n para aislar los agujeros negros (intensidad muy baja) <br>
+      &nbsp; &nbsp; _, thresh_holes = cv2.threshold(gray, 30, 255, cv2.THRESH_BINARY_INV) <br>
+        <br>
+      &nbsp; &nbsp; # Operaciones morfol&oacute;gicas para eliminar ruido superficial <br>
+      &nbsp; &nbsp; kernel = np.ones((3, 3), np.uint8) <br>
+      &nbsp; &nbsp; thresh_holes = cv2.morphologyEx(thresh_holes, cv2.MORPH_OPEN, kernel) <br>
+        <br>
+      &nbsp; &nbsp; # Encontrar contornos de los agujeros <br>
+      &nbsp; &nbsp; contours, _ = cv2.findContours(thresh_holes, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE) <br>
+        <br>
+      &nbsp; &nbsp; lista_agujeros = [] <br>
+      &nbsp; &nbsp; for c in contours: <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; area_px = cv2.contourArea(c) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; if area_px &gt; 40: &nbsp;# Filtrar manchas o ruido peque&ntilde;o <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; perimeter = cv2.arcLength(c, True) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if perimeter &gt; 0: <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Calcular circularidad para validar que sean agujeros reales <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; circularity = 4 * np.pi * (area_px / (perimeter * perimeter)) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if circularity &gt; 0.5: <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Calcular centroide con Momentos de Image <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; M = cv2.moments(c) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if M[&quot;m00&quot;] != 0: <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cX = int(M[&quot;m10&quot;] / M[&quot;m00&quot;]) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cY = int(M[&quot;m01&quot;] / M[&quot;m00&quot;]) <br>
+        <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Conversi&oacute;n de p&iacute;xeles a mil&iacute;metros <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; diametro_px = 2 * np.sqrt(area_px / np.pi) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; diametro_mm = diametro_px * factor_mm_por_pixel <br>
+        <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lista_agujeros.append({ <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;id&quot;: len(lista_agujeros) + 1, <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;centro&quot;: (cX, cY), <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &quot;diametro_mm&quot;: round(diametro_mm, 2) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }) <br>
+        <br>
+      &nbsp; &nbsp; # ---------------------------------------------------- <br>
+      &nbsp; &nbsp; # ETAPA 2: An&aacute;lisis Crom&aacute;tico (Espacio HSV) <br>
+      &nbsp; &nbsp; # ---------------------------------------------------- <br>
+      &nbsp; &nbsp; # M&aacute;scara para aislar la placa de acr&iacute;lico del fondo negro absoluto <br>
+      &nbsp; &nbsp; plate_mask = cv2.inRange(hsv, (0, 40, 40), (180, 255, 255)) <br>
+      &nbsp; &nbsp; total_plate_pixels = cv2.countNonZero(plate_mask) <br>
+        <br>
+      &nbsp; &nbsp; # Definici&oacute;n de rangos de tono (H en OpenCV va de 0 a 180) <br>
+      &nbsp; &nbsp; rangos_colores = { <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &quot;Rojo&quot;: [(0, 15), (165, 180)], <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &quot;Amarillo&quot;: [(16, 35)], <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &quot;Verde&quot;: [(36, 75)], <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &quot;Azul&quot;: [(76, 130)], <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &quot;Magenta/Violeta&quot;: [(131, 164)] <br>
+      &nbsp; &nbsp; } <br>
+        <br>
+      &nbsp; &nbsp; distribucion_porcentual = {} <br>
+      &nbsp; &nbsp; for nombre_color, intervalos in rangos_colores.items(): <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; mask_color = np.zeros(gray.shape, dtype=np.uint8) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; for intervalo in intervalos: <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lower = np.array([intervalo[0], 50, 50]) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; upper = np.array([intervalo[1], 255, 255]) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; m = cv2.inRange(hsv, lower, upper) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mask_color = cv2.bitwise_or(mask_color, m) <br>
+        <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; # Restringir la m&aacute;scara a la placa y excluir los agujeros <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; mask_color = cv2.bitwise_and(mask_color, mask_color, mask=plate_mask) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; mask_color = cv2.bitwise_and(mask_color, cv2.bitwise_not(thresh_holes)) <br>
+        <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; conteo_pixeles = cv2.countNonZero(mask_color) <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; porcentaje = (conteo_pixeles / total_plate_pixels) * 100 if total_plate_pixels &gt; 0 else 0 <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; distribucion_porcentual[nombre_color] = round(porcentaje, 2) <br>
+        <br>
+      &nbsp; &nbsp; # ---------------------------------------------------- <br>
+      &nbsp; &nbsp; # REPORTE DE RESULTADOS <br>
+      &nbsp; &nbsp; # ---------------------------------------------------- <br>
+      &nbsp; &nbsp; print(&quot;=== REPORTE DE AN&Aacute;LISIS FOTOEL&Aacute;STICO ===&quot;) <br>
+      &nbsp; &nbsp; print(f&quot;Total de agujeros cuantificados: {len(lista_agujeros)}&quot;) <br>
+      &nbsp; &nbsp; for h in lista_agujeros: <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; print(f&quot; &nbsp;- Agujero #{h[&#39;id&#39;]} | Posici&oacute;n (X,Y): {h[&#39;centro&#39;]} | Di&aacute;metro: {h[&#39;diametro_mm&#39;]} mm&quot;) <br>
+        <br>
+      &nbsp; &nbsp; print(&quot;\n--- Distribuci&oacute;n Porcentual de Esfuerzos (Colores) ---&quot;) <br>
+      &nbsp; &nbsp; for color, pct in distribucion_porcentual.items(): <br>
+      &nbsp; &nbsp; &nbsp; &nbsp; print(f&quot; &nbsp;- {color}: {pct}%&quot;) <br>
+        <br>
+        # Ejemplo de ejecuci&oacute;n simulada <br>
+        fotoelastica(&quot;synthetic_plate.png&quot;) <br>
+        <br>
+        <br>
+      </p>
+      <div align="left">xxxxx
+      </div>      <p align="left"> <span class="style1">Ejecuci&oacute;n del c&oacute;digo ejemplo </span><br>
+      </p>
+      <p align="left"><img src="IMG_0009.jpg" width="300" height="212" class="fr-fic fr-dib" style="width: 300px;"></p>
+      <p align="left"> <br>
+      </p>
+      <p align="left">=== REPORTE DE AN&Aacute;LISIS FOTOEL&Aacute;STICO === <br>
+        Total de agujeros cuantificados: 1 <br>
+      &nbsp; - Agujero #1 | Posici&oacute;n (X,Y): (339, 237) | Di&aacute;metro: 27.04 mm <br>
+        <br>
+        --- Distribuci&oacute;n Porcentual de Esfuerzos (Colores) --- <br>
+      &nbsp; - Rojo: 23.13% <br>
+      &nbsp; - Amarillo: 58.91% <br>
+      &nbsp; - Verde: 0.91% <br>
+      &nbsp; - Azul: 7.38% <br>
+      &nbsp; - Magenta/Violeta: 2.87% <br>
+        <br>
+      </p></th>
+  </tr>
+</table>
+<p align="center">
 </body>
 </html>
